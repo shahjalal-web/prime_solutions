@@ -18,6 +18,7 @@ export const logoutUser = async () => {
   }
 };
 
+
 export const loginWithEmail = async (email, password) => {
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);

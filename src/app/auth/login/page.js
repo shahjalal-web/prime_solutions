@@ -54,7 +54,7 @@ export default function LoginPage() {
         if (dbData.data.role === "admin") {
           router.push("/dashboard/admin");
         } else {
-          router.push("/dashboard");
+          router.push("/my-dashboard");
         }
       } else {
         throw new Error(dbData.message || "User data not found in DB");
