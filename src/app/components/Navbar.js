@@ -104,7 +104,7 @@ export default function Navbar() {
           {user ? (
             <>
               <Link
-                href={user.role === "admin" ? "/admin/dashboard" : "/dashboard"}
+                href={user.role === "admin" ? "/dashboard/admin" : "/dashboard"}
                 className="text-orange-600 font-bold uppercase text-xs"
               >
                 {user.role === "admin" ? "Admin Panel" : "Dashboard"}
