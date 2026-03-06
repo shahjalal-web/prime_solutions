@@ -2,20 +2,39 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #111827;
-    --primary: #2563eb;
-    --secondary: #4b5563;
-    --accent: #f3f4f6;
+    /* Light Mode - Slate-Tinted Light Vibe */
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    
+    --primary: #ea580c;
+    --primary-foreground: #ffffff;
+    
+    --secondary: #64748b;
+    --secondary-foreground: #0f172a;
+    
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    
+    --border: #e2e8f0;
+    --card: #ffffff;
   }
 
-  /* Force .dark class selectors */
+  /* .dark class selectors */
   .dark {
-    --background: #030712;
-    --foreground: #f9fafb;
-    --primary: #3b82f6;
-    --secondary: #9ca3af;
-    --accent: #1f2937;
+    --background: #020617;
+    --foreground: #f8fafc;
+    
+    --primary: #f97316;
+    --primary-foreground: #ffffff;
+    
+    --secondary: #94a3b8;
+    --secondary-foreground: #f8fafc;
+    
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+    
+    --border: #334155;
+    --card: #0f172a;
   }
 }
 
@@ -24,9 +43,94 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: Arial, Helvetica, sans-serif;
-    /* Transition add korle theme change smooth hobe */
     transition-property: background-color, border-color, color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
   }
+}
+
+/* --- React Quill & Rich Text Display Logic --- */
+
+.ql-editor-display {
+  color: var(--foreground) !important;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Handle Paragraphs and Line Breaks */
+.ql-editor-display p {
+  margin-bottom: 1.25rem !important;
+  white-space: pre-wrap !important;
+}
+
+/* Empty lines / Enter key spacing */
+.ql-editor-display p:empty::before,
+.ql-editor-display p br {
+  content: "";
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Heading Styling inside Rich Text */
+.ql-editor-display h1, 
+.ql-editor-display h2, 
+.ql-editor-display h3 {
+  color: var(--foreground);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Bold Text and Colors */
+.ql-editor-display strong {
+  font-weight: 700;
+  color: var(--primary); /* Force bold text to be Primary Orange */
+}
+
+/* List Styling (Bulleted & Numbered) */
+.ql-editor-display ul {
+  list-style-type: disc !important;
+  margin-left: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.ql-editor-display ol {
+  list-style-type: decimal !important;
+  margin-left: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.ql-editor-display li {
+  margin-bottom: 0.5rem !important;
+  display: list-item !important;
+}
+
+/* Custom Bullet Colors */
+.ql-editor-display ul li::marker {
+  color: var(--primary);
+}
+
+/* Support for inline colors from Quill editor */
+.ql-editor-display span[style*="color"] {
+  color: inherit; /* This allows the inline style from Quill to take over */
+}
+
+/* Link Styling */
+.ql-editor-display a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Tailwind Prose override for Quill Colors */
+.ql-editor-display.prose :where(span, p, h1, h2, h3, h4, strong, em):not(:where([class~="not-prose"] *)) {
+  color: inherit;
+}
+
+/* Ensure inline styles are respected */
+.ql-editor-display [style*="color"] {
+  color: unset !important; /* Browser ke inline style priority dite force korbe */
 }

@@ -4,8 +4,9 @@ import { usePathname } from "next/navigation";
 import { HiChartBar, HiUsers, HiLightningBolt, HiCog, HiLogout } from "react-icons/hi";
 
 const menuItems = [
-  { name: "Overview", path: "/admin", icon: HiChartBar },
-  { name: "Manage Users", path: "/admin/users", icon: HiUsers },
+  { name: "Add City", path: "/dashboard/admin/add-city", icon: HiChartBar },
+  { name: "Add Category", path: "/dashboard/admin/add-category", icon: HiUsers },
+  { name: "Add Sub Category", path: "/dashboard/admin/add-sub-category", icon: HiUsers },
   { name: "Services", path: "/admin/services", icon: HiLightningBolt },
   { name: "Settings", path: "/admin/settings", icon: HiCog },
 ];
