@@ -66,9 +66,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/pages/services" },
-    { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/pages/about" },
+    { name: "Portfolio", href: "/pages/portfolio" },
+    { name: "Contact", href: "/pages/contact" },
   ];
 
   return (
@@ -136,7 +136,7 @@ export default function Navbar() {
 
           {/* Emergency Call */}
           <a
-            href="tel:+123456789"
+            href="tel:+157165572079"
             className="px-5 py-2.5 bg-red-600 text-white text-sm font-bold rounded-full hover:bg-red-700 transition-all shadow-lg shadow-red-600/20"
           >
             Emergency 24/7
@@ -201,7 +201,7 @@ export default function Navbar() {
               )}
 
               <a
-                href="tel:+123456789"
+                href="tel:+157165572079"
                 className="py-4 bg-red-600 text-white rounded-xl shadow-lg shadow-red-600/20"
               >
                 Emergency Call

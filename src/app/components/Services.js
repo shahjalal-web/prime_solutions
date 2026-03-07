@@ -103,7 +103,7 @@ export default function Services() {
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4 }}
                   onMouseEnter={() => setActiveCard(index)}
-                  className={`group relative h-[500px] rounded-[40px] overflow-hidden cursor-pointer transition-all duration-700 border-2 ${
+                  className={`group relative h-125 rounded-[40px] overflow-hidden cursor-pointer transition-all duration-700 border-2 ${
                     isActive ? "border-orange-600 scale-[1.02] shadow-2xl" : "border-transparent opacity-80"
                   }`}
                 >
@@ -115,13 +115,13 @@ export default function Services() {
 
                   {/* Darker Overlay for Text Readability */}
                   <div className={`absolute inset-0 transition-opacity duration-500 ${
-                    isActive ? "bg-gradient-to-t from-black via-black/60 to-transparent" : "bg-black/40"
+                    isActive ? "bg-linear-to-t from-black via-black/60 to-transparent" : "bg-black/40"
                   }`} />
 
                   {/* Content Area */}
                   <div className="absolute inset-0 p-10 flex flex-col justify-end z-10">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-[2px] bg-orange-600"></div>
+                      <div className="w-8 h-0.5 bg-orange-600"></div>
                       <p className="text-orange-500 font-black text-[10px] uppercase tracking-[0.3em]">
                         {service.subtitle}
                       </p>
@@ -161,7 +161,7 @@ export default function Services() {
           <p className="text--foreground font-bold text-xl">
             Not sure what you need? <span className="text-orange-600">We offer free onsite inspections.</span>
           </p>
-          <a href="tel:+12345678" className="px-10 py-4 bg-orange-600 text-white font-black rounded-2xl shadow-xl hover:scale-105 transition-all">
+          <a href="tel:+15716557207" className="px-10 py-4 bg-orange-600 text-white font-black rounded-2xl shadow-xl hover:scale-105 transition-all">
             24/7 EMERGENCY HELP
           </a>
         </div>

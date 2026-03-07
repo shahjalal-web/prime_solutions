@@ -95,7 +95,7 @@ export default function ClientPartner() {
         </motion.div>
 
         {/* --- Interactive Grid --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 relative">
           {categories.map((cat, index) => {
             const ui = categoryUIConfig[cat.name] || defaultUI;
 
@@ -109,7 +109,7 @@ export default function ClientPartner() {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="group relative h-137.5 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl border border-(--secondary)/10 bg-(--accent)/30 backdrop-blur-sm transition-all duration-300"
+                className="group relative h-96 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-lg shadow-green-400 hover:shadow-2xl border border-(--secondary)/10 bg-(--accent)/30 backdrop-blur-sm transition-all duration-300"
               >
                 {/* 1. Image logic: Mobile-e full visible, Desktop-e grayscale logic */}
                 <div

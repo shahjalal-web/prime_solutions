@@ -1,17 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   HiPhone,
   HiShieldCheck,
-  HiOfficeBuilding,
-  HiHome,
 } from "react-icons/hi";
 
 export default function Hero() {
-  const [activeType, setActiveType] = useState("residential");
 
   return (
     <section className="relative min-h-[90vh] flex items-center bg--background pt-20">
@@ -46,7 +42,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-5 mt-8">
             {/* Call Now Button with Hover Transition */}
             <a
-              href="tel:+123456789"
+              href="tel:+157165572079"
               className="relative group flex items-center justify-center gap-3 px-8 py-4 bg-orange-600 text-white font-black rounded-xl overflow-hidden shadow-xl shadow-orange-600/20 transition-all active:scale-95 min-w-60"
             >
               {/* Background Animation on Hover */}
@@ -61,7 +57,7 @@ export default function Hero() {
               {/* Hover State: The Phone Number */}
               <span className="absolute inset-0 z-10 flex items-center justify-center gap-2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 font-mono text-lg tracking-wider">
                 <HiPhone size={20} />
-                +1 234 567 890
+                +1 (571)-655-7207
               </span>
             </a>
 

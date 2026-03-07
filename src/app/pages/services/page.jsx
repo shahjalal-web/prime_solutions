@@ -44,7 +44,7 @@ export default async function ServicesPage() {
                         <a
                             key={cat._id}
                             href={`/pages/services/${cat._id}`}
-                            className="group relative bg-card/70 backdrop-blur-xl border border-border rounded-[40px] p-3 transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(15,23,42,0.1)] hover:-translate-y-3 flex flex-col w-64 ring-1 ring-border/50 hover:ring-primary/30 shadow shadow-green-500"
+                            className="group relative bg-card/70 backdrop-blur-xl rounded-[40px] p-3 transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(15,23,42,0.1)] hover:-translate-y-3 flex flex-col w-64 ring-1 ring-border/50 hover:ring-primary/30 shadow shadow-green-500"
                         >
                             {/* Image Section */}
                             <div className="relative h-64 w-full overflow-hidden rounded-4xl mb-6">

@@ -1,14 +1,48 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HiChartBar, HiUsers, HiLightningBolt, HiCog, HiLogout } from "react-icons/hi";
+
+import { 
+  HiOutlineOfficeBuilding, 
+  HiOutlineCollection,     
+  HiOutlineViewGridAdd, 
+  HiOutlineMailOpen,       
+  HiOutlineNewspaper,      
+  HiOutlinePhotograph,
+  HiLogout
+} from "react-icons/hi";
 
 const menuItems = [
-  { name: "Add City", path: "/dashboard/admin/add-city", icon: HiChartBar },
-  { name: "Add Category", path: "/dashboard/admin/add-category", icon: HiUsers },
-  { name: "Add Sub Category", path: "/dashboard/admin/add-sub-category", icon: HiUsers },
-  { name: "Services", path: "/admin/services", icon: HiLightningBolt },
-  { name: "Settings", path: "/admin/settings", icon: HiCog },
+  { 
+    name: "Add City", 
+    path: "/dashboard/admin/add-city", 
+    icon: HiOutlineOfficeBuilding 
+  },
+  { 
+    name: "Add Category", 
+    path: "/dashboard/admin/add-category", 
+    icon: HiOutlineCollection 
+  },
+  { 
+    name: "Add Sub Category", 
+    path: "/dashboard/admin/add-sub-category", 
+    icon: HiOutlineViewGridAdd 
+  },
+  { 
+    name: "Contacts", 
+    path: "/dashboard/admin/contacts", 
+    icon: HiOutlineMailOpen 
+  },
+  { 
+    name: "Add Blog", 
+    path: "/dashboard/admin/add-blogs", 
+    icon: HiOutlineNewspaper 
+  },
+  { 
+    name: "Add Portfolio", 
+    path: "/dashboard/admin/add-portfolio", 
+    icon: HiOutlinePhotograph 
+  },
 ];
 
 export default function Sidebar() {

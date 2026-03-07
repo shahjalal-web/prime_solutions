@@ -134,3 +134,20 @@
 .ql-editor-display [style*="color"] {
   color: unset !important; /* Browser ke inline style priority dite force korbe */
 }
+
+
+/* Quill content background removal */
+.ql-editor-display [style*="background-color"] {
+    background-color: transparent !important;
+}
+
+.ql-editor-display [style*="background-color: rgb(255, 255, 255)"],
+.ql-editor-display [style*="background-color:#ffffff"],
+.ql-editor-display [style*="background-color: white"] {
+    background-color: transparent !important;
+}
+
+/* Optional: text color fix */
+.ql-editor-display [style*="color: rgb(0, 0, 0)"] {
+    color: inherit !important;
+}
