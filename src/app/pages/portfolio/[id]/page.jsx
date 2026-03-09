@@ -2,6 +2,7 @@
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import Link from "next/link";
 import ProjectGallery from "./ProjectGallery"; // Path thik kore niben
+import InspectionTrigger from "../../service-details/[slug]/InspectionTrigger";
 
 export const revalidate = 60;
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -58,8 +59,9 @@ export default async function PortfolioDetailsPage({ params }) {
                     <ProjectGallery images={project.images?.after} type="after" />
                 </div>
 
+                                <InspectionTrigger />
                 {/* --- Technical Details Section --- */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mt-10">
                     <div className="lg:col-span-8">
                         <section className="bg-card p-10 md:p-14 rounded-[50px] border border-border shadow-sm">
                             <h2 className="text-2xl font-black uppercase tracking-tight text-foreground mb-10 border-l-8 border-orange-600 pl-6 italic">

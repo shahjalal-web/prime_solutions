@@ -87,9 +87,15 @@ export default function BlogGrid() {
                   <h3 className="text-xl md:text-2xl font-black text-orange-600 leading-tight group-hover:underline decoration-2 underline-offset-4 transition-all uppercase italic">
                     {blog.title}
                   </h3>
-                  <p className="text-(--secondary) text-sm leading-relaxed font-medium line-clamp-3 italic opacity-80">
-                    {getExcerpt(blog.content)}
-                  </p>
+                  <div
+                    className="text-secondary text-sm font-medium line-clamp-3 mb-10 italic flex-1"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        blog.content
+                          .substring(0, 160)
+                          .replace(/<[^>]*>?/gm, "") + "...",
+                    }}
+                  />
                   <div className="text-orange-600 font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all">
                     Read Full Article <span className="text-lg">»</span>
                   </div>

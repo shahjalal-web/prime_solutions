@@ -9,7 +9,8 @@ import {
   HiOutlineMailOpen,       
   HiOutlineNewspaper,      
   HiOutlinePhotograph,
-  HiLogout
+  HiLogout,
+  HiOutlineClipboardCheck
 } from "react-icons/hi";
 
 const menuItems = [
@@ -17,6 +18,11 @@ const menuItems = [
     name: "Add City", 
     path: "/dashboard/admin/add-city", 
     icon: HiOutlineOfficeBuilding 
+  },
+{ 
+    name: "All Inspections", 
+    path: "/dashboard/admin/all-inspection", 
+    icon: HiOutlineClipboardCheck 
   },
   { 
     name: "Add Category", 

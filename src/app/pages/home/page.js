@@ -1,14 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import {
-  HiPhone,
-  HiShieldCheck,
-} from "react-icons/hi";
+import InspectionModal from "../../components/InspectionModal";
+import { HiPhone, HiShieldCheck } from "react-icons/hi";
+import { useState } from "react";
+import InspectionTrigger from "../../pages/service-details/[slug]/InspectionTrigger";
 
 export default function Hero() {
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="relative min-h-[90vh] flex items-center bg--background pt-20">
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -61,8 +60,12 @@ export default function Hero() {
               </span>
             </a>
 
+            {/* Request Inspection Button */}
+
+            <InspectionTrigger />
+
             {/* View Services Button - Modern Minimalist */}
-            <Link
+            {/* <Link
               href="/pages/services"
               className="group relative flex items-center justify-center gap-2 px-8 py-4 bg--accent/30 text--foreground font-bold rounded-xl border border--secondary/10 hover:bg--accent transition-all text-center overflow-hidden"
             >
@@ -74,10 +77,8 @@ export default function Hero() {
               >
                 →
               </motion.span>
-
-              {/* Subtle Background Shine */}
               <div className="absolute inset-0 w-1/2 h-full bg-white/5 skew-x-[-20deg] -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700" />
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
 

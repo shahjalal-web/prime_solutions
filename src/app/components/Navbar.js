@@ -167,7 +167,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg--background border-b border--secondary/10 shadow-xl md:hidden"
+            className="absolute top-full left-0 w-full bg-black text-white border-b border--secondary/10 shadow-xl md:hidden"
           >
             <div className="flex flex-col p-6 gap-6 text-center font-bold">
               {navLinks.map((link) => (
@@ -182,12 +182,23 @@ export default function Navbar() {
               ))}
 
               {user && (
-                <button
-                  onClick={handleSignOut}
-                  className="text-xl text-red-500 hover:text-red-600"
-                >
-                  Logout
-                </button>
+                <>
+                  <Link
+                  onClick={() => setIsOpen(false)}
+                    href={
+                      user.role === "admin" ? "/dashboard/admin" : "/dashboard"
+                    }
+                    className="text-orange-600 font-bold text-xl uppercase"
+                  >
+                    {user.role === "admin" ? "Admin Panel" : "Dashboard"}
+                  </Link>
+                  <button
+                    onClick={handleSignOut}
+                    className="text-xl text-red-500 hover:text-red-600"
+                  >
+                    Logout
+                  </button>
+                </>
               )}
 
               {!user && (

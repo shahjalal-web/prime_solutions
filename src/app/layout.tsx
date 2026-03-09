@@ -3,6 +3,7 @@ import "./globals.css";
 import Navber from "./components/Navbar";
 import Footer from "./components/Footer";
 import {AuthProvider} from "./context/AuthContext";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <AuthProvider>
           <Navber />
           {children}
+          <Toaster position="top-right" richColors />
           <Footer />
         </AuthProvider>
       </body>

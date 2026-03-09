@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { HiOutlineCalendar, HiOutlineUser, HiOutlineTag, HiArrowNarrowLeft, HiArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
+import InspectionTrigger from "../../service-details/[slug]/InspectionTrigger";
 
 export const revalidate = 60;
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -51,6 +52,7 @@ export default async function BlogDetailsPage({ params }) {
                     <span className="bg-primary/10 text-primary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] border border-primary/20">
                         {blog.category?.name} Protocol
                     </span>
+                    
                     <h1 className="text-5xl md:text-5xl mt-2 font-black uppercase italic tracking-tighter leading-[0.9]">
                         {blog.title}
                     </h1>
@@ -66,6 +68,8 @@ export default async function BlogDetailsPage({ params }) {
                 <div className="relative h-125 w-full rounded-[60px] overflow-hidden shadow-2xl mb-16 border-8 border-card">
                     <img src={blog.image?.url || blog.image} alt={blog.title} className="w-full h-full object-cover" />
                 </div>
+                
+                        <InspectionTrigger />
 
                 {/* --- Main Content --- */}
                 <div
@@ -87,9 +91,10 @@ export default async function BlogDetailsPage({ params }) {
                 <div className="mt-20 p-12 bg-card border border-border rounded-[50px] text-center">
                     <h3 className="text-2xl font-black uppercase italic mb-6">Found this guide helpful?</h3>
                     <p className="text-secondary font-medium italic mb-8 max-w-md mx-auto">Share it with someone who needs help or speak to us directly.</p>
-                    <a href="tel:+15716557207" className="inline-block bg-primary text-forground font-black px-12 py-5 rounded-2xl hover:bg-foreground transition-all uppercase tracking-widest text-sm shadow-lg shadow-green-400 hover:shadow-2xl">
+                    {/* <a href="tel:+15716557207" className="inline-block bg-primary text-forground font-black px-12 py-5 rounded-2xl hover:bg-foreground transition-all uppercase tracking-widest text-sm shadow-lg shadow-green-400 hover:shadow-2xl mb-4">
                         Immediate Consultation
-                    </a>
+                    </a> */}
+                        <InspectionTrigger />
                 </div>
 
                 {/* --- Related Articles Grid --- */}
@@ -104,16 +109,16 @@ export default async function BlogDetailsPage({ params }) {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {relatedBlogs.map((rBlog) => (
-                                <Link 
-                                    key={rBlog._id} 
+                                <Link
+                                    key={rBlog._id}
                                     href={`/pages/blogs/${rBlog.slug}`}
                                     className="group flex flex-col bg-card border border-border rounded-[40px] overflow-hidden hover:shadow-2xl transition-all duration-500"
                                 >
                                     <div className="h-56 overflow-hidden relative">
-                                        <img 
-                                            src={rBlog.image?.url || rBlog.image} 
-                                            className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" 
-                                            alt={rBlog.title} 
+                                        <img
+                                            src={rBlog.image?.url || rBlog.image}
+                                            className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                                            alt={rBlog.title}
                                         />
                                     </div>
                                     <div className="p-8 flex flex-col flex-1">

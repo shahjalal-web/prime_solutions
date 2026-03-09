@@ -10,8 +10,8 @@ const contactInfo = [
     {
         icon: HiOutlinePhone,
         label: "24/7 Emergency",
-        value: "(888) 123-4567",
-        link: "tel:+18881234567",
+        value: "+1 (571) 655 72079",
+        link: "tel:+157165572079",
         color: "bg-orange-600"
     },
     {
@@ -294,7 +294,7 @@ export default function ContactPage() {
                                     className={`group relative flex items-center justify-between w-full bg-foreground text-background p-2 rounded-[25px] overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 shadow shadow-green-400 ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
                                 >
                                     <span className="ml-8 font-black uppercase tracking-[0.2em] text-xs">
-                                        {loading ? "Sending Request..." : "Dispatch Request"}
+                                        {loading ? "Submiting..." : "Submit"}
                                     </span>
                                     <div className="bg-primary p-5 rounded-[20px] text-foreground group-hover:px-10 transition-all duration-500">
                                         <HiArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />

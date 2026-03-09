@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { HiShieldCheck, HiClock, HiLightningBolt, HiUsers } from "react-icons/hi";
 import { SlCallIn } from "react-icons/sl";
 import { HiOutlineShieldCheck, HiOutlineClock } from "react-icons/hi";
+import InspectionTrigger from "../service-details/[slug]/InspectionTrigger";
 
 const features = [
     { icon: HiShieldCheck, title: "Licensed & Insured", desc: "Fully certified professionals ensuring safety and compliance." },
@@ -60,6 +61,9 @@ export default function AboutUs() {
                     ))}
                 </div>
             </section>
+            <div className="max-w-5xl mx-auto">
+                <InspectionTrigger />
+            </div>
 
             {/* --- Story Section --- */}
             <section className="py-20 px-6 bg-accent/30">

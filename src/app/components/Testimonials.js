@@ -107,7 +107,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Display */}
-        <div className="relative min-h-[400px]">
+        <div className="relative min-h-100">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout" initial={false}>
               {reviews

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HiArrowRight, HiOutlineExternalLink, HiSearch } from "react-icons/hi";
+import InspectionTrigger from "../service-details/[slug]/InspectionTrigger";
 
 const projectTypes = ["All", "Residential", "Commercial", "Industrial"];
 
@@ -178,9 +179,10 @@ export default function PortfolioPage() {
                             We provide technical documentation for residential and commercial dispatches similar to your case.
                         </p>
                     </div>
-                    <Link href="/pages/contact" className="px-14 py-6 bg-orange-600 text-white font-black rounded-3xl shadow-2xl shadow-orange-600/30 hover:bg-black transition-all hover:-translate-y-2 uppercase tracking-widest text-sm shrink-0">
+                    {/* <Link href="/pages/contact" className="px-14 py-6 bg-orange-600 text-white font-black rounded-3xl shadow-2xl shadow-orange-600/30 hover:bg-black transition-all hover:-translate-y-2 uppercase tracking-widest text-sm shrink-0">
                         Request Case Studies
-                    </Link>
+                    </Link> */}
+                    <InspectionTrigger />
                 </div>
             </div>
         </div>
