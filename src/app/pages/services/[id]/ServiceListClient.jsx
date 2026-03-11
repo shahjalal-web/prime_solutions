@@ -49,9 +49,9 @@ export default function ServiceListClient({ initialServices }) {
         </div>
       ) : (
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 w-fit">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 w-fit">
             {filteredServices.map((sub) => (
-              <div key={sub._id} className="group relative bg-card border border-border rounded-[40px] p-4 transition-all duration-700 hover:-translate-y-3 flex flex-col w-64 hover:shadow-2xl hover:border-primary/20">
+              <div key={sub._id} className="group relative bg-card border border-border rounded-[40px] p-4 transition-all duration-700 hover:-translate-y-3 flex flex-col hover:shadow-2xl hover:border-primary/20">
                 <div className="relative h-56 w-full overflow-hidden rounded-4xl mb-6 shadow-inner bg-accent">
                   <img src={sub.image?.url} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-30 group-hover:grayscale-0" alt={sub.name} />
                   <div className="absolute top-4 left-4 bg-card/90 backdrop-blur-md border border-border text-orange-500 text-[9px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
@@ -62,7 +62,7 @@ export default function ServiceListClient({ initialServices }) {
                   <h3 className="text-xl font-black uppercase italic tracking-tighter leading-[1.1] mb-3 text-foreground group-hover:text-primary transition-colors min-h-12">{sub.name}</h3>
                   <div className="text-secondary text-[11px] leading-relaxed line-clamp-2 mb-8 font-medium" dangerouslySetInnerHTML={{ __html: sub.description }} />
                   <div className="mt-auto pb-3">
-                    <a href={`/pages/service-details/${sub.slug}`} className="flex items-center justify-between bg-foreground text-card px-6 py-4 rounded-[22px] font-black uppercase text-[10px] tracking-widest transition-all duration-500 hover:bg-primary hover:shadow-xl active:scale-95">
+                    <a href={`/pages/service-details/${sub.slug}`} className="flex items-center justify-between bg-foreground text-card px-6 py-4 rounded-[22px] font-black uppercase text-[10px] tracking-widest transition-all duration-500 hover:bg-primary shadow-lg shadow-green-400 hover:shadow-2xl active:scale-95 ">
                       View Details
                       <div className="bg-card/10 p-1 rounded-lg group-hover:translate-x-1 transition-transform">
                         <HiArrowNarrowRight size={14} />

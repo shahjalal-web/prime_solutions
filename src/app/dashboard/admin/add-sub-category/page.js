@@ -231,7 +231,7 @@ export default function SubCategoryManagement() {
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full bg--background p-4 rounded-2xl border border--secondary/20 text--foreground outline-none focus:border-orange-500"
+                  className="w-full p-4 rounded-2xl border border--secondary/20 text--foreground outline-none focus:border-orange-500  bg-black/50 text-white"
                   required
                 >
                   <option value="">Select Category</option>
@@ -251,7 +251,7 @@ export default function SubCategoryManagement() {
               <select
                 value={serviceType}
                 onChange={(e) => setServiceType(e.target.value)}
-                className="w-full bg--background p-4 rounded-2xl border border--secondary/20 text--foreground outline-none focus:border-orange-500"
+                className="w-full bg--background p-4 rounded-2xl border border--secondary/20 text--foreground outline-none focus:border-orange-500 bg-black/50 text-white"
               >
                 <option value="Residential">Residential Only</option>
                 <option value="Commercial">Commercial Only</option>

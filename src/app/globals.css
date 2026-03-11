@@ -21,7 +21,7 @@
 
   /* .dark class selectors */
   .dark {
-    --background: #020617;
+    --background: #03000a;
     --foreground: #f8fafc;
     
     --primary: #f97316;
@@ -36,6 +36,19 @@
     --border: #334155;
     --card: #0f172a;
   }
+}
+
+
+/* globals.css e add korun */
+.dark body {
+  background: radial-gradient(
+    circle at left, 
+    #4c008e 0%, 
+    #230042 35%,
+    #18004b 70% 
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 @layer base {
@@ -150,4 +163,18 @@
 /* Optional: text color fix */
 .ql-editor-display [style*="color: rgb(0, 0, 0)"] {
     color: inherit !important;
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
 }

@@ -30,10 +30,10 @@ export default async function CategoryDetailPage({ params }) {
   return (
     <div className="min-h-screen bg-background py-20 px-6">
       {/* --- Header Section (Static Part) --- */}
-      <div className="mb-12 text-center max-w-3xl mx-auto relative">
+      <div className="mb-12 text-center mx-auto relative">
         <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-40 h-40 bg-primary/10 blur-[80px] rounded-full pointer-events-none" />
         <h2 className="text-5xl md:text-7xl font-black uppercase italic text-foreground tracking-tighter leading-none mb-6">
-          {currentCategory?.name || "Premium"} <span className="text-primary underline decoration-border decoration-wavy underline-offset-8">Solutions</span>
+          {currentCategory?.name || "Premium"} <br></br> <span className="text-orange-600 underline decoration-border decoration-wavy underline-offset-8">Solutions</span>
         </h2>
         <p className="text-secondary font-medium text-sm max-w-lg mx-auto leading-relaxed">
           Custom restoration for <span className="text-foreground font-bold">{currentCategory?.name}</span> needs.

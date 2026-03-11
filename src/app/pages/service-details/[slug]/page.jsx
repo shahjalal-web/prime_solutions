@@ -58,7 +58,7 @@ export default async function ServiceDetailsPage({ params }) {
                         <span className="inline-block bg-orange-600/10 text-orange-600 text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest border border-orange-600/20">
                             {service.serviceType || "Restoration"} CERTIFIED
                         </span>
-                        <h1 className="text-2xl md:text-5xl  font-black text-foreground uppercase leading-[0.9] tracking-tighter italic">
+                        <h1 className="text-2xl md:text-5xl font-black text-foreground uppercase leading-[0.9] tracking-tighter italic">
                             {service.name}
                         </h1>
                         <p className="text-secondary text-lg font-medium max-w-xl italic">

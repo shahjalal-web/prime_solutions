@@ -2,15 +2,38 @@
 /* eslint-disable @next/next/no-img-element */
 import { HiOutlineCalendar, HiOutlineUser, HiOutlineTag, HiArrowNarrowLeft, HiArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import InspectionTrigger from "../../service-details/[slug]/InspectionTrigger";
 
-export const revalidate = 60;
+// ১. ISR কনফিগারেশন: প্রতি ১ ঘণ্টা পর পর ডেটা আপডেট হবে
+export const revalidate = 60; 
+
+// ২. dynamicParams true রাখা: বিল্ডের বাইরের স্লাগগুলো যেন অন-ডিমান্ড জেনারেট হয়
+export const dynamicParams = true;
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-// 1. Fetch Main Blog Details
+// ৩. generateStaticParams: বিল্ড টাইমে শুধু প্রথম ১০টি ব্লগ জেনারেট হবে
+export async function generateStaticParams() {
+    try {
+        const res = await fetch(`${API_URL}/blogs`);
+        const data = await res.json();
+        const blogs = data.data || [];
+        
+        // শুধু লেটেস্ট ১০টি ব্লগ রিটার্ন করা হচ্ছে
+        return blogs.slice(0, 10).map((blog) => ({
+            slug: blog.slug,
+        }));
+    } catch (err) {
+        return [];
+    }
+}
+
 async function getBlogDetails(slug) {
     try {
-        const res = await fetch(`${API_URL}/blogs/details/${slug}`, { next: { revalidate: 60 } });
+        const res = await fetch(`${API_URL}/blogs/details/${slug}`, { 
+            next: { revalidate: 60 } 
+        });
         const data = await res.json();
         return data.data;
     } catch (err) {
@@ -18,12 +41,12 @@ async function getBlogDetails(slug) {
     }
 }
 
-// 2. Fetch Related Blogs by Category
 async function getRelatedBlogs(categoryId, currentBlogId) {
     try {
-        const res = await fetch(`${API_URL}/blogs?category=${categoryId}`, { next: { revalidate: 60 } });
+        const res = await fetch(`${API_URL}/blogs?category=${categoryId}`, { 
+            next: { revalidate: 60 } 
+        });
         const data = await res.json();
-        // Current blog-ti list theke remove kore prothom 3-ti show korbo
         return (data.data || []).filter(blog => blog._id !== currentBlogId).slice(0, 3);
     } catch (err) {
         return [];
@@ -34,7 +57,10 @@ export default async function BlogDetailsPage({ params }) {
     const { slug } = await params;
     const blog = await getBlogDetails(slug);
 
-    if (!blog) return <div className="h-screen flex items-center justify-center font-black uppercase">Article Not Found</div>;
+    // ৪. যদি ব্লগ না পাওয়া যায় তবে ৪-০-৪ পেজ শো করবে
+    if (!blog) {
+        notFound();
+    }
 
     const relatedBlogs = await getRelatedBlogs(blog.category?._id, blog._id);
 
@@ -49,72 +75,81 @@ export default async function BlogDetailsPage({ params }) {
 
                 {/* --- Meta Data --- */}
                 <div className="space-y-6 mb-12">
-                    <span className="bg-primary/10 text-primary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] border border-primary/20">
-                        {blog.category?.name} Protocol
+                    <span className="bg-primary/10 text-primary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] border border-primary/20 italic">
+                        {blog.category?.name} Protocol Analysis
                     </span>
                     
-                    <h1 className="text-5xl md:text-5xl mt-2 font-black uppercase italic tracking-tighter leading-[0.9]">
+                    <h1 className="text-4xl md:text-6xl mt-2 font-black uppercase italic tracking-tighter leading-[0.95]">
                         {blog.title}
                     </h1>
 
                     <div className="flex flex-wrap items-center gap-8 pt-6 border-t border-border text-secondary/60 text-[10px] font-black uppercase tracking-widest">
-                        <div className="flex items-center gap-2"><HiOutlineUser className="text-primary text-sm" /> By {blog.author || "Restoration Expert"}</div>
-                        <div className="flex items-center gap-2"><HiOutlineCalendar className="text-primary text-sm" /> {new Date(blog.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
-                        <div className="flex items-center gap-2"><HiOutlineTag className="text-primary text-sm" /> {blog.subCategory?.name}</div>
+                        <div className="flex items-center gap-2">
+                           <HiOutlineUser className="text-primary text-sm" /> 
+                           By {blog.author || "Restoration Expert"}
+                        </div>
+                        <div className="flex items-center gap-2">
+                           <HiOutlineCalendar className="text-primary text-sm" /> 
+                           {new Date(blog.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                        </div>
+                        <div className="flex items-center gap-2">
+                           <HiOutlineTag className="text-primary text-sm" /> 
+                           {blog.subCategory?.name}
+                        </div>
                     </div>
                 </div>
 
                 {/* --- Feature Image --- */}
-                <div className="relative h-125 w-full rounded-[60px] overflow-hidden shadow-2xl mb-16 border-8 border-card">
-                    <img src={blog.image?.url || blog.image} alt={blog.title} className="w-full h-full object-cover" />
+                <div className="relative h-72 md:h-125 w-full rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl mb-16 border-4 md:border-8 border-card">
+                    <img 
+                        src={blog.image?.url || blog.image} 
+                        alt={`${blog.title} - Prime Solution Restoration Virginia`} 
+                        className="w-full h-full object-cover" 
+                    />
                 </div>
                 
-                        <InspectionTrigger />
+                <div className="mb-12">
+                    <InspectionTrigger />
+                </div>
 
-                {/* --- Main Content --- */}
+                {/* --- Main Content with High-End Prose Styling --- */}
                 <div
                     className="ql-editor-display prose prose-lg prose-slate max-w-none 
                     prose-p:text-secondary prose-p:leading-relaxed prose-p:italic prose-p:font-medium
                     prose-headings:text-foreground prose-headings:font-black prose-headings:uppercase prose-headings:italic prose-headings:tracking-tighter
                     prose-strong:text-primary prose-strong:font-black
                     prose-img:rounded-[40px] prose-img:shadow-xl
-                    all:bg-transparent **:bg-transparent"
-                    style={{
-                        color: 'var(--foreground)',
-                        wordWrap: 'break-word',
-                        overflowWrap: 'break-word'
-                    }}
+                    wrap-break-word"
                     dangerouslySetInnerHTML={{ __html: blog.content }}
                 />
 
-                {/* --- Share/CTA --- */}
-                <div className="mt-20 p-12 bg-card border border-border rounded-[50px] text-center">
-                    <h3 className="text-2xl font-black uppercase italic mb-6">Found this guide helpful?</h3>
-                    <p className="text-secondary font-medium italic mb-8 max-w-md mx-auto">Share it with someone who needs help or speak to us directly.</p>
-                    {/* <a href="tel:+15716557207" className="inline-block bg-primary text-forground font-black px-12 py-5 rounded-2xl hover:bg-foreground transition-all uppercase tracking-widest text-sm shadow-lg shadow-green-400 hover:shadow-2xl mb-4">
-                        Immediate Consultation
-                    </a> */}
-                        <InspectionTrigger />
+                {/* --- Action CTA --- */}
+                <div className="mt-20 p-8 md:p-12 bg-card border border-border rounded-[40px] md:rounded-[50px] text-center shadow-xl">
+                    <h3 className="text-2xl font-black uppercase italic mb-6">Found this recovery protocol helpful?</h3>
+                    <p className="text-secondary font-medium italic mb-10 max-w-md mx-auto">
+                        Speak with our licensed specialists for emergency restoration in Virginia, Maryland, or DC.
+                    </p>
+                    <InspectionTrigger />
                 </div>
 
-                {/* --- Related Articles Grid --- */}
+                {/* --- Related Articles --- */}
                 {relatedBlogs.length > 0 && (
                     <div className="mt-32 pt-20 border-t border-border">
-                        <div className="flex items-end justify-between mb-12">
-                            <div>
-                                <span className="text-primary font-black text-xs uppercase tracking-[0.3em] mb-2 block">Keep Reading</span>
-                                <h2 className="text-4xl font-black uppercase italic tracking-tighter">More from <span className="text-primary">{blog.category?.name}</span></h2>
-                            </div>
+                        <div className="mb-12">
+                             <span className="text-primary font-black text-xs uppercase tracking-[0.3em] mb-2 block">Knowledge Base</span>
+                             <h2 className="text-4xl font-black uppercase italic tracking-tighter">
+                                Related <span className="text-primary">Insights</span>
+                             </h2>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {relatedBlogs.map((rBlog) => (
                                 <Link
                                     key={rBlog._id}
                                     href={`/pages/blogs/${rBlog.slug}`}
-                                    className="group flex flex-col bg-card border border-border rounded-[40px] overflow-hidden hover:shadow-2xl transition-all duration-500"
+                                    className="group flex flex-col bg-card border border-border rounded-[35px] overflow-hidden hover:shadow-2xl transition-all duration-500"
                                 >
-                                    <div className="h-56 overflow-hidden relative">
+                                    <div className="h-48 overflow-hidden relative">
                                         <img
                                             src={rBlog.image?.url || rBlog.image}
                                             className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
@@ -122,14 +157,14 @@ export default async function BlogDetailsPage({ params }) {
                                         />
                                     </div>
                                     <div className="p-8 flex flex-col flex-1">
-                                        <h3 className="text-xl font-black uppercase italic tracking-tight leading-tight mb-4 group-hover:text-primary transition-colors">
+                                        <h3 className="text-lg font-black uppercase italic tracking-tight leading-tight mb-6 group-hover:text-primary transition-colors">
                                             {rBlog.title}
                                         </h3>
-                                        <div className="flex items-center justify-between mt-auto pt-6 border-t border-border">
-                                            <span className="text-[10px] font-black uppercase tracking-widest text-secondary opacity-60">
+                                        <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/50">
+                                            <span className="text-[9px] font-black uppercase tracking-widest text-secondary opacity-60">
                                                 {new Date(rBlog.createdAt).toLocaleDateString()}
                                             </span>
-                                            <HiArrowNarrowRight className="text-primary group-hover:translate-x-2 transition-transform" size={20} />
+                                            <HiArrowNarrowRight className="text-primary group-hover:translate-x-2 transition-transform" size={18} />
                                         </div>
                                     </div>
                                 </Link>
