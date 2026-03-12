@@ -18,7 +18,7 @@ export default function AboutSection() {
             className="flex-1 relative"
           >
             {/* The Orange Decorative Box */}
-            <div className="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-[15px] border-orange-500 -z-10 hidden md:block" />
+            <div className="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-15 border-orange-500 -z-10 hidden md:block" />
 
             <div className="relative rounded-sm overflow-hidden shadow-2xl">
               <img

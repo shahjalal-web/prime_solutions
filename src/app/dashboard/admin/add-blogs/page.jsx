@@ -189,7 +189,7 @@ export default function BlogAdmin() {
                         <div className="flex gap-4">
                             <select
                                 required
-                                className="w-1/2 bg-background border border-border p-5 rounded-2xl outline-none font-bold text-foreground"
+                                className="w-1/2 bg-gray-500 border border-border p-5 rounded-2xl outline-none font-bold text-white"
                                 value={formData.category}
                                 onChange={e => setFormData({ ...formData, category: e.target.value, subCategory: "" })}
                             >
@@ -198,13 +198,14 @@ export default function BlogAdmin() {
                             </select>
                             <select
                                 required
-                                className="w-1/2 bg-background border border-border p-5 rounded-2xl outline-none font-bold text-foreground disabled:opacity-50"
+                                className="w-1/2 bg-gray-600 border border-border p-5 rounded-2xl outline-none font-bold text-white disabled:opacity-50"
                                 value={formData.subCategory}
                                 onChange={e => setFormData({ ...formData, subCategory: e.target.value })}
                                 disabled={!formData.category}
                             >
                                 <option value="">Sub Category</option>
                                 {subCategories?.map(s => <option key={s._id} value={s._id}>{s.name}</option>)}
+                                <option value="others">Others</option>
                             </select>
                         </div>
                     </div>

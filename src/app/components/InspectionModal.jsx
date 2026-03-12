@@ -155,6 +155,7 @@ const handleSubmit = async (e) => {
                   >
                     <option value="" className="bg-[#0f0f0f]">Select Protocol</option>
                     {subCategories.map(s => <option key={s._id} value={s._id} className="bg-[#0f0f0f]">{s.name}</option>)}
+                    <option className="bg-black" value="others">Others</option>
                   </select>
                   <HiChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-orange-600 pointer-events-none" />
                 </div>
