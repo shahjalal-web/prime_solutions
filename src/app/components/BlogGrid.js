@@ -6,7 +6,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL;
 // --- ISR Data Fetching (Server Side) ---
 async function getLatestBlogs() {
   const res = await fetch(`${API_URL}/blogs`, {
-    next: { revalidate: 60 }, // প্রতি ১ ঘণ্টা পর পর ডেটা অটো আপডেট হবে (ISR)
+    next: { revalidate: 3600 }, // প্রতি ১ ঘণ্টা পর পর ডেটা অটো আপডেট হবে (ISR)
   });
   if (!res.ok) return [];
   const data = await res.json();
