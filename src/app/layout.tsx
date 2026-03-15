@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Prime Solution Restoration | 24/7 Water, Fire & Mold Restoration in VA, DC & MD",
   description:
     "Expert property restoration in Loudoun, Fairfax & Prince William County. 24/7 Emergency response for water, fire, and mold damage. Serving VA, DC, and MD.",
-  metadataBase: new URL("https://psolutionservices.com"),
+  metadataBase: new URL("https://www.psolutionservices.com"),
   alternates: {
     canonical: "/",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Prime Solution Restoration | 24/7 Water, Fire & Mold Restoration",
     description:
       "Expert property restoration in Loudoun, Fairfax & Prince William County. 24/7 Emergency response for water, fire, and mold damage.",
-    url: "https://psolutionservices.com",
+    url: "https://www.psolutionservices.com",
     siteName: "Prime Solution Restoration",
     images: [
       {
@@ -56,8 +56,8 @@ const organizationSchema = {
   "@type": "LocalBusiness",
   name: "Prime Solution Restoration",
   alternateName: "PSR",
-  url: "https://psolutionservices.com",
-  logo: "https://psolutionservices.com/logo.png",
+  url: "https://www.psolutionservices.com",
+  logo: "https://www.psolutionservices.com/logo.png",
   description:
     "24/7 emergency property restoration services including water damage, fire damage, mold remediation, and drywall repair serving Northern Virginia, Washington DC, and Maryland.",
   telephone: "+1-571-655-7207",

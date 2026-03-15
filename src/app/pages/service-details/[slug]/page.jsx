@@ -7,6 +7,10 @@ import InspectionTrigger from "./InspectionTrigger"; // Import the client compon
 export const revalidate = 60;
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
+function toSlug(name) {
+    return name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
+}
+
 // 1. Fetch Service Details
 async function getServiceDetails(slug) {
     try {
@@ -20,7 +24,18 @@ async function getServiceDetails(slug) {
     }
 }
 
-// 2. Fetch Related Blogs
+// 2. Fetch Cities
+async function getCities() {
+    try {
+        const res = await fetch(`${API_URL}/cities`, { next: { revalidate: 60 } });
+        const data = await res.json();
+        return data.data || [];
+    } catch {
+        return [];
+    }
+}
+
+// 3. Fetch Related Blogs
 async function getRelatedBlogs(categoryId) {
     try {
         const res = await fetch(`${API_URL}/blogs?category=${categoryId}`, {
@@ -46,7 +61,10 @@ export default async function ServiceDetailsPage({ params }) {
         );
     }
 
-    const relatedBlogs = await getRelatedBlogs(service.category?._id || service.category);
+    const [relatedBlogs, cities] = await Promise.all([
+        getRelatedBlogs(service.category?._id || service.category),
+        getCities(),
+    ]);
 
     return (
         <div className="min-h-screen bg-background text-foreground selection:bg-orange-600/20 pt-10">
@@ -152,6 +170,29 @@ export default async function ServiceDetailsPage({ params }) {
                     </div>
                 </div>
             </div>
+
+            {/* --- We Serve These Areas --- */}
+            {cities.length > 0 && (
+                <section className="container mx-auto px-6 py-16 border-t border-border">
+                    <div className="mb-10">
+                        <span className="text-orange-600 font-black text-xs uppercase tracking-[0.3em] mb-3 block">Coverage Zones</span>
+                        <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter">
+                            Areas We <span className="text-orange-600">Serve</span>
+                        </h2>
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                        {cities.map((city) => (
+                            <Link
+                                key={city._id}
+                                href={`/pages/locations/${toSlug(city.name)}`}
+                                className="px-5 py-2.5 bg-card border border-border rounded-full text-sm font-bold hover:border-orange-600 hover:text-orange-600 transition-all"
+                            >
+                                {city.name}
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+            )}
 
             {/* --- Related Blogs --- */}
             {relatedBlogs.length > 0 && (

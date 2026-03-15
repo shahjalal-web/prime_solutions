@@ -18,14 +18,14 @@ const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Prime Solution Restoration",
-    url: "https://psolutionservices.com/pages/about",
+    url: "https://www.psolutionservices.com/pages/about",
     description:
         "Prime Solution Restoration has been serving Northern Virginia, Washington DC, and Maryland since 2010 with certified water, fire, and mold restoration services.",
     mainEntity: {
         "@type": "Organization",
         name: "Prime Solution Restoration",
         foundingDate: "2010",
-        url: "https://psolutionservices.com",
+        url: "https://www.psolutionservices.com",
         description:
             "Licensed and insured property restoration company providing 24/7 emergency water damage, fire damage, and mold remediation services in VA, DC, and MD.",
         areaServed: ["Loudoun County, VA", "Fairfax County, VA", "Prince William County, VA", "Washington, DC", "Maryland"],

@@ -24,7 +24,7 @@ const contactInfo = [
         icon: HiOutlineLocationMarker,
         label: "Virginia Headquarters",
         value: "42785 Generation Dr., Ashburn, VA 20147",
-        link: "https://goo.gl/maps/your-link",
+        link: "https://maps.google.com/?q=42785+Generation+Dr,+Ashburn,+VA+20147",
         color: "bg-slate-900"
     },
 ];

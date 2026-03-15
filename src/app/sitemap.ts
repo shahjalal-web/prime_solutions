@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://psolutionservices.com";
+const baseUrl = "https://www.psolutionservices.com";
 const API_URL = "https://prime-solutions-server.vercel.app/api/v1";
 
 // Static routes

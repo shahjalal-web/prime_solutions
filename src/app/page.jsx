@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "Prime Solution Restoration",
     description: "24/7 Emergency Property Restoration Services",
-    url: "https://psolutionservices.com",
+    url: "https://www.psolutionservices.com",
     siteName: "Prime Solution Restoration",
     images: [
       {
