@@ -55,6 +55,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Prime Solution Restoration",
+  alternateName: "PSR",
   url: "https://psolutionservices.com",
   logo: "https://psolutionservices.com/logo.png",
   description:

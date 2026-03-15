@@ -198,7 +198,7 @@ export default function ContactPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     <div className="space-y-4">
                                         <label className="text-[9px] font-black uppercase tracking-widest text-primary ml-1">Restoration Category</label>
-                                        <select required id="category" value={formData.category} onChange={handleCategoryChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none">
+                                        <select required id="category" value={formData.category} onChange={handleCategoryChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-gray-600 text-white">
                                             <option value="">Select Category</option>
                                             {categories.map((cat) => (<option key={cat._id} value={cat._id}>{cat.name}</option>))}
                                         </select>
@@ -207,9 +207,10 @@ export default function ContactPage() {
                                         {formData.category && (
                                             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
                                                 <label className="text-[9px] font-black uppercase tracking-widest text-primary ml-1">Specific Problem</label>
-                                                <select required id="subCategory" value={formData.subCategory} onChange={handleInputChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none">
+                                                <select required id="subCategory" value={formData.subCategory} onChange={handleInputChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-gray-600 text-white">
                                                     <option value="">Specific Issue</option>
                                                     {subCategories.map((sub) => (<option key={sub._id} value={sub._id}>{sub.name}</option>))}
+                                                    <option value="other's">Others</option>
                                                 </select>
                                             </motion.div>
                                         )}

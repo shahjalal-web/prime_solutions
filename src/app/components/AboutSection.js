@@ -22,7 +22,7 @@ export default function AboutSection() {
 
             <div className="relative rounded-sm overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=800"
+                src="/about.jpg"
                 alt="Professional Restoration Team in Virginia"
                 className="w-full h-auto object-cover"
               />
