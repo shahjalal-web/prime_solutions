@@ -14,9 +14,50 @@ const features = [
     { icon: HiUsers, title: "Community Focused", desc: "Serving our local neighbors with care and integrity." },
 ];
 
+const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Prime Solution Restoration",
+    url: "https://psolutionservices.com/pages/about",
+    description:
+        "Prime Solution Restoration has been serving Northern Virginia, Washington DC, and Maryland since 2010 with certified water, fire, and mold restoration services.",
+    mainEntity: {
+        "@type": "Organization",
+        name: "Prime Solution Restoration",
+        foundingDate: "2010",
+        url: "https://psolutionservices.com",
+        description:
+            "Licensed and insured property restoration company providing 24/7 emergency water damage, fire damage, and mold remediation services in VA, DC, and MD.",
+        areaServed: ["Loudoun County, VA", "Fairfax County, VA", "Prince William County, VA", "Washington, DC", "Maryland"],
+        hasCredential: [
+            {
+                "@type": "EducationalOccupationalCredential",
+                credentialCategory: "certification",
+                name: "IICRC Water Damage Restoration Technician",
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                credentialCategory: "certification",
+                name: "IICRC Applied Microbial Remediation Technician",
+            },
+        ],
+        knowsAbout: [
+            "Water Damage Restoration",
+            "Fire Damage Cleanup",
+            "Mold Remediation",
+            "Drywall Repair",
+            "Emergency Property Restoration",
+        ],
+    },
+};
+
 export default function AboutUs() {
     return (
         <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+            />
 
             {/* --- Hero Section --- */}
             <section className="relative pt-32 pb-20 px-6">
