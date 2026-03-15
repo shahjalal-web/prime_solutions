@@ -184,7 +184,7 @@ export default function AboutUs() {
                                 <motion.a
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    href="tel:+157165572079"
+                                    href="tel:+15716557207"
                                     className="group w-full md:w-fit bg-primary text-froground border-none font-black px-12 py-8 rounded-[30px] hover:bg-orange-500 transition-all shadow-[0_20px_50px_rgba(234,88,12,0.3)] flex items-center justify-center gap-4 text-xl uppercase tracking-tighter italic"
                                 >
                                     <div className="bg-white/20 p-3 rounded-2xl group-hover:bg-white/40 transition-colors">

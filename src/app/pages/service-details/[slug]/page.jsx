@@ -155,7 +155,7 @@ export default async function ServiceDetailsPage({ params }) {
                                 <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-8">Certified 24/7 Emergency Dispatch</p>
 
                                 <div className="space-y-4">
-                                    <a href="tel:+157165572079" className="flex items-center justify-center gap-3 bg-orange-600 text-white w-full py-5 rounded-2xl font-black text-xl hover:bg-white hover:text-black transition-all shadow-xl shadow-orange-600/20">
+                                    <a href="tel:+15716557207" className="flex items-center justify-center gap-3 bg-orange-600 text-white w-full py-5 rounded-2xl font-black text-xl hover:bg-white hover:text-black transition-all shadow-xl shadow-orange-600/20">
                                         <HiPhone size={24} className="animate-pulse" /> +1 (571) 655-7207
                                     </a>
 

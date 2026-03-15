@@ -137,7 +137,7 @@ export default function Navbar() {
 
           {/* Emergency Call */}
           <a
-            href="tel:+157165572079"
+            href="tel:+15716557207"
             className="px-5 py-2.5 bg-red-600 text-white text-sm font-bold rounded-full hover:bg-red-700 transition-all shadow-lg shadow-red-600/20"
           >
             Emergency 24/7
@@ -213,7 +213,7 @@ export default function Navbar() {
               )}
 
               <a
-                href="tel:+157165572079"
+                href="tel:+15716557207"
                 className="py-4 bg-red-600 text-white rounded-xl shadow-lg shadow-red-600/20"
               >
                 Emergency Call
