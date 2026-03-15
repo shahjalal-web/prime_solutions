@@ -26,9 +26,10 @@ export const metadata = {
     siteName: "Prime Solution Restoration",
     images: [
       {
-        url: "/hero.jfif", // একটি সুন্দর থাম্বনেইল ইমেজ দিন
+        url: "/Trauma & Biohazard Cleanup.jpg",
         width: 1200,
         height: 630,
+        alt: "Prime Solution Restoration - Professional Property Restoration Services",
       },
     ],
     locale: "en_US",

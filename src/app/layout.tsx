@@ -18,6 +18,29 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
+  openGraph: {
+    title: "Prime Solution Restoration | 24/7 Water, Fire & Mold Restoration",
+    description:
+      "Expert property restoration in Loudoun, Fairfax & Prince William County. 24/7 Emergency response for water, fire, and mold damage.",
+    url: "https://psolutionservices.com",
+    siteName: "Prime Solution Restoration",
+    images: [
+      {
+        url: "/Trauma & Biohazard Cleanup.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Prime Solution Restoration - Professional Property Restoration Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prime Solution Restoration | 24/7 Restoration Services",
+    description: "24/7 Emergency Property Restoration in VA, DC & MD.",
+    images: ["/Trauma & Biohazard Cleanup.jpg"],
+  },
   robots: {
     index: true,
     follow: true,
