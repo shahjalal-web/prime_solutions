@@ -236,11 +236,29 @@ export default function ContactPage() {
                 </div>
 
                 {/* --- Map Section --- */}
-                <div className="mt-24 h-125 w-full bg-accent rounded-[60px] overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-1000">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.3789327823526!2d-77.4912239!3d39.014238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63f3f3f3f3f3f%3A0x3f3f3f3f3f3f3f3f!2s42785%20Generation%20Dr%2C%20Ashburn%2C%20VA%2020147!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-                        width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
-                    ></iframe>
+                <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-3 pl-2">
+                            Location 1 — Ashburn, VA
+                        </p>
+                        <div className="h-80 w-full bg-accent rounded-[40px] overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-1000">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.3789327823526!2d-77.4912239!3d39.014238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64bf2e4db82ad%3A0x1234567890abcdef!2s42785%20Generation%20Dr%2C%20Ashburn%2C%20VA%2020147!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                                width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-3 pl-2">
+                            Location 2 — Manassas, VA
+                        </p>
+                        <div className="h-80 w-full bg-accent rounded-[40px] overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-1000">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.3789327823526!2d-77.4755!3d38.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6730b6b6b6b6b%3A0xabcdef1234567890!2s8735%20Quarry%20Rd%20Unit%20102%2C%20Manassas%2C%20VA%2020110!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                                width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

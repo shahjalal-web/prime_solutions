@@ -59,13 +59,44 @@ const organizationSchema = {
   logo: "https://psolutionservices.com/logo.png",
   description:
     "24/7 emergency property restoration services including water damage, fire damage, mold remediation, and drywall repair serving Northern Virginia, Washington DC, and Maryland.",
-  telephone: "",
-  email: "",
+  telephone: "+1-571-655-7207",
+  email: "office@psolutionservices.com",
   address: {
     "@type": "PostalAddress",
-    addressRegion: "Virginia",
+    streetAddress: "42785 Generation Dr.",
+    addressLocality: "Ashburn",
+    addressRegion: "VA",
+    postalCode: "20147",
     addressCountry: "US",
   },
+  location: [
+    {
+      "@type": "Place",
+      name: "Prime Solution Restoration – Ashburn",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "42785 Generation Dr.",
+        addressLocality: "Ashburn",
+        addressRegion: "VA",
+        postalCode: "20147",
+        addressCountry: "US",
+      },
+      hasMap: "https://maps.google.com/?q=42785+Generation+Dr,+Ashburn,+VA+20147",
+    },
+    {
+      "@type": "Place",
+      name: "Prime Solution Restoration – Manassas",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "8735 Quarry Rd Unit 102",
+        addressLocality: "Manassas",
+        addressRegion: "VA",
+        postalCode: "20110",
+        addressCountry: "US",
+      },
+      hasMap: "https://maps.google.com/?q=8735+Quarry+Rd+Unit+102,+Manassas,+VA+20110",
+    },
+  ],
   areaServed: [
     {
       "@type": "AdministrativeArea",
