@@ -4,6 +4,7 @@ import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
 import BlogGrid from "./components/BlogGrid";
 import Faq from "./components/Faq";
+import TrustBadges from "./components/TrustBadges";
 // import Services from "./components/service"
 import ServicesPage from "./pages/services/page"
 
@@ -48,6 +49,7 @@ export default function Home() {
       <Process />
       <Testimonials />
       <Faq />
+      <TrustBadges />
       <BlogGrid />
     </div>
   );

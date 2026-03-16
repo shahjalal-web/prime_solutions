@@ -41,6 +41,12 @@ const staticRoutes: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
   },
+  {
+    url: `${baseUrl}/pages/locations`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
 ];
 
 // Fetch all blogs
@@ -52,12 +58,14 @@ async function getBlogRoutes(): Promise<MetadataRoute.Sitemap> {
     const data = await res.json();
     const blogs = data.data || [];
 
-    return blogs.map((blog: { slug: string; updatedAt?: string; createdAt?: string }) => ({
-      url: `${baseUrl}/pages/blogs/${blog.slug}`,
-      lastModified: new Date(blog.updatedAt || blog.createdAt || Date.now()),
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
-    }));
+    return blogs.map(
+      (blog: { slug: string; updatedAt?: string; createdAt?: string }) => ({
+        url: `${baseUrl}/pages/blogs/${blog.slug}`,
+        lastModified: new Date(blog.updatedAt || blog.createdAt || Date.now()),
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      })
+    );
   } catch {
     return [];
   }
@@ -103,17 +111,77 @@ async function getSubCategoryRoutes(): Promise<MetadataRoute.Sitemap> {
   }
 }
 
+// Fetch all cities (location pages)
+async function getLocationRoutes(): Promise<MetadataRoute.Sitemap> {
+  try {
+    const res = await fetch(`${API_URL}/cities`, {
+      next: { revalidate: 3600 },
+    });
+    const data = await res.json();
+    const cities = data.data || [];
+
+    return cities.map((city: { name: string; updatedAt?: string }) => {
+      const slug = city.name
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "");
+      return {
+        url: `${baseUrl}/pages/locations/${slug}`,
+        lastModified: new Date(city.updatedAt || Date.now()),
+        changeFrequency: "monthly" as const,
+        priority: 0.75,
+      };
+    });
+  } catch {
+    return [];
+  }
+}
+
+// Fetch all portfolios
+async function getPortfolioRoutes(): Promise<MetadataRoute.Sitemap> {
+  try {
+    const res = await fetch(`${API_URL}/portfolios`, {
+      next: { revalidate: 3600 },
+    });
+    const data = await res.json();
+    const portfolios = data.data || [];
+
+    return portfolios.map(
+      (portfolio: { _id: string; updatedAt?: string; createdAt?: string }) => ({
+        url: `${baseUrl}/pages/portfolio/${portfolio._id}`,
+        lastModified: new Date(
+          portfolio.updatedAt || portfolio.createdAt || Date.now()
+        ),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      })
+    );
+  } catch {
+    return [];
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [blogRoutes, categoryRoutes, subCategoryRoutes] = await Promise.all([
+  const [
+    blogRoutes,
+    categoryRoutes,
+    subCategoryRoutes,
+    locationRoutes,
+    portfolioRoutes,
+  ] = await Promise.all([
     getBlogRoutes(),
     getCategoryRoutes(),
     getSubCategoryRoutes(),
+    getLocationRoutes(),
+    getPortfolioRoutes(),
   ]);
 
   return [
     ...staticRoutes,
     ...categoryRoutes,
     ...subCategoryRoutes,
+    ...locationRoutes,
+    ...portfolioRoutes,
     ...blogRoutes,
   ];
 }
