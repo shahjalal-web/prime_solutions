@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker, HiArrowRight, HiOutlineSparkles } from "react-icons/hi";
 import { SlCallIn } from "react-icons/sl";
+import { useRouter } from "next/navigation";
 
 const contactInfo = [
     {
@@ -33,6 +34,7 @@ export default function ContactPage() {
     const [categories, setCategories] = useState([]);
     const [subCategories, setSubCategories] = useState([]);
     const [loading, setLoading] = useState(false);
+    const router = useRouter();
     const [formData, setFormData] = useState({
         name: "",
         phone: "",
@@ -85,8 +87,8 @@ export default function ContactPage() {
             });
             const data = await res.json();
             if (data.success) {
-                alert("Restoration Dispatch Request Sent!");
                 setFormData({ name: "", phone: "", category: "", subCategory: "", message: "" });
+                router.push("/pages/thank-you");
             }
         } catch (err) {
             alert("Submission failed. Please call our emergency line.");
