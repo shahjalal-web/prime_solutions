@@ -187,7 +187,7 @@ export default async function Footer() {
         <div className="pt-8 border-t border-border text-[10px] font-black text-secondary uppercase tracking-[0.15em]">
           <div className="flex flex-col items-center gap-3">
             <p>© 2026 Prime Solution Restoration. Licensed & Insured.</p>
-            <div className="flex items-center gap-4 mt-1">
+            {/* <div className="flex items-center gap-4 mt-1">
               <p className="opacity-50 font-medium lowercase italic">
                 Developed by
               </p>
@@ -214,7 +214,7 @@ export default async function Footer() {
                   <FaExternalLinkAlt size={8} />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
