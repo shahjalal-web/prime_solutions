@@ -123,6 +123,31 @@ export default async function BlogDetailsPage({ params }) {
                     dangerouslySetInnerHTML={{ __html: blog.content }}
                 />
 
+                {/* --- FAQ Section --- */}
+                {blog.faqs && blog.faqs.length > 0 && (
+                    <div className="mt-20 pt-16 border-t border-border">
+                        <div className="mb-10">
+                            <span className="text-primary font-black text-xs uppercase tracking-[0.3em] mb-2 block">Common Questions</span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter">
+                                Frequently Asked <span className="text-primary">Questions</span>
+                            </h2>
+                        </div>
+                        <div className="space-y-4">
+                            {blog.faqs.map((faq, index) => (
+                                <details key={index} className="group bg-card border border-border rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-foreground hover:text-primary transition-colors list-none">
+                                        <span>{faq.question}</span>
+                                        <span className="ml-4 text-primary text-xl font-black group-open:rotate-45 transition-transform duration-300">+</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-secondary font-medium italic leading-relaxed border-t border-border/50 pt-4">
+                                        {faq.answer}
+                                    </div>
+                                </details>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
                 {/* --- Action CTA --- */}
                 <div className="mt-20 p-8 md:p-12 bg-card border border-border rounded-[40px] md:rounded-[50px] text-center shadow-xl">
                     <h3 className="text-2xl font-black uppercase italic mb-6">Found this recovery protocol helpful?</h3>

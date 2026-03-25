@@ -2,10 +2,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import dynamic from "next/dynamic";
 import imageCompression from "browser-image-compression"; // Image compression library
-import { HiOutlinePencilAlt, HiOutlineTrash, HiOutlineCloudUpload } from "react-icons/hi";
+import { HiOutlinePencilAlt, HiOutlineTrash, HiOutlineCloudUpload, HiOutlinePlus, HiOutlineMinus } from "react-icons/hi";
 import { toast } from "sonner";
 import { useAuth } from "../../../context/AuthContext"
 import 'react-quill-new/dist/quill.snow.css';
@@ -21,7 +21,6 @@ export default function BlogAdmin() {
     const [categories, setCategories] = useState([]);
     const [subCategories, setSubCategories] = useState([]);
     const [blogs, setBlogs] = useState([]);
-    console.log(blogs)
     const [loading, setLoading] = useState(false);
     const [selectedFile, setSelectedFile] = useState(null);
     const [isEditing, setIsEditing] = useState(null);
@@ -29,6 +28,8 @@ export default function BlogAdmin() {
     const [formData, setFormData] = useState({
         title: "", content: "", category: "", subCategory: ""
     });
+
+    const [faqs, setFaqs] = useState([]);
 
     const API_URL = process.env.NEXT_PUBLIC_API_URL;
     const CLOUD_NAME = "druw6dw7t";
@@ -92,6 +93,21 @@ export default function BlogAdmin() {
         }
     };
 
+    // FAQ handlers
+    const addFaq = () => {
+        setFaqs([...faqs, { question: "", answer: "" }]);
+    };
+
+    const removeFaq = (index) => {
+        setFaqs(faqs.filter((_, i) => i !== index));
+    };
+
+    const updateFaq = (index, field, value) => {
+        const updated = [...faqs];
+        updated[index][field] = value;
+        setFaqs(updated);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!user?.firebaseUid) return toast.error("Unauthorized");
@@ -112,11 +128,15 @@ export default function BlogAdmin() {
             // Step 2: Slug generation
             const slug = formData.title.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
 
-            // Step 3: Payload construction (Image should be an object)
+            // Step 3: Filter out empty FAQs
+            const validFaqs = faqs.filter(f => f.question.trim() && f.answer.trim());
+
+            // Step 4: Payload construction (Image should be an object)
             const payload = {
                 ...formData,
                 image: imageData, // {url, publicId}
-                slug
+                slug,
+                faqs: validFaqs
             };
 
             const url = isEditing
@@ -137,6 +157,7 @@ export default function BlogAdmin() {
             if (res.ok) {
                 toast.success(isEditing ? "Blog Updated!" : "Blog Published!");
                 setFormData({ title: "", content: "", category: "", subCategory: "" });
+                setFaqs([]);
                 setSelectedFile(null);
                 setIsEditing(null);
                 fetchInitialData();
@@ -166,6 +187,40 @@ export default function BlogAdmin() {
         } catch (err) {
             toast.error("Delete failed");
         }
+    };
+
+    // Edit button handler - fixes category/subCategory/title not showing
+    const handleEdit = async (blog) => {
+        const categoryId = blog.category?._id || blog.category || "";
+        const subCategoryId = blog.subCategory?._id || blog.subCategory || "";
+
+        setIsEditing(blog);
+
+        // First set category to trigger subcategory fetch
+        setFormData({
+            title: blog.title || "",
+            content: blog.content || "",
+            category: categoryId,
+            subCategory: "" // temporarily empty, will set after subcategories load
+        });
+
+        // Load FAQs from blog
+        setFaqs(blog.faqs && blog.faqs.length > 0 ? blog.faqs.map(f => ({ question: f.question, answer: f.answer })) : []);
+
+        // Fetch subcategories for this category, then set the subCategory value
+        if (categoryId) {
+            try {
+                const res = await fetch(`${API_URL}/sub-categories?category=${categoryId}`);
+                const d = await res.json();
+                setSubCategories(d.data || []);
+                // Now set subCategory after subcategories are loaded
+                setFormData(prev => ({ ...prev, subCategory: subCategoryId }));
+            } catch (err) {
+                console.error("Failed to load subcategories for edit:", err);
+            }
+        }
+
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -225,12 +280,56 @@ export default function BlogAdmin() {
                         <ReactQuill theme="snow" value={formData.content} onChange={val => setFormData({ ...formData, content: val })} className="h-80 text-foreground" />
                     </div>
 
+                    {/* FAQ Section */}
+                    <div className="space-y-4">
+                        <div className="flex items-center justify-between">
+                            <h3 className="text-lg font-black uppercase italic tracking-tight text-foreground">
+                                FAQs <span className="text-secondary text-sm font-medium normal-case not-italic">(Optional)</span>
+                            </h3>
+                            <button
+                                type="button"
+                                onClick={addFaq}
+                                className="flex items-center gap-2 bg-primary/10 text-primary px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-primary/20 transition-colors"
+                            >
+                                <HiOutlinePlus size={18} /> Add FAQ
+                            </button>
+                        </div>
+
+                        {faqs.map((faq, index) => (
+                            <div key={index} className="bg-background border border-border rounded-2xl p-5 space-y-3">
+                                <div className="flex items-center justify-between">
+                                    <span className="text-[10px] font-black uppercase tracking-widest text-secondary">FAQ #{index + 1}</span>
+                                    <button
+                                        type="button"
+                                        onClick={() => removeFaq(index)}
+                                        className="flex items-center gap-1 text-red-500 hover:text-red-600 text-sm font-bold transition-colors"
+                                    >
+                                        <HiOutlineMinus size={16} /> Remove
+                                    </button>
+                                </div>
+                                <input
+                                    placeholder="Question"
+                                    className="w-full bg-card border border-border p-4 rounded-xl outline-none font-bold text-foreground focus:border-primary transition-colors"
+                                    value={faq.question}
+                                    onChange={e => updateFaq(index, "question", e.target.value)}
+                                />
+                                <textarea
+                                    placeholder="Answer"
+                                    rows={3}
+                                    className="w-full bg-card border border-border p-4 rounded-xl outline-none font-medium text-foreground focus:border-primary transition-colors resize-none"
+                                    value={faq.answer}
+                                    onChange={e => updateFaq(index, "answer", e.target.value)}
+                                />
+                            </div>
+                        ))}
+                    </div>
+
                     <div className="flex gap-4">
                         <button disabled={loading} type="submit" className="bg-primary text-forground px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-foreground transition-all shadow shadow-green-400 hover:shadow-2xl shadow-primary/20 disabled:opacity-50">
                             {loading ? "Processing..." : isEditing ? "Update Article" : "Publish Article"}
                         </button>
                         {isEditing && (
-                            <button type="button" onClick={() => { setIsEditing(null); setFormData({ title: "", content: "", category: "", subCategory: "" }); setSelectedFile(null); }} className="bg-accent text-foreground px-8 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-red-500 hover:text-white transition-all">
+                            <button type="button" onClick={() => { setIsEditing(null); setFormData({ title: "", content: "", category: "", subCategory: "" }); setFaqs([]); setSelectedFile(null); }} className="bg-accent text-foreground px-8 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-red-500 hover:text-white transition-all">
                                 Cancel
                             </button>
                         )}
@@ -261,7 +360,7 @@ export default function BlogAdmin() {
                                     <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase">{blog.category?.name || "N/A"}</span>
                                 </td>
                                 <td className="p-8 text-right space-x-2">
-                                    <button onClick={() => { setIsEditing(blog); setFormData({ title: blog.title, content: blog.content, category: blog.category?._id, subCategory: blog.subCategory?._id }); window.scrollTo(0, 0); }} className="p-3 bg-accent text-secondary hover:text-primary rounded-xl"><HiOutlinePencilAlt size={20} /></button>
+                                    <button onClick={() => handleEdit(blog)} className="p-3 bg-accent text-secondary hover:text-primary rounded-xl"><HiOutlinePencilAlt size={20} /></button>
                                     <button onClick={() => handleDelete(blog._id)} className="p-3 bg-accent text-secondary hover:text-red-600 rounded-xl"><HiOutlineTrash size={20} /></button>
                                 </td>
                             </tr>
