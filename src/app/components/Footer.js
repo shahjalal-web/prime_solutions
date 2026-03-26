@@ -40,7 +40,7 @@ export default async function Footer() {
               href="/"
               className="text-3xl font-black tracking-tighter uppercase italic"
             >
-              P<span className="text-orange-600">SOLUTION</span>
+              P<span className="text-orange-600">S</span>R
             </Link>
             <p className="text-secondary text-sm font-medium italic leading-relaxed">
               Virginia's 24/7 Experts in **Water Damage Restoration**, **Fire

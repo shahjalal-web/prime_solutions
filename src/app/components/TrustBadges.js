@@ -48,6 +48,7 @@ const badges = [
     ),
     name: "Top Pro",
     platform: "Thumbtack",
+    href: "https://www.thumbtack.com/va/manassas/water-damage-restoration/prime-solution-restoration/service/524telerium",
   },
   {
     id: 2,
@@ -64,6 +65,7 @@ const badges = [
     ),
     name: "Bark.com",
     platform: "Bark",
+    href: "https://www.bark.com/en/us/company/prime-solution-restoration/gw9Ke/",
   },
   {
     id: 3,
@@ -85,6 +87,7 @@ const badges = [
     ),
     name: "Hotfrog",
     platform: "Hotfrog",
+    href: "https://www.hotfrog.com/company/va/manassas/prime-solution-restoration",
   },
   {
     id: 4,
@@ -113,6 +116,7 @@ const badges = [
     ),
     name: "BBB Accredited Business",
     platform: "Better Business Bureau",
+    href: "https://www.bbb.org/us/va/manassas/profile/restoration/prime-solution-restoration",
   },
 ];
 
@@ -143,13 +147,16 @@ export default function TrustBadges() {
         {/* Badges Grid */}
         <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
           {badges.map((badge, index) => (
-            <motion.div
+            <motion.a
               key={badge.id}
+              href={badge.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.12, duration: 0.5 }}
-              className="flex flex-col items-center gap-3 group"
+              className="flex flex-col items-center gap-3 group cursor-pointer"
             >
               {/* Badge Visual */}
               <div className="transition-transform duration-300 group-hover:scale-105">
@@ -165,7 +172,7 @@ export default function TrustBadges() {
                   {badge.platform}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>

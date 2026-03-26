@@ -86,7 +86,7 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-black tracking-tighter text--foreground"
         >
-          P<span className="text-orange-600">SOLUTION</span>
+          P<span className="text-orange-600">S</span>R
         </Link>
 
         {/* Desktop Menu */}
