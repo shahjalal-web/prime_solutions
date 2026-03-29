@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { HiArrowNarrowRight, HiLocationMarker, HiPhone, HiShieldCheck, HiClock } from "react-icons/hi";
+import { HiArrowNarrowRight, HiLocationMarker, HiPhone, HiShieldCheck, HiClock, HiExclamation } from "react-icons/hi";
 import { notFound } from "next/navigation";
 import InspectionTrigger from "../../service-details/[slug]/InspectionTrigger";
 
@@ -45,15 +45,19 @@ export async function generateMetadata({ params }) {
 
     if (!city) return {};
 
+    // Use custom meta if available, fallback to default
+    const title = city.metaTitle || `Water Damage Restoration ${city.name} VA | 24/7 Emergency | Prime Solution Restoration`;
+    const description = city.metaDescription || `Need water damage restoration in ${city.name}, VA? Prime Solution Restoration provides 24/7 emergency water, fire & mold restoration services in ${city.name} and surrounding areas.`;
+
     return {
-        title: `Water Damage Restoration ${city.name} VA | 24/7 Emergency | Prime Solution Restoration`,
-        description: `Need water damage restoration in ${city.name}, VA? Prime Solution Restoration provides 24/7 emergency water, fire & mold restoration services in ${city.name} and surrounding areas.`,
+        title,
+        description,
         alternates: {
             canonical: `https://www.psolutionservices.com/pages/locations/${slug}`,
         },
         openGraph: {
-            title: `Water Damage Restoration ${city.name} VA | Prime Solution Restoration`,
-            description: `24/7 emergency restoration services in ${city.name}, Virginia.`,
+            title,
+            description,
             url: `https://www.psolutionservices.com/pages/locations/${slug}`,
         },
     };
@@ -66,6 +70,11 @@ export default async function CityPage({ params }) {
     const city = cities.find((c) => toSlug(c.name) === slug);
 
     if (!city) notFound();
+
+    const hasUniqueContent = city.description && city.description.trim() && city.description !== "<p><br></p>";
+    const hasNeighborhoods = city.neighborhoods && city.neighborhoods.length > 0;
+    const hasLocalRisks = city.localRisks && city.localRisks.length > 0;
+    const hasFaqs = city.faqs && city.faqs.length > 0;
 
     const citySchema = {
         "@context": "https://schema.org",
@@ -98,11 +107,11 @@ export default async function CityPage({ params }) {
 
             {/* --- Hero Section --- */}
             <section className="py-24 px-6">
-                <div className="container mx-auto  text-center">
+                <div className="container mx-auto text-center">
                     <div className="flex items-center justify-center gap-2 mb-6">
                         <HiLocationMarker className="text-primary" size={20} />
                         <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
-                            Serving {city.name}, Virginia
+                            Serving {city.name}{city.county ? `, ${city.county}` : ""}, Virginia
                         </span>
                     </div>
 
@@ -145,6 +154,80 @@ export default async function CityPage({ params }) {
                     </div>
                 </div>
             </section>
+
+            {/* --- Unique City Description (if available) --- */}
+            {hasUniqueContent && (
+                <section className="py-20 px-6">
+                    <div className="container mx-auto max-w-4xl">
+                        <div className="bg-card p-10 md:p-14 rounded-[50px] border border-border shadow-sm">
+                            <h2 className="text-2xl font-black uppercase tracking-tight text-foreground mb-10 border-l-8 border-primary pl-6 italic leading-none">
+                                Restoration Services in <span className="text-primary">{city.name}</span>
+                            </h2>
+                            <div
+                                className="ql-editor-display prose prose-lg prose-slate max-w-none
+                                prose-headings:text-foreground prose-headings:font-black
+                                prose-p:text-secondary prose-p:italic
+                                prose-strong:text-primary
+                                wrap-break-word"
+                                style={{ color: 'var(--foreground)' }}
+                                dangerouslySetInnerHTML={{ __html: city.description }}
+                            />
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* --- Neighborhoods (if available) --- */}
+            {hasNeighborhoods && (
+                <section className="py-16 px-6 border-t border-border">
+                    <div className="container mx-auto max-w-5xl">
+                        <div className="text-center mb-10">
+                            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
+                                Local Coverage
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter mt-3">
+                                Neighborhoods in <span className="text-primary">{city.name}</span>
+                            </h2>
+                        </div>
+                        <div className="flex flex-wrap justify-center gap-3">
+                            {city.neighborhoods.map((n, i) => (
+                                <span
+                                    key={i}
+                                    className="px-5 py-2.5 bg-card border border-border rounded-full text-sm font-bold hover:border-primary hover:text-primary transition-all"
+                                >
+                                    {n}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* --- Local Risks (if available) --- */}
+            {hasLocalRisks && (
+                <section className="py-16 px-6 border-t border-border">
+                    <div className="container mx-auto max-w-4xl">
+                        <div className="text-center mb-10">
+                            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
+                                Local Awareness
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter mt-3">
+                                Common Risks in <span className="text-primary">{city.name}</span>
+                            </h2>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {city.localRisks.map((risk, i) => (
+                                <div key={i} className="flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
+                                    <div className="w-10 h-10 bg-red-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <HiExclamation className="text-red-500" size={20} />
+                                    </div>
+                                    <p className="text-secondary font-medium text-sm leading-relaxed">{risk}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* --- Services Available in This City --- */}
             <section className="py-24 px-6">
@@ -189,6 +272,35 @@ export default async function CityPage({ params }) {
                 </div>
             </section>
 
+            {/* --- Local FAQs (if available) --- */}
+            {hasFaqs && (
+                <section className="py-20 px-6 border-t border-border">
+                    <div className="container mx-auto max-w-4xl">
+                        <div className="text-center mb-12">
+                            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
+                                Common Questions
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter mt-3">
+                                FAQs
+                            </h2>
+                        </div>
+                        <div className="space-y-4">
+                            {city.faqs.map((faq, index) => (
+                                <details key={index} className="group bg-card border border-border rounded-2xl overflow-hidden">
+                                    <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-foreground hover:text-primary transition-colors list-none">
+                                        <span>{faq.question}</span>
+                                        <span className="ml-4 text-primary text-xl font-black group-open:rotate-45 transition-transform duration-300">+</span>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-secondary font-medium italic leading-relaxed border-t border-border/50 pt-4">
+                                        {faq.answer}
+                                    </div>
+                                </details>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
             {/* --- CTA --- */}
             <section className="py-20 px-6">
                 <div className="container mx-auto max-w-4xl">
@@ -203,7 +315,7 @@ export default async function CityPage({ params }) {
                         </p>
                         <a
                             href="tel:+15716557207"
-                            className="inline-flex items-center gap-3 bg-primary text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-orange-500 transition-all shadow-xl shadow-primary/30 relative z-10"
+                            className="inline-flex items-center gap-3 bg-primary px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-orange-500 hover:text-white transition-all shadow-xl shadow-primary/30 relative z-10"
                         >
                             <HiPhone className="animate-pulse" size={22} /> +1 (571) 655-7207
                         </a>

@@ -1,0 +1,1082 @@
+[
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd456" },
+    "name": "Middleburg",
+    "slug": "middleburg",
+    "county": "Loudoun County",
+    "description": "<p>Middleburg is a charming historic town in the heart of Virginia's horse country. With its mix of centuries-old stone buildings and upscale estates, water damage and fire restoration here often require specialized care for historic properties. Prime Solution Restoration provides expert restoration services tailored to Middleburg's unique architectural heritage.</p>",
+    "neighborhoods": ["The Plains", "Upperville", "Rectortown", "Atoka", "Foxcroft"],
+    "localRisks": ["Flash flooding along Goose Creek tributaries", "Historic stone building moisture intrusion", "Aging plumbing in heritage properties", "Rural well water system failures"],
+    "faqs": [
+      { "question": "Do you handle restoration for historic homes in Middleburg?", "answer": "Yes, our team is experienced in restoring historic and heritage properties in Middleburg. We use specialized techniques to preserve original materials while ensuring thorough water extraction and mold prevention." },
+      { "question": "How quickly can you respond to an emergency in Middleburg?", "answer": "We can arrive in Middleburg within 60 minutes of your call. Our team operates 24/7 including holidays and weekends." },
+      { "question": "Does Prime Solution work with insurance companies for Middleburg claims?", "answer": "Absolutely. We work directly with all major insurance carriers and can help you navigate the claims process from start to finish for your Middleburg property." },
+      { "question": "What types of water damage are common in Middleburg?", "answer": "Middleburg properties often experience basement flooding from Goose Creek tributaries, burst pipes in older homes during winter, and well water system failures in rural estates." }
+    ],
+    "metaTitle": "Water Damage Restoration Middleburg VA | 24/7 Emergency | PSR",
+    "metaDescription": "Expert water damage restoration in Middleburg, VA. 24/7 emergency response for historic homes and estates. Fire, mold & storm damage services. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45f" },
+    "name": "Vienna",
+    "slug": "vienna",
+    "county": "Fairfax County",
+    "description": "<p>Vienna is a well-established community in Fairfax County known for its tree-lined streets, older colonial-style homes, and active town center. Many homes in Vienna date back several decades, making them susceptible to plumbing failures and basement water intrusion. Prime Solution Restoration serves Vienna residents with fast, reliable water damage, fire damage, and mold remediation services.</p>",
+    "neighborhoods": ["Tysons Woods", "Wolf Trap", "Dunn Loring", "Lakevale Estates", "Vienna Woods", "Windover Heights"],
+    "localRisks": ["Basement flooding in older colonial homes", "Sump pump failures during heavy rain", "Tree root damage to sewer lines", "Ice dam formation on aging roofs"],
+    "faqs": [
+      { "question": "What restoration services do you offer in Vienna, VA?", "answer": "We offer comprehensive water damage restoration, fire and smoke damage cleanup, mold remediation, and storm damage repair for residential and commercial properties throughout Vienna." },
+      { "question": "My Vienna home has a flooded basement — what should I do?", "answer": "Turn off electricity to the affected area if safe, avoid walking through standing water, and call us immediately at (571) 655-7207. We'll have a certified team at your Vienna home within 60 minutes." },
+      { "question": "Do you service both old and new homes in Vienna?", "answer": "Yes. We're experienced with Vienna's older colonial homes as well as newer construction. Our technicians understand the unique challenges of each property type." },
+      { "question": "Can you help with mold after water damage in my Vienna basement?", "answer": "Absolutely. Mold can develop within 24-48 hours after water damage. We offer complete mold inspection, testing, and remediation services for Vienna properties." }
+    ],
+    "metaTitle": "Water Damage Restoration Vienna VA | 24/7 Emergency Service | PSR",
+    "metaDescription": "Professional water damage restoration in Vienna, VA. 24/7 emergency flood cleanup, fire damage repair & mold remediation. IICRC certified. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd468" },
+    "name": "Lorton",
+    "slug": "lorton",
+    "county": "Fairfax County",
+    "description": "<p>Lorton is a growing community in southern Fairfax County, situated along the Occoquan River and Pohick Creek. Its proximity to waterways and rapid development make Lorton properties particularly vulnerable to water damage from flooding and storm runoff. Prime Solution Restoration provides fast, professional restoration services to protect Lorton homes and businesses.</p>",
+    "neighborhoods": ["Laurel Hill", "Newington", "Gunston", "South Run", "Crosspointe", "Mason Neck"],
+    "localRisks": ["Occoquan River and Pohick Creek flooding", "Storm water runoff in new developments", "Sewage backup from aging infrastructure", "Foundation settling in clay-heavy soil"],
+    "faqs": [
+      { "question": "Is Lorton at high risk for water damage?", "answer": "Yes, Lorton's proximity to the Occoquan River and Pohick Creek means many properties face elevated flood risk, especially during heavy storms. We recommend proactive waterproofing and having our emergency number saved." },
+      { "question": "How fast can you get to Lorton for an emergency?", "answer": "Our crews can reach most Lorton locations within 45-60 minutes. We maintain teams throughout southern Fairfax County for rapid response." },
+      { "question": "Do you handle storm damage restoration in Lorton?", "answer": "Yes, we provide complete storm damage restoration including water extraction, structural drying, debris removal, and reconstruction for Lorton properties." },
+      { "question": "What should I do if my Lorton home floods from the creek?", "answer": "Evacuate if water is rising, document damage with photos, avoid electrical hazards, and call us immediately. We'll dispatch an emergency team and help you file your insurance claim." }
+    ],
+    "metaTitle": "Water Damage Restoration Lorton VA | Emergency Flood Cleanup | PSR",
+    "metaDescription": "24/7 water damage restoration in Lorton, VA. Emergency flood cleanup near Occoquan River. Fire damage, mold remediation & storm repair. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd471" },
+    "name": "Dumfries",
+    "slug": "dumfries",
+    "county": "Prince William County",
+    "description": "<p>Dumfries, one of the oldest chartered towns in Virginia, sits along Quantico Creek in Prince William County. The town's mix of historic buildings and newer residential developments presents unique restoration challenges. Prime Solution Restoration serves Dumfries with expert water damage, fire damage, and mold remediation services available around the clock.</p>",
+    "neighborhoods": ["Montclair", "Quantico Creek Estates", "Triangle", "Potomac Shores"],
+    "localRisks": ["Quantico Creek flooding during storms", "Aging infrastructure in historic downtown", "Basement moisture in low-lying areas", "Storm surge from nearby waterways"],
+    "faqs": [
+      { "question": "Do you provide emergency restoration services in Dumfries?", "answer": "Yes, we offer 24/7 emergency restoration services in Dumfries, VA. Our certified technicians can be on-site within 60 minutes of your call." },
+      { "question": "What causes most water damage in Dumfries homes?", "answer": "Common causes include Quantico Creek flooding, heavy rainfall overwhelming drainage systems, burst pipes in older homes, and sump pump failures during storms." },
+      { "question": "Can you restore fire-damaged properties in Dumfries?", "answer": "Absolutely. We provide complete fire and smoke damage restoration including structural cleanup, odor removal, soot cleaning, and full reconstruction services." },
+      { "question": "Do you offer free inspections in Dumfries?", "answer": "Yes, we offer free damage assessments for Dumfries properties. Our team will evaluate the extent of damage and provide a detailed restoration plan and estimate." }
+    ],
+    "metaTitle": "Water Damage Restoration Dumfries VA | 24/7 Service | PSR",
+    "metaDescription": "Expert water damage restoration in Dumfries, VA. 24/7 emergency response, fire cleanup & mold remediation. Licensed & insured. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd477" },
+    "name": "Arlington",
+    "slug": "arlington",
+    "county": "Arlington County",
+    "description": "<p>Arlington County is one of the most densely populated areas in Virginia, featuring a mix of high-rise condominiums, townhomes, and single-family residences. With its urban density and older building stock, Arlington properties frequently experience water damage from plumbing failures, roof leaks, and storm events. Prime Solution Restoration delivers fast, professional restoration services across all Arlington neighborhoods.</p>",
+    "neighborhoods": ["Clarendon", "Courthouse", "Columbia Pike", "Shirlington", "Cherrydale", "Lyon Village", "Yorktown", "Ashton Heights"],
+    "localRisks": ["High-rise plumbing failures affecting multiple units", "Urban storm drainage overflow", "Older building envelope failures", "Construction-related water intrusion in developing areas"],
+    "faqs": [
+      { "question": "Do you service condos and high-rise buildings in Arlington?", "answer": "Yes, we specialize in multi-unit restoration in Arlington. We coordinate with property management, handle unit-to-unit water damage, and work within building access requirements." },
+      { "question": "How do you handle water damage in an Arlington condo?", "answer": "We perform emergency water extraction, set up commercial-grade dehumidifiers, coordinate with neighboring units if affected, and work directly with your HOA and insurance company." },
+      { "question": "What's the most common cause of water damage in Arlington?", "answer": "In Arlington, the most common causes are burst pipes in older buildings, appliance failures in condos, and roof leaks during heavy storms. Urban density means even small leaks can affect multiple properties." },
+      { "question": "Do you offer commercial restoration services in Arlington?", "answer": "Yes, we serve Arlington businesses including offices, retail spaces, and restaurants with 24/7 emergency restoration, minimal disruption, and fast turnaround." }
+    ],
+    "metaTitle": "Water Damage Restoration Arlington VA | Condo & Home Service | PSR",
+    "metaDescription": "Arlington VA water damage restoration for condos, homes & businesses. 24/7 emergency response, fire & mold services. IICRC certified. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd478" },
+    "name": "Rosslyn",
+    "slug": "rosslyn",
+    "county": "Arlington County",
+    "description": "<p>Rosslyn is Arlington's premier urban corridor, featuring numerous high-rise office buildings, luxury apartments, and mixed-use developments. Water damage in Rosslyn often involves complex commercial and multi-story residential situations. Prime Solution Restoration has the equipment and expertise to handle large-scale restoration projects in Rosslyn's dense urban environment.</p>",
+    "neighborhoods": ["Rosslyn-Ballston Corridor", "Colonial Village", "Fort Myer Heights", "Key Bridge area"],
+    "localRisks": ["High-rise pipe bursts cascading across floors", "Potomac River proximity flooding risk", "Underground parking garage flooding", "HVAC condensation damage in commercial buildings"],
+    "faqs": [
+      { "question": "Can you handle commercial water damage restoration in Rosslyn?", "answer": "Yes, we provide large-scale commercial restoration in Rosslyn's office buildings and mixed-use properties. We have industrial-grade equipment for rapid water extraction and structural drying." },
+      { "question": "What happens if a pipe bursts in my Rosslyn high-rise?", "answer": "Call us immediately at (571) 655-7207. We'll dispatch a team to stop the water source, extract standing water, and begin structural drying. We also coordinate with building management for multi-unit situations." },
+      { "question": "Do you work after hours for Rosslyn businesses?", "answer": "Absolutely. We operate 24/7 and can schedule restoration work during off-hours to minimize disruption to your Rosslyn business operations." },
+      { "question": "How do you handle water damage in Rosslyn parking garages?", "answer": "We use commercial submersible pumps for rapid extraction, followed by structural assessment, concrete drying, and mold prevention treatment for underground parking facilities." }
+    ],
+    "metaTitle": "Water Damage Restoration Rosslyn VA | Commercial & Residential | PSR",
+    "metaDescription": "Professional water damage restoration in Rosslyn, Arlington VA. 24/7 service for high-rises, offices & condos. Fire & mold remediation. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd486" },
+    "name": "Adams Morgan",
+    "slug": "adams-morgan",
+    "county": "Washington DC",
+    "description": "<p>Adams Morgan is a vibrant, eclectic neighborhood in Washington DC known for its diverse dining scene, nightlife, and mix of historic row houses and apartment buildings. The area's older building stock and dense urban layout make water damage and fire restoration particularly challenging. Prime Solution Restoration provides expert emergency services to Adams Morgan's unique residential and commercial properties.</p>",
+    "neighborhoods": ["Lanier Heights", "Kalorama", "Reed-Cooke", "Meridian Hill"],
+    "localRisks": ["Aging plumbing in pre-war row houses", "Basement flooding from urban runoff", "Fire spread risk in attached row houses", "Roof deterioration on older buildings"],
+    "faqs": [
+      { "question": "Do you provide restoration services in Adams Morgan, DC?", "answer": "Yes, we serve Adams Morgan and surrounding DC neighborhoods with 24/7 emergency water damage, fire damage, and mold remediation services." },
+      { "question": "Can you work on historic row houses in Adams Morgan?", "answer": "Absolutely. Our team is experienced with DC's historic row houses and understands the restoration requirements for older buildings, including preserving original materials where possible." },
+      { "question": "What's the biggest water damage risk in Adams Morgan?", "answer": "The biggest risks are burst pipes in aging pre-war plumbing, basement flooding during heavy rain, and water intrusion through deteriorating roof and masonry in older buildings." },
+      { "question": "Do you coordinate with DC permits for restoration work?", "answer": "Yes, we handle all necessary permitting and coordinate with DC building regulations, including any historic preservation requirements that may apply in Adams Morgan." }
+    ],
+    "metaTitle": "Water Damage Restoration Adams Morgan DC | 24/7 Emergency | PSR",
+    "metaDescription": "Water damage restoration in Adams Morgan, Washington DC. Emergency flood cleanup, fire damage & mold services for row houses & apartments. Call 24/7!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd451" },
+    "name": "Broadlands",
+    "slug": "broadlands",
+    "county": "Loudoun County",
+    "description": "<p>Broadlands is a master-planned community in Ashburn, Loudoun County, featuring modern single-family homes, townhomes, and community amenities. While newer construction reduces some risks, Broadlands homes can still experience water damage from appliance failures, HVAC issues, and severe storms. Prime Solution Restoration provides prompt, professional service to the Broadlands community.</p>",
+    "neighborhoods": ["Broadlands South", "Broadlands North", "Nature Walk", "Southern Walk"],
+    "localRisks": ["Appliance water line failures in newer homes", "HVAC condensation and drain line backups", "Sump pump failure during heavy storms", "Grading and drainage issues in new developments"],
+    "faqs": [
+      { "question": "What causes water damage in newer Broadlands homes?", "answer": "Even newer homes experience water damage from washing machine hose failures, HVAC drain line clogs, dishwasher leaks, and sump pump failures during heavy storms." },
+      { "question": "How fast can you respond to a Broadlands emergency?", "answer": "We can typically reach Broadlands within 45-60 minutes. Our Loudoun County team is positioned for rapid response throughout the Ashburn and Broadlands area." },
+      { "question": "Do you work with Broadlands HOA requirements?", "answer": "Yes, we're familiar with HOA guidelines in Broadlands and ensure all restoration work meets community standards. We can also coordinate directly with your HOA if needed." },
+      { "question": "Can you help prevent future water damage in my Broadlands home?", "answer": "Yes, after restoration we provide recommendations for prevention including sump pump backup systems, water leak detectors, and HVAC maintenance tips specific to Broadlands homes." }
+    ],
+    "metaTitle": "Water Damage Restoration Broadlands VA | Fast Response | PSR",
+    "metaDescription": "Water damage restoration for Broadlands, Ashburn VA. 24/7 emergency service for modern homes. Mold, fire & flood cleanup. IICRC certified. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd458" },
+    "name": "Dulles",
+    "slug": "dulles",
+    "county": "Loudoun County",
+    "description": "<p>The Dulles area in Loudoun County is a rapidly growing region anchored by Dulles International Airport and the expanding Dulles Technology Corridor. With a mix of commercial properties, data centers, and residential developments, restoration needs in Dulles range from residential water damage to large-scale commercial recovery. Prime Solution Restoration serves the entire Dulles area with certified emergency response teams.</p>",
+    "neighborhoods": ["Dulles Town Center area", "Arcola", "Stone Ridge", "Willowsford", "Dulles South"],
+    "localRisks": ["Commercial facility water damage from HVAC systems", "Construction site water intrusion in developing areas", "Storm water management challenges in new developments", "Data center cooling system failures"],
+    "faqs": [
+      { "question": "Do you handle commercial restoration near Dulles Airport?", "answer": "Yes, we serve commercial properties throughout the Dulles corridor including offices, retail centers, warehouses, and technology facilities with 24/7 emergency response." },
+      { "question": "Can you restore water damage in Dulles-area data centers?", "answer": "We have experience with sensitive commercial environments. We use specialized drying techniques and work within your facility's security and operational requirements." },
+      { "question": "What areas around Dulles do you cover?", "answer": "We serve the entire Dulles area including Stone Ridge, Arcola, Willowsford, Dulles South, and all communities along the Dulles Technology Corridor." },
+      { "question": "How do you handle large commercial fire damage in the Dulles area?", "answer": "We deploy full-scale commercial teams for fire damage restoration including structural assessment, smoke and soot cleanup, odor removal, and complete reconstruction services." }
+    ],
+    "metaTitle": "Water Damage Restoration Dulles VA | Commercial & Residential | PSR",
+    "metaDescription": "Professional restoration services near Dulles, VA. 24/7 water, fire & mold damage repair for homes and commercial properties. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45d" },
+    "name": "McLean",
+    "slug": "mclean",
+    "county": "Fairfax County",
+    "description": "<p>McLean is one of Northern Virginia's most prestigious communities, home to luxury estates, high-end properties, and discerning homeowners. Restoration work in McLean demands exceptional quality, discretion, and attention to detail. Prime Solution Restoration brings premium-level service to McLean, treating every property with the care and expertise that this distinguished community expects.</p>",
+    "neighborhoods": ["Langley", "Salona Village", "Chesterbrook", "McLean Hamlet", "Franklin Park", "Evermay"],
+    "localRisks": ["Luxury finish damage from water events requiring specialized restoration", "Mature tree root intrusion into sewer lines", "Swimming pool and irrigation system leaks", "Ice dam damage on large roof systems"],
+    "faqs": [
+      { "question": "Do you have experience restoring luxury homes in McLean?", "answer": "Yes, we specialize in high-end residential restoration in McLean. Our team is experienced with premium materials including hardwood floors, custom cabinetry, marble, and high-end finishes." },
+      { "question": "Can you be discreet during restoration work at my McLean home?", "answer": "Absolutely. We understand the privacy expectations of McLean residents. Our teams arrive in unmarked vehicles when requested, and we maintain strict confidentiality." },
+      { "question": "How do you handle water damage to expensive finishes?", "answer": "We use specialized techniques for premium materials — controlled drying for hardwood floors, careful extraction around custom millwork, and manufacturer-recommended procedures for luxury finishes." },
+      { "question": "Do you provide restoration for McLean estate properties?", "answer": "Yes, we handle estates of all sizes in McLean including main residences, guest houses, pool houses, and outbuildings. Our team can manage complex, multi-structure restoration projects." }
+    ],
+    "metaTitle": "Water Damage Restoration McLean VA | Luxury Home Specialists | PSR",
+    "metaDescription": "Premium water damage restoration for McLean, VA luxury homes. 24/7 emergency service. Expert fire, mold & flood restoration. Discreet, professional service.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd460" },
+    "name": "Oakton",
+    "slug": "oakton",
+    "county": "Fairfax County",
+    "description": "<p>Oakton is a quiet, affluent community in central Fairfax County known for its wooded lots, established neighborhoods, and excellent schools. Many Oakton homes sit on larger properties with mature trees, which can contribute to root-related plumbing issues and storm damage. Prime Solution Restoration provides reliable, high-quality restoration services to Oakton homeowners.</p>",
+    "neighborhoods": ["Vale", "Fox Mill", "Tattersall", "Oakton Estates", "Blake Lane area"],
+    "localRisks": ["Tree-fall damage during storms on wooded lots", "Root intrusion in older sewer lines", "Basement water intrusion from hillside runoff", "Well and septic system failures in rural sections"],
+    "faqs": [
+      { "question": "Do you serve the Oakton, VA area?", "answer": "Yes, we provide complete restoration services throughout Oakton including water damage, fire damage, mold remediation, and storm damage repair." },
+      { "question": "My Oakton home has water in the basement after rain — can you help?", "answer": "Yes, we provide emergency water extraction and can also assess the source of the intrusion, whether it's foundation seepage, grading issues, or failed waterproofing." },
+      { "question": "Can you remove a tree that fell on my Oakton home?", "answer": "We handle complete storm damage restoration including debris removal, tarping, water extraction from the exposed area, and full structural repair and reconstruction." },
+      { "question": "What is mold remediation and do Oakton homes need it?", "answer": "Mold remediation is the professional removal and treatment of mold growth. Oakton's wooded, shaded lots can retain moisture, making some homes more susceptible to mold, especially in basements and crawl spaces." }
+    ],
+    "metaTitle": "Water Damage Restoration Oakton VA | 24/7 Emergency | PSR",
+    "metaDescription": "Water damage restoration in Oakton, VA. 24/7 emergency service for flood, fire & mold damage. Serving Oakton's established neighborhoods. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd475" },
+    "name": "Nokesville",
+    "slug": "nokesville",
+    "county": "Prince William County",
+    "description": "<p>Nokesville is a rural community in southwestern Prince William County, known for its farms, equestrian properties, and wide-open spaces. Restoration needs in Nokesville often involve well water system failures, rural property flooding, and storm damage. Prime Solution Restoration serves Nokesville with the same professional urgency we bring to urban areas.</p>",
+    "neighborhoods": ["Kettle Run", "Nokesville Road corridor", "Brentsville", "Aden"],
+    "localRisks": ["Well water system failures and contamination", "Rural property flooding from poor drainage", "Barn and outbuilding fire damage", "Septic system backup and overflow"],
+    "faqs": [
+      { "question": "Do you provide restoration services in rural Nokesville?", "answer": "Yes, we serve all of Nokesville including rural and agricultural properties. Our equipment is mobile and we can access even remote locations." },
+      { "question": "Can you handle well water contamination cleanup?", "answer": "Yes, we provide water damage restoration including cleanup from well failures, contaminated water events, and sewage backups common in rural Nokesville properties." },
+      { "question": "Do you restore barns and outbuildings in Nokesville?", "answer": "Yes, we restore all types of structures including barns, stables, workshops, and outbuildings that are common on Nokesville's rural properties." },
+      { "question": "How long does it take you to reach Nokesville?", "answer": "We can reach Nokesville within 60 minutes. Despite its rural setting, we maintain response capability throughout Prince William County." }
+    ],
+    "metaTitle": "Water Damage Restoration Nokesville VA | Rural Property Service | PSR",
+    "metaDescription": "Restoration services for Nokesville, VA rural properties. 24/7 water damage, fire & mold cleanup for homes, farms & estates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47e" },
+    "name": "Del Ray",
+    "slug": "del-ray",
+    "county": "Independent City",
+    "description": "<p>Del Ray is a trendy, walkable neighborhood in the City of Alexandria, known for its boutique shops, restaurants along Mount Vernon Avenue, and charming bungalow-style homes. Many Del Ray homes were built in the early-to-mid 20th century, making them susceptible to plumbing issues and moisture problems. Prime Solution Restoration provides expert care for Del Ray's beloved vintage properties.</p>",
+    "neighborhoods": ["Mount Vernon Avenue corridor", "Hume Springs", "Del Ray Central", "Warwick Village"],
+    "localRisks": ["Aging cast-iron plumbing in vintage bungalows", "Basement flooding in low-lying areas", "Lead paint and asbestos concerns during restoration of older homes", "Street-level flooding from urban storm runoff"],
+    "faqs": [
+      { "question": "Do you restore vintage bungalows in Del Ray?", "answer": "Yes, we have extensive experience with Del Ray's characteristic bungalows and craftsman-style homes. We take extra care to preserve original character while addressing water, fire, or mold damage." },
+      { "question": "My Del Ray basement floods every time it rains — can you help?", "answer": "Yes, we provide emergency water extraction and can recommend long-term solutions including French drain installation, sump pump systems, and exterior waterproofing." },
+      { "question": "Do you handle mold in Del Ray's older homes?", "answer": "Absolutely. Older Del Ray homes are particularly susceptible to mold due to limited ventilation and older building materials. We provide thorough mold inspection, testing, and remediation." },
+      { "question": "Can you match original materials during restoration in Del Ray?", "answer": "We make every effort to source matching materials for historic and vintage homes. When exact matches aren't available, we work with specialized suppliers and craftspeople." }
+    ],
+    "metaTitle": "Water Damage Restoration Del Ray Alexandria VA | 24/7 | PSR",
+    "metaDescription": "Water damage restoration in Del Ray, Alexandria VA. Expert care for vintage homes. 24/7 emergency flood, fire & mold services. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd485" },
+    "name": "Foggy Bottom",
+    "slug": "foggy-bottom",
+    "county": "Washington DC",
+    "description": "<p>Foggy Bottom is a historic DC neighborhood near the Potomac River, home to George Washington University, the Kennedy Center, and a mix of historic townhomes and modern condominiums. Its low-lying location near the Potomac makes it vulnerable to flooding. Prime Solution Restoration provides specialized urban restoration services to Foggy Bottom's diverse mix of properties.</p>",
+    "neighborhoods": ["West End", "GWU campus area", "Watergate complex area", "Kennedy Center vicinity"],
+    "localRisks": ["Potomac River proximity flooding", "Low-lying terrain water accumulation", "High-rise mechanical system failures", "Historic building water intrusion"],
+    "faqs": [
+      { "question": "Is Foggy Bottom at risk for flooding?", "answer": "Yes, Foggy Bottom's low elevation near the Potomac River makes it one of DC's more flood-prone neighborhoods. We recommend having an emergency plan and our number saved." },
+      { "question": "Do you service high-rise condos in Foggy Bottom?", "answer": "Yes, we serve all types of Foggy Bottom properties including high-rise condominiums, historic townhomes, university buildings, and commercial spaces." },
+      { "question": "Can you handle water damage in Foggy Bottom's older buildings?", "answer": "Absolutely. We're experienced with DC's older building stock and understand the challenges of restoration in historic properties while meeting DC preservation guidelines." },
+      { "question": "How quickly can you reach Foggy Bottom for an emergency?", "answer": "We can typically reach Foggy Bottom within 45-60 minutes. For major flooding events, we can deploy multiple teams simultaneously." }
+    ],
+    "metaTitle": "Water Damage Restoration Foggy Bottom DC | Flood Cleanup | PSR",
+    "metaDescription": "Emergency water damage restoration in Foggy Bottom, Washington DC. 24/7 flood cleanup, fire & mold services near the Potomac. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd44c" },
+    "name": "Ashburn",
+    "slug": "ashburn",
+    "county": "Loudoun County",
+    "description": "<p>Ashburn is one of Loudoun County's largest and fastest-growing communities, featuring a blend of modern planned communities, technology-driven businesses, and diverse residential options. From Ashburn Village to One Loudoun, the area's rapid development means homes range from brand-new construction to 20+ year old communities. Prime Solution Restoration is the trusted restoration partner for Ashburn families and businesses.</p>",
+    "neighborhoods": ["Ashburn Village", "Ashburn Farm", "Brambleton", "Broadlands", "One Loudoun", "Belmont Greene", "Belmont Country Club", "Moorefield Station"],
+    "localRisks": ["Water heater failures in aging developments", "HVAC condensation issues in newer homes", "Storm drainage overwhelm during heavy rainfall", "Sump pump failures in homes near Broad Run"],
+    "faqs": [
+      { "question": "What's the most common water damage in Ashburn?", "answer": "The most common causes in Ashburn are water heater failures, washing machine hose bursts, HVAC drain line clogs, and sump pump failures during heavy storms. We respond to all types 24/7." },
+      { "question": "How quickly can you respond to an Ashburn emergency?", "answer": "We maintain crews in the Ashburn area and can typically arrive within 30-45 minutes for emergency calls." },
+      { "question": "Do you serve Ashburn's commercial properties?", "answer": "Yes, we provide restoration services for Ashburn's office parks, retail centers, data centers, and commercial facilities along the Route 7 and Waxpool corridors." },
+      { "question": "Can you help with insurance claims for my Ashburn property?", "answer": "Yes, we work with all major insurance carriers and provide detailed documentation, moisture readings, and progress reports to support your Ashburn property damage claim." }
+    ],
+    "metaTitle": "Water Damage Restoration Ashburn VA | #1 Emergency Service | PSR",
+    "metaDescription": "Ashburn VA's trusted water damage restoration company. 24/7 emergency flood, fire & mold services. Fast response, IICRC certified. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd452" },
+    "name": "Purcellville",
+    "slug": "purcellville",
+    "county": "Loudoun County",
+    "description": "<p>Purcellville is a charming small town in western Loudoun County, nestled at the foot of the Blue Ridge Mountains. Known for its historic downtown, farms, and tight-knit community, Purcellville properties range from historic homes to modern rural estates. Prime Solution Restoration provides responsive, professional restoration services to Purcellville and the surrounding western Loudoun area.</p>",
+    "neighborhoods": ["Purcellville Gateway", "Locust Grove", "Fields of Atoka", "Crooked Run Orchard area"],
+    "localRisks": ["Mountain runoff flooding during heavy rain", "Well water system contamination", "Historic property moisture issues", "Winter freeze and pipe burst in exposed plumbing"],
+    "faqs": [
+      { "question": "Can you reach Purcellville quickly for emergencies?", "answer": "Yes, we serve western Loudoun County including Purcellville with emergency response within 60 minutes. Our teams are equipped for the area's rural roads and properties." },
+      { "question": "Do you handle restoration for Purcellville's historic buildings?", "answer": "Yes, we have experience restoring historic structures in Purcellville's downtown area and surrounding properties, preserving original character while eliminating damage." },
+      { "question": "What winter-specific damage risks should Purcellville homeowners know about?", "answer": "Purcellville's western Loudoun location means colder winters — frozen pipes, ice dams, and heating system failures are common. We recommend insulating exposed pipes and maintaining your heating system." },
+      { "question": "Do you restore well-water damaged properties in Purcellville?", "answer": "Yes, we handle all types of water damage including well failures, contaminated water events, and flooding from mountain runoff common in the Purcellville area." }
+    ],
+    "metaTitle": "Water Damage Restoration Purcellville VA | Western Loudoun | PSR",
+    "metaDescription": "Water damage restoration in Purcellville, VA. 24/7 emergency service for western Loudoun County homes & historic properties. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47d" },
+    "name": "Old Town Alexandria",
+    "slug": "old-town-alexandria",
+    "county": "Independent City",
+    "description": "<p>Old Town Alexandria is one of the most historic and picturesque neighborhoods in the DMV area, with colonial-era buildings, cobblestone streets, and waterfront properties along the Potomac River. Restoration in Old Town requires specialized expertise in historic preservation, flood mitigation, and working within strict architectural guidelines. Prime Solution Restoration brings that expertise to every Old Town project.</p>",
+    "neighborhoods": ["King Street corridor", "Waterfront", "Lee Street", "Captain's Row", "Founders Park"],
+    "localRisks": ["Potomac River tidal flooding along waterfront", "Historic building foundation seepage", "Colonial-era plumbing system failures", "Strict historic preservation requirements during restoration"],
+    "faqs": [
+      { "question": "Do you understand Old Town Alexandria's historic preservation requirements?", "answer": "Yes, we're experienced with Old Town's strict architectural guidelines and Board of Architectural Review requirements. We restore properties to code while preserving historic integrity." },
+      { "question": "How do you handle flood damage near the Old Town waterfront?", "answer": "We provide rapid water extraction, structural drying with low-impact equipment, and work with historic materials specialists to ensure proper restoration of flood-affected Old Town properties." },
+      { "question": "Can you restore original hardwood floors in Old Town homes?", "answer": "Yes, we specialize in salvaging and restoring original hardwood floors. When restoration isn't possible, we source period-appropriate replacement materials to maintain authenticity." },
+      { "question": "Do you work with Old Town Alexandria's BAR guidelines?", "answer": "Absolutely. We coordinate with the Board of Architectural Review when needed and ensure all exterior restoration work complies with Old Town's historic district requirements." }
+    ],
+    "metaTitle": "Water Damage Restoration Old Town Alexandria VA | Historic Homes | PSR",
+    "metaDescription": "Expert restoration for Old Town Alexandria's historic properties. 24/7 water, fire & flood damage services. Historic preservation specialists. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46b" },
+    "name": "Mount Vernon",
+    "slug": "mount-vernon",
+    "county": "Fairfax County",
+    "description": "<p>The Mount Vernon area in southeastern Fairfax County is a diverse community along the Potomac River, known for its historic significance and mix of residential neighborhoods. Properties range from waterfront homes to established suburban developments. The area's proximity to the Potomac and Little Hunting Creek makes flood preparedness essential. Prime Solution Restoration provides reliable emergency services throughout the Mount Vernon district.</p>",
+    "neighborhoods": ["Fort Hunt", "Riverside Estates", "Stratford Landing", "Hollin Hills", "Waynewood", "Belle View"],
+    "localRisks": ["Potomac River flooding in waterfront areas", "Little Hunting Creek overflow", "Aging infrastructure in established neighborhoods", "Hurricane and nor'easter storm surge"],
+    "faqs": [
+      { "question": "Is the Mount Vernon area prone to flooding?", "answer": "Yes, areas near the Potomac River and Little Hunting Creek face elevated flood risk, especially during major storms and hurricanes. We provide rapid flood response for the entire Mount Vernon district." },
+      { "question": "Do you serve Fort Hunt and nearby Mount Vernon neighborhoods?", "answer": "Yes, we serve all Mount Vernon area neighborhoods including Fort Hunt, Riverside Estates, Stratford Landing, Hollin Hills, Waynewood, and Belle View." },
+      { "question": "What should I do if my Mount Vernon home floods?", "answer": "Ensure safety first, then call us at (571) 655-7207. Don't enter floodwater-affected areas until we assess for electrical and structural hazards. We'll begin extraction and drying immediately." },
+      { "question": "Can you restore water-damaged hardwood floors in older Mount Vernon homes?", "answer": "Yes, we use controlled drying techniques to salvage hardwood floors whenever possible. For homes with original mid-century flooring, we take extra care to preserve the character of the property." }
+    ],
+    "metaTitle": "Water Damage Restoration Mount Vernon VA | Flood Cleanup | PSR",
+    "metaDescription": "Water damage restoration for Mount Vernon, Fairfax County VA. 24/7 emergency flood cleanup near the Potomac. Fire & mold services. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd482" },
+    "name": "Georgetown",
+    "slug": "georgetown",
+    "county": "Washington DC",
+    "description": "<p>Georgetown is one of Washington DC's most iconic and affluent neighborhoods, with Federal-style townhomes, cobblestone streets, and a vibrant waterfront along the Potomac. Many properties date back to the 18th and 19th centuries, requiring restoration professionals who understand historic materials and techniques. Prime Solution Restoration provides Georgetown properties with the expert, careful service they deserve.</p>",
+    "neighborhoods": ["Georgetown Waterfront", "East Village", "West Village", "Burleith", "Hillandale"],
+    "localRisks": ["Potomac River flooding along the waterfront", "18th-century foundation water seepage", "Aging plumbing in Federal-style townhomes", "Fire spread risk in connected row houses"],
+    "faqs": [
+      { "question": "Do you restore historic Georgetown townhomes?", "answer": "Yes, we specialize in restoring Georgetown's historic Federal-style and Victorian townhomes. We work with period-appropriate materials and respect the neighborhood's architectural heritage." },
+      { "question": "How do you handle flooding from the Potomac in Georgetown?", "answer": "We deploy rapid-response teams with commercial pumps for Georgetown waterfront flooding. We also provide structural drying, mold prevention, and restoration of water-damaged historic materials." },
+      { "question": "Is Georgetown at risk for water damage?", "answer": "Yes, Georgetown's proximity to the Potomac, combined with its aging building stock and below-grade spaces, makes it vulnerable to flooding, plumbing failures, and moisture intrusion." },
+      { "question": "Can you work within Georgetown's historic district regulations?", "answer": "Absolutely. We're familiar with DC's historic preservation requirements and ensure all restoration work in Georgetown complies with the Old Georgetown Board guidelines." }
+    ],
+    "metaTitle": "Water Damage Restoration Georgetown DC | Historic Property Experts | PSR",
+    "metaDescription": "Georgetown DC water damage restoration specialists. Expert care for historic townhomes. 24/7 flood, fire & mold services. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd450" },
+    "name": "Brambleton",
+    "slug": "brambleton",
+    "county": "Loudoun County",
+    "description": "<p>Brambleton is one of Loudoun County's premier master-planned communities, offering modern homes, extensive amenities, and a family-friendly environment. While newer construction provides better protection, Brambleton homes are not immune to water damage from appliance failures, storm events, and HVAC issues. Prime Solution Restoration is Brambleton's go-to restoration service provider.</p>",
+    "neighborhoods": ["Brambleton Town Center", "The Preserve", "Birchwood", "Ryan Park", "Summerfield"],
+    "localRisks": ["Water heater and appliance failures", "Storm water drainage system overloads", "HVAC condensation damage", "Construction defect water intrusion in newer builds"],
+    "faqs": [
+      { "question": "Why do newer Brambleton homes get water damage?", "answer": "New homes commonly experience water heater failures, appliance hose bursts, HVAC drain clogs, and occasionally construction defects that allow water intrusion. Early detection is key." },
+      { "question": "Do you offer mold testing in Brambleton?", "answer": "Yes, we provide professional mold inspection and testing for Brambleton homes. If mold is found, we offer complete remediation services to restore your home to a safe condition." },
+      { "question": "Can you handle storm damage in Brambleton?", "answer": "Absolutely. We provide complete storm damage restoration including emergency tarping, water extraction, structural drying, and repairs for Brambleton properties." },
+      { "question": "How do I know if I need restoration or just cleanup?", "answer": "If water has soaked into walls, flooring, or ceilings, professional restoration is needed to prevent mold and structural damage. A simple surface cleanup is not sufficient. We offer free assessments." }
+    ],
+    "metaTitle": "Water Damage Restoration Brambleton VA | Storm & Flood Service | PSR",
+    "metaDescription": "Professional water damage restoration for Brambleton, Loudoun County VA. 24/7 emergency storm, flood & mold cleanup. IICRC certified. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46e" },
+    "name": "Manassas Park",
+    "slug": "manassas-park",
+    "county": "Independent City",
+    "description": "<p>Manassas Park is an independent city in Northern Virginia, offering affordable housing options and a growing community. With a mix of single-family homes, townhomes, and apartments, restoration needs vary across the city. Prime Solution Restoration provides Manassas Park residents with fast, affordable, and professional water damage, fire damage, and mold remediation services.</p>",
+    "neighborhoods": ["Blooms Crossing", "Manassas Park Central", "Conner Drive area", "Park Avenue corridor"],
+    "localRisks": ["Basement flooding in low-lying areas", "Aging plumbing in older sections of the city", "Sewer system backup during heavy rain", "Apartment complex water damage affecting multiple units"],
+    "faqs": [
+      { "question": "Do you serve Manassas Park for water damage restoration?", "answer": "Yes, we provide 24/7 emergency water damage restoration throughout Manassas Park, covering homes, apartments, townhomes, and commercial properties." },
+      { "question": "Is Manassas Park affordable for restoration services?", "answer": "We offer competitive pricing and work directly with insurance companies to minimize out-of-pocket costs. We also provide free damage assessments for Manassas Park properties." },
+      { "question": "Can you handle apartment water damage in Manassas Park?", "answer": "Yes, we're experienced with multi-unit water damage situations common in Manassas Park's apartment communities. We coordinate with property management for efficient resolution." },
+      { "question": "What should I do about sewage backup in my Manassas Park home?", "answer": "Don't touch the water — sewage is a biohazard. Call us immediately for professional cleanup. We have certified biohazard technicians who will safely extract, disinfect, and restore the affected area." }
+    ],
+    "metaTitle": "Water Damage Restoration Manassas Park VA | Affordable Service | PSR",
+    "metaDescription": "Water damage restoration in Manassas Park, VA. 24/7 emergency flood cleanup, fire & mold services. Free estimates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd466" },
+    "name": "Centreville",
+    "slug": "centreville",
+    "county": "Fairfax County",
+    "description": "<p>Centreville is a large suburban community in western Fairfax County with diverse housing options from established neighborhoods to newer developments. Its location at the junction of major routes makes it a central hub, and its varied building stock means restoration needs range from basement flooding in older homes to appliance failures in newer ones. Prime Solution Restoration serves all of Centreville with reliable, fast response.</p>",
+    "neighborhoods": ["Centre Ridge", "Sully Station", "Virginia Run", "London Towne", "Newgate", "Little Rocky Run"],
+    "localRisks": ["Cub Run flooding in nearby neighborhoods", "Sump pump failure in basement-heavy housing", "Ice dam formation during winter storms", "Aging HVAC systems causing water damage"],
+    "faqs": [
+      { "question": "What's the fastest way to get help for water damage in Centreville?", "answer": "Call us at (571) 655-7207. We maintain response teams throughout Fairfax County and can reach most Centreville locations within 45-60 minutes for emergencies." },
+      { "question": "Do you serve all Centreville neighborhoods?", "answer": "Yes, we serve all Centreville communities including Centre Ridge, Sully Station, Virginia Run, London Towne, Newgate, and Little Rocky Run." },
+      { "question": "Can you fix water damage from a burst pipe in winter?", "answer": "Absolutely. Frozen and burst pipes are common in Centreville winters. We provide emergency water extraction, pipe access coordination with your plumber, structural drying, and complete restoration." },
+      { "question": "Do you handle fire damage restoration in Centreville?", "answer": "Yes, we provide comprehensive fire and smoke damage restoration for Centreville homes and businesses, including structural cleanup, odor elimination, and full reconstruction." }
+    ],
+    "metaTitle": "Water Damage Restoration Centreville VA | Fast 24/7 Response | PSR",
+    "metaDescription": "Centreville VA water damage restoration — fast 24/7 emergency response. Flood cleanup, fire damage & mold remediation. IICRC certified. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd481" },
+    "name": "Washington DC",
+    "slug": "washington-dc",
+    "county": "Washington DC",
+    "description": "<p>Washington DC presents unique restoration challenges with its mix of historic landmarks, government buildings, row houses, and modern condominiums. From Capitol Hill to Georgetown, each neighborhood has distinct architectural character and restoration requirements. Prime Solution Restoration provides comprehensive emergency services across the District, combining urban expertise with respect for DC's historic fabric.</p>",
+    "neighborhoods": ["Capitol Hill", "Georgetown", "Dupont Circle", "Adams Morgan", "Foggy Bottom", "Navy Yard", "U Street", "Shaw", "NoMa", "H Street Corridor"],
+    "localRisks": ["Potomac and Anacostia River flooding", "Aging city-wide water infrastructure", "Historic building water intrusion", "Urban storm water overflow", "High-rise HVAC failures"],
+    "faqs": [
+      { "question": "Do you provide restoration services throughout Washington DC?", "answer": "Yes, we serve all DC neighborhoods including Capitol Hill, Georgetown, Dupont Circle, Adams Morgan, Foggy Bottom, Navy Yard, and all surrounding areas." },
+      { "question": "Can you handle DC's historic preservation requirements?", "answer": "Absolutely. We're experienced with DC's historic district regulations and work within preservation guidelines while providing thorough, effective restoration." },
+      { "question": "What types of properties do you restore in DC?", "answer": "We restore all property types in DC — historic row houses, modern condominiums, commercial offices, retail spaces, government-adjacent buildings, and mixed-use developments." },
+      { "question": "How do you handle large-scale water damage in DC buildings?", "answer": "We deploy commercial-grade equipment including truck-mounted extractors, industrial dehumidifiers, and air movers. For multi-story buildings, we coordinate floor-by-floor restoration with building management." }
+    ],
+    "metaTitle": "Water Damage Restoration Washington DC | 24/7 Emergency | PSR",
+    "metaDescription": "Washington DC water damage restoration experts. 24/7 emergency service for homes, condos & historic properties. Fire, mold & flood cleanup. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd483" },
+    "name": "Capitol Hill",
+    "slug": "capitol-hill",
+    "county": "Washington DC",
+    "description": "<p>Capitol Hill is one of DC's largest and most iconic residential neighborhoods, dominated by beautiful row houses and historic townhomes near the US Capitol. The area's century-old building stock, combined with DC's aging water infrastructure, makes water damage a persistent concern. Prime Solution Restoration offers Capitol Hill residents expert restoration that respects the neighborhood's architectural heritage.</p>",
+    "neighborhoods": ["Eastern Market", "Barracks Row", "Stanton Park", "Lincoln Park", "Hill East"],
+    "localRisks": ["Century-old plumbing failures", "Basement flooding from city infrastructure overflow", "Row house fire spread to adjacent properties", "Lead pipe and cast iron pipe deterioration"],
+    "faqs": [
+      { "question": "What causes water damage in Capitol Hill row houses?", "answer": "The most common causes are aging cast-iron and lead plumbing, basement seepage from the high water table, city sewer backup during heavy rains, and deteriorating roof flashing on older homes." },
+      { "question": "Can you prevent fire from spreading between Capitol Hill row houses?", "answer": "While fire prevention is the fire department's role, our fire damage restoration starts immediately after clearance. We board up openings, extract water from firefighting, and prevent secondary damage to adjacent units." },
+      { "question": "Do you restore original brick and plaster on Capitol Hill homes?", "answer": "Yes, we work to preserve original materials including exposed brick, plaster walls, and historic trim. When replacement is necessary, we source period-appropriate materials." },
+      { "question": "How do you access tight Capitol Hill row house spaces for restoration?", "answer": "We use compact, professional-grade equipment designed for tight urban spaces. Our teams are experienced with the narrow footprints and multi-level layouts typical of Capitol Hill row houses." }
+    ],
+    "metaTitle": "Water Damage Restoration Capitol Hill DC | Row House Experts | PSR",
+    "metaDescription": "Capitol Hill DC water damage restoration for historic row houses. 24/7 emergency flood, fire & mold cleanup. Preservation specialists. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd44d" },
+    "name": "Leesburg",
+    "slug": "leesburg",
+    "county": "Loudoun County",
+    "description": "<p>Leesburg, the county seat of Loudoun County, blends a vibrant historic downtown with modern residential communities. From colonial-era buildings along King Street to new developments on the town's outskirts, Leesburg presents a full spectrum of restoration challenges. Prime Solution Restoration is Leesburg's trusted partner for all water, fire, mold, and storm damage emergencies.</p>",
+    "neighborhoods": ["Historic Downtown", "Lansdowne", "Riverside", "Edwards Landing", "Selma Estates", "Leesburg Gateway", "Village at Leesburg"],
+    "localRisks": ["Goose Creek and Tuscarora Creek flooding", "Historic downtown building moisture issues", "Storm water runoff in newer developments", "Basement flooding from high water table"],
+    "faqs": [
+      { "question": "Do you serve both historic and new parts of Leesburg?", "answer": "Yes, we serve all of Leesburg from the historic downtown to newer communities like Lansdowne and Riverside. Our team adapts their approach based on the age and type of your property." },
+      { "question": "Is Leesburg at risk for creek flooding?", "answer": "Yes, properties near Goose Creek and Tuscarora Creek face flood risk during heavy rain events. We provide emergency flood response and can help you develop a preparedness plan." },
+      { "question": "How fast can you respond to a Leesburg emergency?", "answer": "We can reach most Leesburg locations within 45-60 minutes. As the Loudoun County seat, Leesburg is well within our primary service zone." },
+      { "question": "Do you offer free damage assessments in Leesburg?", "answer": "Yes, we provide free on-site damage assessments for Leesburg properties. We'll evaluate the extent of damage and provide a detailed restoration plan before any work begins." }
+    ],
+    "metaTitle": "Water Damage Restoration Leesburg VA | County Seat Service | PSR",
+    "metaDescription": "Leesburg VA water damage restoration — 24/7 emergency service. Flood, fire & mold cleanup for historic and modern properties. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd44f" },
+    "name": "South Riding",
+    "slug": "south-riding",
+    "county": "Loudoun County",
+    "description": "<p>South Riding is a large master-planned community in southeastern Loudoun County, known for its family-friendly environment, community pools, and well-maintained neighborhoods. With homes built primarily in the 2000s, South Riding properties face water damage risks from aging appliances, HVAC issues, and occasional storm events. Prime Solution Restoration keeps South Riding homes safe and dry.</p>",
+    "neighborhoods": ["South Riding Town Center", "Riding Center", "The Preserve at South Riding", "South Riding West"],
+    "localRisks": ["Water heater failures in 15-20 year old homes", "Sump pump failures during storms", "HVAC condensation drain backups", "Roof aging and leak development"],
+    "faqs": [
+      { "question": "My South Riding home is about 15 years old — what should I watch for?", "answer": "At 15-20 years, watch for water heater failure, aging washing machine hoses, roof wear, and HVAC drain line issues. These are the most common causes of water damage we see in South Riding." },
+      { "question": "Do you work with South Riding's HOA?", "answer": "Yes, we're familiar with South Riding's HOA guidelines and ensure restoration work meets community standards. We can coordinate directly with property management when needed." },
+      { "question": "How quickly can you get to South Riding?", "answer": "We can reach South Riding within 45-60 minutes for emergency calls. Our Loudoun County teams are positioned for rapid response." },
+      { "question": "Can you help with mold in my South Riding basement?", "answer": "Yes, we provide complete mold inspection, testing, and remediation for South Riding homes. Basements in the area can develop mold from humidity and water intrusion, and we address both the mold and its source." }
+    ],
+    "metaTitle": "Water Damage Restoration South Riding VA | 24/7 Service | PSR",
+    "metaDescription": "Water damage restoration for South Riding, Loudoun County VA. 24/7 emergency flood, fire & mold cleanup. Free estimates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46f" },
+    "name": "Gainesville",
+    "slug": "gainesville",
+    "county": "Prince William County",
+    "description": "<p>Gainesville is a rapidly growing community in western Prince William County, anchored by the Virginia Gateway shopping area and numerous residential developments. The area's expansion means a mix of new construction and established neighborhoods, each with distinct restoration needs. Prime Solution Restoration provides Gainesville with fast, dependable emergency restoration services.</p>",
+    "neighborhoods": ["Heritage Hunt", "Virginia Oaks", "Piedmont", "Dominion Valley", "University", "The Manors"],
+    "localRisks": ["New construction drainage and grading issues", "Broad Run flood zone proximity", "Rapid development straining storm water systems", "Wind and storm damage exposure in open areas"],
+    "faqs": [
+      { "question": "What restoration services do you offer in Gainesville?", "answer": "We offer complete water damage restoration, fire and smoke cleanup, mold remediation, and storm damage repair for all Gainesville residential and commercial properties." },
+      { "question": "Is Heritage Hunt covered by your services?", "answer": "Yes, we serve Heritage Hunt and all Gainesville communities including Virginia Oaks, Piedmont, Dominion Valley, and surrounding neighborhoods." },
+      { "question": "Can you handle storm damage in Gainesville's open areas?", "answer": "Yes, Gainesville's western location means more exposure to wind and storm damage. We provide emergency tarping, water extraction, and full storm damage restoration." },
+      { "question": "Do you offer commercial restoration in the Gainesville area?", "answer": "Yes, we serve Gainesville's growing commercial sector including retail, office, and restaurant properties in the Virginia Gateway area and beyond." }
+    ],
+    "metaTitle": "Water Damage Restoration Gainesville VA | Fast Emergency Service | PSR",
+    "metaDescription": "Gainesville VA water damage restoration — 24/7 emergency response. Flood, fire, mold & storm damage repair. Serving all Gainesville communities. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd476" },
+    "name": "Montclair",
+    "slug": "montclair",
+    "county": "Prince William County",
+    "description": "<p>Montclair is an established residential community in southern Prince William County, built around Lake Montclair. The community's lakeside setting and mature trees create a beautiful environment but also increase risks of water intrusion and storm damage. Prime Solution Restoration provides Montclair residents with prompt, professional restoration services.</p>",
+    "neighborhoods": ["Lake Montclair", "Montclair North", "Montclair South", "Cardinal Forest"],
+    "localRisks": ["Lake Montclair overflow and shoreline flooding", "Mature tree storm damage", "Aging home systems in 30+ year old properties", "Basement moisture from lake-adjacent water table"],
+    "faqs": [
+      { "question": "Do you serve the Lake Montclair community?", "answer": "Yes, we serve the entire Montclair community including lakeside properties, and we understand the unique water damage risks associated with living near Lake Montclair." },
+      { "question": "My Montclair home is over 30 years old — what risks should I consider?", "answer": "Homes of that age often face water heater failure, deteriorating pipe joints, aging roof systems, and window seal failures. Regular inspections can help catch issues before they cause major damage." },
+      { "question": "Can you handle flood damage from Lake Montclair?", "answer": "Yes, we provide emergency flood response for lakeside properties including water extraction, structural drying, mold prevention, and full restoration services." },
+      { "question": "Do you remove fallen trees from storm damage in Montclair?", "answer": "We handle complete storm damage restoration including debris removal, emergency repairs, water extraction, and reconstruction. We coordinate tree removal with certified arborists when needed." }
+    ],
+    "metaTitle": "Water Damage Restoration Montclair VA | Lake Community Experts | PSR",
+    "metaDescription": "Water damage restoration for Montclair, Prince William County VA. 24/7 emergency flood, storm & mold services near Lake Montclair. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd453" },
+    "name": "Round Hill",
+    "slug": "round-hill",
+    "county": "Loudoun County",
+    "description": "<p>Round Hill is a small, scenic town in western Loudoun County at the base of the Blue Ridge Mountains. Its rural setting and older building stock create unique restoration challenges. Prime Solution Restoration brings fast, professional service to Round Hill and the surrounding western Loudoun communities.</p>",
+    "neighborhoods": ["Sleeter Lake area", "Round Hill Town Center", "Franklin Park Trail area"],
+    "localRisks": ["Mountain runoff flooding", "Well and septic system failures", "Older home plumbing deterioration", "Winter freeze damage in elevated locations"],
+    "faqs": [
+      { "question": "Can you respond to emergencies in Round Hill despite its rural location?", "answer": "Yes, we serve all of western Loudoun including Round Hill with emergency response within 60 minutes. Our teams are equipped for rural property access." },
+      { "question": "Do you handle well water damage in Round Hill?", "answer": "Yes, we restore properties affected by well failures, contaminated water events, and rural flooding common in the Round Hill area." },
+      { "question": "What winter damage risks exist in Round Hill?", "answer": "Round Hill's elevation means colder temperatures and higher risk of frozen pipes, ice dams, and heating system failures. We provide 24/7 winter emergency response." },
+      { "question": "Do you offer fire damage restoration in Round Hill?", "answer": "Yes, we provide complete fire and smoke damage restoration for Round Hill properties, including cleanup, odor removal, and full reconstruction." }
+    ],
+    "metaTitle": "Water Damage Restoration Round Hill VA | Western Loudoun | PSR",
+    "metaDescription": "Restoration services for Round Hill, VA. 24/7 emergency water, fire & mold damage repair. Serving western Loudoun County. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45a" },
+    "name": "Fairfax Station",
+    "slug": "fairfax-station",
+    "county": "Fairfax County",
+    "description": "<p>Fairfax Station is an affluent, wooded community in southern Fairfax County known for its larger lots, custom homes, and quiet residential character. Many homes sit on expansive properties with mature trees, which can contribute to storm damage and drainage issues. Prime Solution Restoration provides Fairfax Station with premium restoration services.</p>",
+    "neighborhoods": ["Burke Lake area", "Fairfax Station Road corridor", "Hampton Forest", "South Run"],
+    "localRisks": ["Large tree storm damage on wooded lots", "Burke Lake area flooding", "Well and septic issues on larger lots", "Long driveways limiting emergency access in storms"],
+    "faqs": [
+      { "question": "Do you service larger estate properties in Fairfax Station?", "answer": "Yes, we handle restoration for Fairfax Station's larger homes and properties, including multi-building estates. Our equipment and team size scale to match the scope of work." },
+      { "question": "Can you reach Fairfax Station properties with long driveways?", "answer": "Yes, our vehicles and equipment are designed for varied access situations. We can reach even Fairfax Station's more secluded properties for emergency response." },
+      { "question": "What about mold in Fairfax Station's wooded areas?", "answer": "Wooded properties with shade and moisture retention are more susceptible to mold growth, especially in basements and crawl spaces. We provide thorough mold inspection and remediation." },
+      { "question": "How do you handle storm damage with fallen trees in Fairfax Station?", "answer": "We provide complete storm damage restoration from emergency tarping and water extraction to debris removal and structural repair. We work with tree services for safe removal." }
+    ],
+    "metaTitle": "Water Damage Restoration Fairfax Station VA | Premium Service | PSR",
+    "metaDescription": "Professional restoration for Fairfax Station, VA estates and homes. 24/7 emergency water, fire & storm damage services. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45e" },
+    "name": "Great Falls",
+    "slug": "great-falls",
+    "county": "Fairfax County",
+    "description": "<p>Great Falls is one of Northern Virginia's most exclusive communities, featuring luxury estates, horse properties, and stunning natural beauty along the Potomac River. Restoration in Great Falls demands the highest level of expertise, discretion, and care for premium materials. Prime Solution Restoration delivers luxury-grade restoration services worthy of Great Falls properties.</p>",
+    "neighborhoods": ["Langley Farms", "Forestville", "Seneca Estates", "River Creek", "Great Falls Village Center area"],
+    "localRisks": ["Potomac River and Difficult Run flooding", "Luxury finish damage requiring specialist restoration", "Estate-scale storm damage", "Well and septic system failures on large properties"],
+    "faqs": [
+      { "question": "Do you handle luxury home restoration in Great Falls?", "answer": "Yes, we specialize in high-end restoration for Great Falls properties. Our team is experienced with premium materials, custom finishes, and the expectations of luxury homeowners." },
+      { "question": "Can you be discreet during restoration work in Great Falls?", "answer": "Absolutely. We respect the privacy of Great Falls residents. Unmarked vehicles, confidential service, and minimal disruption are standard for our Great Falls projects." },
+      { "question": "What flood risks exist in Great Falls?", "answer": "Properties near the Potomac River and Difficult Run stream face flood risk during major storms. We provide rapid emergency response and recommend flood preparedness measures for at-risk properties." },
+      { "question": "Do you restore horse barns and outbuildings in Great Falls?", "answer": "Yes, we restore all structures on Great Falls properties including main homes, guest houses, pool houses, barns, and equestrian facilities." }
+    ],
+    "metaTitle": "Water Damage Restoration Great Falls VA | Luxury Estate Service | PSR",
+    "metaDescription": "Premium water damage restoration for Great Falls, VA luxury estates. 24/7 emergency service. Fire, mold & flood specialists. Discreet, professional.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd467" },
+    "name": "Tysons",
+    "slug": "tysons",
+    "county": "Fairfax County",
+    "description": "<p>Tysons is Fairfax County's urban center, featuring a rapidly growing skyline of high-rise residences, office towers, and mixed-use developments. The area's transformation from suburban mall district to urban downtown brings unique restoration challenges involving complex commercial properties and luxury high-rise condominiums. Prime Solution Restoration serves Tysons with the scale and expertise its modern properties require.</p>",
+    "neighborhoods": ["Tysons Corner", "Tysons East", "Tysons West", "The Boro", "Scotts Run"],
+    "localRisks": ["High-rise plumbing failures affecting multiple floors", "Commercial HVAC system leaks", "Underground parking garage flooding", "Construction-adjacent water damage in developing areas"],
+    "faqs": [
+      { "question": "Do you serve Tysons high-rise buildings?", "answer": "Yes, we provide restoration services for Tysons' high-rise residential and commercial buildings. We have commercial-scale equipment and experience with multi-story, multi-unit situations." },
+      { "question": "Can you handle water damage in Tysons commercial properties?", "answer": "Absolutely. We serve Tysons' offices, retail spaces, restaurants, and mixed-use developments with 24/7 emergency response and minimal business disruption." },
+      { "question": "What's the most common damage in Tysons buildings?", "answer": "In Tysons, we most commonly see plumbing failures in high-rises, HVAC system leaks in commercial spaces, and construction-related water intrusion in newer developments." },
+      { "question": "Do you work with Tysons property management companies?", "answer": "Yes, we partner with many Tysons property management companies and can set up preferred vendor arrangements for rapid response to water, fire, or mold emergencies." }
+    ],
+    "metaTitle": "Water Damage Restoration Tysons VA | High-Rise & Commercial | PSR",
+    "metaDescription": "Tysons VA water damage restoration for high-rises, offices & condos. 24/7 emergency service. Fire, flood & mold cleanup. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd473" },
+    "name": "Occoquan",
+    "slug": "occoquan",
+    "county": "Prince William County",
+    "description": "<p>Occoquan is a charming historic waterfront town along the Occoquan River in Prince William County. Its small-town character, antique shops, and riverside restaurants make it a beloved destination, but its waterfront location creates real flood risk. Prime Solution Restoration provides Occoquan with expert flood response and historic property restoration services.</p>",
+    "neighborhoods": ["Historic Mill District", "Occoquan Overlook", "River Mill", "Commerce Street area"],
+    "localRisks": ["Occoquan River flooding — the town's primary risk", "Historic building water intrusion", "Tidal influence from the Potomac", "Basement flooding in riverside properties"],
+    "faqs": [
+      { "question": "How serious is flood risk in Occoquan?", "answer": "Occoquan has experienced significant flooding events, particularly for properties near the river. We provide rapid flood response and recommend flood preparedness plans for all Occoquan property owners." },
+      { "question": "Do you restore Occoquan's historic commercial buildings?", "answer": "Yes, we have experience restoring Occoquan's historic shops, restaurants, and buildings along the waterfront. We work to preserve historic character while providing thorough restoration." },
+      { "question": "Can you respond quickly during an Occoquan flood event?", "answer": "Yes, we maintain emergency response capability for Occoquan and can deploy teams with commercial pumps and extraction equipment during flood events." },
+      { "question": "What should Occoquan business owners do after a flood?", "answer": "Document damage with photos, contact your insurance, and call us immediately. We'll begin emergency extraction and can help you get your business back open as quickly as possible." }
+    ],
+    "metaTitle": "Water Damage Restoration Occoquan VA | Flood & Historic Experts | PSR",
+    "metaDescription": "Emergency flood and water damage restoration for Occoquan, VA. 24/7 response for riverside and historic properties. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd479" },
+    "name": "Ballston",
+    "slug": "ballston",
+    "county": "Arlington County",
+    "description": "<p>Ballston is a dynamic urban neighborhood in Arlington along the Rosslyn-Ballston corridor, featuring modern condominiums, office buildings, and the vibrant Ballston Quarter development. Water damage in Ballston frequently involves multi-unit high-rise situations. Prime Solution Restoration provides Ballston with fast, expert urban restoration services.</p>",
+    "neighborhoods": ["Ballston Quarter area", "Bluemont", "Buckingham", "N. Glebe Road corridor"],
+    "localRisks": ["High-rise pipe failures cascading between units", "Commercial kitchen water damage", "Underground garage flooding from storms", "HVAC system failures in large buildings"],
+    "faqs": [
+      { "question": "Do you handle condo water damage in Ballston high-rises?", "answer": "Yes, we're experienced with Ballston's high-rise condominiums. We handle unit-to-unit water damage, coordinate with building management, and work within condo association guidelines." },
+      { "question": "Can you work after hours in Ballston commercial buildings?", "answer": "Yes, we operate 24/7 and regularly perform restoration work during off-hours to minimize disruption to Ballston businesses and residents." },
+      { "question": "What if water damage in my Ballston condo affects the unit below?", "answer": "We'll assess and address damage in all affected units. We coordinate between residents, work with the HOA, and provide documentation for separate insurance claims." },
+      { "question": "How fast can you reach Ballston?", "answer": "We can reach Ballston within 30-45 minutes for emergencies. The Arlington corridor is well within our primary response zone." }
+    ],
+    "metaTitle": "Water Damage Restoration Ballston Arlington VA | Condo Experts | PSR",
+    "metaDescription": "Ballston Arlington VA water damage restoration for condos & businesses. 24/7 emergency service. Fire, flood & mold specialists. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47a" },
+    "name": "Crystal City",
+    "slug": "crystal-city",
+    "county": "Arlington County",
+    "description": "<p>Crystal City is a major urban district in Arlington, home to Amazon's HQ2, the Pentagon City area, and a dense mix of residential towers and commercial buildings connected by underground corridors. Restoration in Crystal City often involves complex commercial and high-rise residential situations. Prime Solution Restoration provides the large-scale capability Crystal City properties demand.</p>",
+    "neighborhoods": ["Crystal City Underground", "Crystal Drive corridor", "Long Bridge Park area", "Aurora Highlands adjacent"],
+    "localRisks": ["High-rise mechanical system failures", "Underground corridor flooding", "Potomac River proximity flood risk", "Large-scale commercial water damage events"],
+    "faqs": [
+      { "question": "Do you provide commercial restoration in Crystal City?", "answer": "Yes, we serve Crystal City's commercial properties including offices, retail spaces in the underground, and large-scale corporate facilities with 24/7 emergency response." },
+      { "question": "Can you handle water damage in Crystal City's underground areas?", "answer": "Yes, we have experience with sub-grade and underground restoration, using commercial pumps and specialized drying equipment for Crystal City's unique underground spaces." },
+      { "question": "How do you handle multi-floor water damage in Crystal City towers?", "answer": "We deploy teams floor-by-floor, starting with water source control and extraction, then systematic drying. We coordinate with building management for access and resident communication." },
+      { "question": "Do you offer preventive services for Crystal City properties?", "answer": "Yes, we offer water damage risk assessments, emergency planning, and preferred vendor agreements for Crystal City property managers and HOAs." }
+    ],
+    "metaTitle": "Water Damage Restoration Crystal City Arlington VA | 24/7 | PSR",
+    "metaDescription": "Crystal City Arlington water damage restoration for towers, offices & underground spaces. 24/7 emergency service. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47b" },
+    "name": "Pentagon City",
+    "slug": "pentagon-city",
+    "county": "Arlington County",
+    "description": "<p>Pentagon City is a bustling Arlington neighborhood adjacent to the Pentagon, featuring high-rise apartments, retail destinations, and mixed-use developments. The area's dense urban environment means water damage events can affect multiple units and businesses simultaneously. Prime Solution Restoration provides Pentagon City with rapid, coordinated emergency response.</p>",
+    "neighborhoods": ["Pentagon Row", "Metropolitan Park", "Fashion Centre area", "Army Navy Drive corridor"],
+    "localRisks": ["Multi-unit water damage in high-rise apartments", "Retail and restaurant water emergencies", "Underground parking garage flooding", "HVAC system failures in large complexes"],
+    "faqs": [
+      { "question": "Do you service Pentagon City's high-rise apartments?", "answer": "Yes, we provide complete restoration services for Pentagon City's residential towers, coordinating with property management for efficient access and resolution." },
+      { "question": "Can you handle water damage in Pentagon City retail spaces?", "answer": "Yes, we serve retail and restaurant properties in Pentagon City with 24/7 emergency response, working to minimize business closure time." },
+      { "question": "How fast is your response time to Pentagon City?", "answer": "We can typically reach Pentagon City within 30-45 minutes. Its central Arlington location is one of the fastest areas in our service zone to reach." },
+      { "question": "Do you work with Pentagon City HOAs?", "answer": "Yes, we work with multiple Pentagon City HOAs and property management companies, providing coordinated response for common-area and unit-specific water damage." }
+    ],
+    "metaTitle": "Water Damage Restoration Pentagon City VA | High-Rise Service | PSR",
+    "metaDescription": "Pentagon City Arlington VA water damage restoration. 24/7 emergency service for apartments, retail & offices. Flood, fire & mold cleanup. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46c" },
+    "name": "Woodbridge",
+    "slug": "woodbridge",
+    "county": "Prince William County",
+    "description": "<p>Woodbridge is Prince William County's largest community, stretching along the I-95 corridor with diverse neighborhoods, shopping centers, and residential developments. From established communities near the Occoquan to newer developments, Woodbridge has varied restoration needs. Prime Solution Restoration provides comprehensive service across all Woodbridge neighborhoods.</p>",
+    "neighborhoods": ["Lake Ridge", "Dale City", "Potomac Mills area", "Marumsco Hills", "Featherstone", "Old Bridge"],
+    "localRisks": ["Occoquan River and Neabsco Creek flooding", "Storm water system overload in dense areas", "Sewer backup in older neighborhoods", "Townhome and condo water damage affecting neighbors"],
+    "faqs": [
+      { "question": "Do you serve all of Woodbridge?", "answer": "Yes, we serve the entire Woodbridge area including Lake Ridge, Dale City, Potomac Mills area, Marumsco Hills, Featherstone, and all surrounding neighborhoods." },
+      { "question": "What's the most common water damage in Woodbridge?", "answer": "Woodbridge commonly sees basement flooding from storm events, burst pipes, water heater failures, and sewer backup in older sections. We respond to all types 24/7." },
+      { "question": "Can you handle townhome water damage in Woodbridge?", "answer": "Yes, we're experienced with Woodbridge's many townhome communities. We address unit-specific damage and coordinate with HOAs and neighboring units when needed." },
+      { "question": "Do you provide commercial restoration near Potomac Mills?", "answer": "Yes, we serve commercial properties throughout the Woodbridge area including retail spaces, restaurants, and offices near Potomac Mills and along the Route 1 corridor." }
+    ],
+    "metaTitle": "Water Damage Restoration Woodbridge VA | All Neighborhoods | PSR",
+    "metaDescription": "Woodbridge VA water damage restoration — serving all neighborhoods 24/7. Emergency flood, fire & mold cleanup. Free estimates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd455" },
+    "name": "Lovettsville",
+    "slug": "lovettsville",
+    "county": "Loudoun County",
+    "description": "<p>Lovettsville is a small, historic town in the northernmost corner of Loudoun County, known for its German heritage, rural charm, and proximity to the Potomac River. Properties in Lovettsville range from historic downtown buildings to expansive farmsteads. Prime Solution Restoration serves Lovettsville with the same urgency and professionalism we bring to the entire region.</p>",
+    "neighborhoods": ["Downtown Lovettsville", "Lucketts", "Taylorstown", "Lovettsville Game Protective area"],
+    "localRisks": ["Potomac River flooding in northern areas", "Well and septic system failures", "Historic building deterioration and moisture issues", "Winter freeze damage at higher elevations"],
+    "faqs": [
+      { "question": "Can you reach Lovettsville quickly for emergencies?", "answer": "Yes, despite its northern Loudoun location, we can reach Lovettsville within 60 minutes for emergency calls. We serve all of Loudoun County." },
+      { "question": "Do you handle flood damage from the Potomac in the Lovettsville area?", "answer": "Yes, we provide emergency flood response for properties affected by Potomac River flooding in the Lovettsville and northern Loudoun area." },
+      { "question": "Can you restore Lovettsville's historic German-heritage buildings?", "answer": "Yes, we're experienced with historic restoration and take care to preserve original materials and architectural character in Lovettsville's heritage buildings." },
+      { "question": "What about fire damage in rural Lovettsville properties?", "answer": "We provide complete fire and smoke damage restoration for rural properties including homes, barns, and outbuildings throughout the Lovettsville area." }
+    ],
+    "metaTitle": "Water Damage Restoration Lovettsville VA | Northern Loudoun | PSR",
+    "metaDescription": "Restoration services for Lovettsville, VA. 24/7 water, fire & flood damage repair for homes and historic properties. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd463" },
+    "name": "Annandale",
+    "slug": "annandale",
+    "county": "Fairfax County",
+    "description": "<p>Annandale is a diverse, established community in central Fairfax County known for its vibrant Korean-American business district and residential neighborhoods. Many homes in Annandale were built in the 1950s-70s, making aging plumbing and infrastructure a primary concern. Prime Solution Restoration provides Annandale with reliable, multilingual emergency services.</p>",
+    "neighborhoods": ["Little River Turnpike corridor", "Ravensworth", "Heritage Hill", "Wakefield Chapel", "Broyhill Crest"],
+    "localRisks": ["Aging 1950s-70s plumbing systems", "Accotink Creek area flooding", "Basement water intrusion in hillside homes", "Sewer lateral failures in older neighborhoods"],
+    "faqs": [
+      { "question": "Do you serve Annandale's diverse community?", "answer": "Yes, we serve all Annandale residents and businesses. Our team is committed to clear communication and professional service for everyone in the community." },
+      { "question": "My Annandale home is from the 1960s — what damage risks exist?", "answer": "Homes from that era commonly have aging cast-iron pipes, deteriorating sewer laterals, outdated water heaters, and foundation seepage issues. Regular inspections can help prevent emergencies." },
+      { "question": "Can you handle commercial restoration for Annandale businesses?", "answer": "Yes, we serve Annandale's business community including restaurants, retail shops, and offices along Little River Turnpike and Columbia Pike with 24/7 emergency response." },
+      { "question": "Do you offer mold remediation in Annandale?", "answer": "Yes, Annandale's older homes are particularly susceptible to mold growth due to older construction methods and materials. We provide complete mold inspection, testing, and remediation." }
+    ],
+    "metaTitle": "Water Damage Restoration Annandale VA | 24/7 Emergency | PSR",
+    "metaDescription": "Annandale VA water damage restoration for homes & businesses. 24/7 emergency flood, fire & mold services. Serving the community. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd469" },
+    "name": "Merrifield",
+    "slug": "merrifield",
+    "county": "Fairfax County",
+    "description": "<p>Merrifield is a revitalizing area in central Fairfax County anchored by the Mosaic District and growing residential developments. The neighborhood's transformation includes new condominiums, townhomes, and mixed-use spaces alongside established homes. Prime Solution Restoration serves Merrifield's evolving community with modern, professional restoration services.</p>",
+    "neighborhoods": ["Mosaic District", "Dunn Loring-Merrifield area", "Lee Highway corridor", "Gatehouse Road area"],
+    "localRisks": ["New construction warranty-period defects", "Older home plumbing failures along Lee Highway", "Commercial kitchen and restaurant water damage", "Urban storm drainage overflow"],
+    "faqs": [
+      { "question": "Do you serve the Mosaic District area in Merrifield?", "answer": "Yes, we serve the entire Merrifield area including the Mosaic District, Dunn Loring, and all surrounding residential and commercial properties." },
+      { "question": "Can you restore water damage in Merrifield's newer condos?", "answer": "Yes, we handle water damage in Merrifield's modern condominiums, working with HOAs and coordinating multi-unit situations when needed." },
+      { "question": "What about older homes in the Merrifield area?", "answer": "We serve both old and new properties. Older Merrifield homes along Lee Highway often need restoration for aging plumbing failures, basement flooding, and roof leaks." },
+      { "question": "Do you handle restaurant water damage in Merrifield?", "answer": "Yes, we provide 24/7 emergency response for Merrifield restaurants and food service businesses, working to minimize closure time and meet health code requirements." }
+    ],
+    "metaTitle": "Water Damage Restoration Merrifield VA | Mosaic District Area | PSR",
+    "metaDescription": "Water damage restoration for Merrifield & Mosaic District VA. 24/7 emergency service for condos, homes & businesses. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd470" },
+    "name": "Haymarket",
+    "slug": "haymarket",
+    "county": "Prince William County",
+    "description": "<p>Haymarket is a historic small town in western Prince William County, surrounded by newer planned communities and the scenic Bull Run Mountains. The area combines rural charm with modern suburban living. Prime Solution Restoration serves Haymarket's diverse properties from historic Main Street buildings to modern homes in communities like Dominion Valley and Piedmont.</p>",
+    "neighborhoods": ["Dominion Valley", "Piedmont", "Regency at Dominion Valley", "Villages of Piedmont", "Catharpin"],
+    "localRisks": ["Bull Run flooding in low-lying areas", "Rural property drainage issues", "Storm damage exposure near mountain foothills", "Well water system failures in rural sections"],
+    "faqs": [
+      { "question": "Do you serve Haymarket and its surrounding communities?", "answer": "Yes, we serve all of Haymarket including Dominion Valley, Piedmont, Catharpin, and surrounding areas with 24/7 emergency restoration services." },
+      { "question": "Is Haymarket at risk for flooding?", "answer": "Properties near Bull Run and low-lying areas face flood risk during heavy storms. We provide rapid emergency response and recommend flood preparedness for at-risk Haymarket properties." },
+      { "question": "Can you handle fire damage restoration in Haymarket?", "answer": "Yes, we provide complete fire and smoke damage restoration for Haymarket homes and businesses, including emergency board-up, cleanup, odor removal, and reconstruction." },
+      { "question": "How fast can you reach Haymarket?", "answer": "We can reach Haymarket within 60 minutes for emergency calls. Our Prince William County teams are positioned for coverage across the western part of the county." }
+    ],
+    "metaTitle": "Water Damage Restoration Haymarket VA | Western Prince William | PSR",
+    "metaDescription": "Haymarket VA water damage restoration — 24/7 emergency service. Flood, fire & mold cleanup for homes and businesses. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd474" },
+    "name": "Bristow",
+    "slug": "bristow",
+    "county": "Prince William County",
+    "description": "<p>Bristow is a growing residential area in central Prince William County, centered around Jiffy Lube Live and numerous family-oriented subdivisions. With mostly newer construction and planned communities, Bristow homes face common suburban water damage risks. Prime Solution Restoration provides Bristow families with fast, dependable restoration services.</p>",
+    "neighborhoods": ["Braemar", "Victory Lakes", "Kingsbrooke", "Linton Hall", "Vistas at Bristow"],
+    "localRisks": ["Sump pump failures during heavy storms", "Water heater and appliance leaks in newer homes", "Storm drainage issues in developing areas", "HVAC condensation problems"],
+    "faqs": [
+      { "question": "What causes water damage in Bristow's newer homes?", "answer": "The most common causes are water heater failures, washing machine hose bursts, sump pump failures during storms, and HVAC drain line clogs. Regular maintenance helps prevent these issues." },
+      { "question": "Do you serve all Bristow neighborhoods?", "answer": "Yes, we serve Braemar, Victory Lakes, Kingsbrooke, Linton Hall, Vistas at Bristow, and all surrounding communities with 24/7 emergency response." },
+      { "question": "How quickly can you get to Bristow?", "answer": "We can reach most Bristow locations within 45-60 minutes. Our Prince William County teams maintain rapid response capability." },
+      { "question": "Do you provide mold remediation in Bristow?", "answer": "Yes, we offer complete mold inspection, testing, and remediation services for Bristow homes. Even newer homes can develop mold if water damage is not properly addressed." }
+    ],
+    "metaTitle": "Water Damage Restoration Bristow VA | Fast Emergency Service | PSR",
+    "metaDescription": "Bristow VA water damage restoration — 24/7 emergency response for homes. Flood, fire & mold cleanup. IICRC certified. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd480" },
+    "name": "Eisenhower Valley",
+    "slug": "eisenhower-valley",
+    "county": "Independent City",
+    "description": "<p>Eisenhower Valley is a modern mixed-use corridor in the City of Alexandria, featuring high-rise apartments, office buildings, and the Eisenhower Avenue Metro station. The area's urban density and modern buildings present specific restoration challenges around high-rise plumbing and commercial systems. Prime Solution Restoration provides professional urban restoration services throughout Eisenhower Valley.</p>",
+    "neighborhoods": ["Eisenhower East", "Carlyle", "Hoffman Town Center", "Telegraph Road area"],
+    "localRisks": ["High-rise plumbing system failures", "Underground parking flooding", "Cameron Run flood zone proximity", "Commercial HVAC system water damage"],
+    "faqs": [
+      { "question": "Do you serve Eisenhower Valley's high-rise buildings?", "answer": "Yes, we provide restoration services for all Eisenhower Valley properties including high-rise apartments, office buildings, and retail spaces." },
+      { "question": "Is Eisenhower Valley at flood risk?", "answer": "Areas near Cameron Run face some flood risk. We provide emergency flood response and recommend preparedness measures for properties in the flood zone." },
+      { "question": "Can you handle large commercial projects in Eisenhower Valley?", "answer": "Yes, we have commercial-scale equipment and experienced teams for large restoration projects in Eisenhower Valley's office and mixed-use buildings." },
+      { "question": "How fast can you reach Eisenhower Valley?", "answer": "We can reach Eisenhower Valley within 30-45 minutes for emergency calls. Its central Alexandria location provides fast access from our service area." }
+    ],
+    "metaTitle": "Water Damage Restoration Eisenhower Valley Alexandria VA | PSR",
+    "metaDescription": "Water damage restoration for Eisenhower Valley, Alexandria VA. 24/7 high-rise, commercial & residential service. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd487" },
+    "name": "Navy Yard",
+    "slug": "navy-yard",
+    "county": "Washington DC",
+    "description": "<p>Navy Yard is one of DC's fastest-growing neighborhoods along the Anacostia River waterfront, featuring new luxury apartments, Nationals Park, and The Yards development. The area's waterfront location and rapid construction create unique restoration challenges. Prime Solution Restoration provides Navy Yard's modern properties with cutting-edge restoration services.</p>",
+    "neighborhoods": ["The Yards", "Capitol Riverfront", "Buzzard Point", "Near Southeast"],
+    "localRisks": ["Anacostia River flooding", "New construction plumbing defects", "High-rise water damage events", "Waterfront storm surge during major weather events"],
+    "faqs": [
+      { "question": "Do you serve Navy Yard's new apartment buildings?", "answer": "Yes, we serve all Navy Yard residential buildings including The Yards, Capitol Riverfront properties, and luxury apartment complexes along the waterfront." },
+      { "question": "Is Navy Yard at risk for flooding?", "answer": "Yes, the Anacostia River waterfront location means flood risk during major storms. New developments have improved infrastructure, but we recommend having an emergency plan." },
+      { "question": "Can you handle water damage during a Nationals game day?", "answer": "Yes, we operate 24/7 regardless of events. For game-day access near the stadium, we coordinate with building security for efficient entry and setup." },
+      { "question": "Do you provide commercial restoration in Navy Yard?", "answer": "Yes, we serve Navy Yard's restaurants, retail spaces, and commercial properties with emergency restoration designed to minimize business interruption." }
+    ],
+    "metaTitle": "Water Damage Restoration Navy Yard DC | Waterfront Experts | PSR",
+    "metaDescription": "Navy Yard DC water damage restoration for luxury apartments & businesses. 24/7 emergency flood, fire & mold services along the waterfront. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd44e" },
+    "name": "Sterling",
+    "slug": "sterling",
+    "county": "Loudoun County",
+    "description": "<p>Sterling is a diverse, established community in eastern Loudoun County, featuring a mix of residential neighborhoods, commercial areas, and industrial parks. Many Sterling homes date from the 1970s-90s, making aging infrastructure a primary concern. Prime Solution Restoration provides Sterling with reliable, affordable emergency restoration services.</p>",
+    "neighborhoods": ["Countryside", "Cascades", "Potomac Falls", "Sterling Park", "Sugarland Run", "Lowes Island"],
+    "localRisks": ["Sugarland Run stream flooding", "Aging plumbing in 1970s-90s homes", "Sewer backup in established neighborhoods", "Commercial warehouse water damage in industrial areas"],
+    "faqs": [
+      { "question": "What are the biggest water damage risks in Sterling?", "answer": "Sterling's older homes face risks from aging pipes, water heater failures, and Sugarland Run flooding. The area's commercial properties also experience HVAC and plumbing-related water damage." },
+      { "question": "Do you serve Sterling's commercial and industrial properties?", "answer": "Yes, we serve Sterling's office parks, warehouses, data centers, and industrial facilities with 24/7 emergency restoration services." },
+      { "question": "How fast can you reach Sterling?", "answer": "We can reach most Sterling locations within 30-45 minutes. Sterling's central eastern Loudoun location is well within our primary response zone." },
+      { "question": "Can you help with mold in older Sterling homes?", "answer": "Yes, older Sterling homes are susceptible to mold in basements, crawl spaces, and bathrooms. We provide complete mold inspection, testing, and remediation services." }
+    ],
+    "metaTitle": "Water Damage Restoration Sterling VA | 24/7 Emergency | PSR",
+    "metaDescription": "Sterling VA water damage restoration for homes & businesses. 24/7 emergency flood, fire & mold cleanup. Serving all Sterling neighborhoods. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47f" },
+    "name": "Landmark",
+    "slug": "landmark",
+    "county": "Independent City",
+    "description": "<p>The Landmark area in Alexandria is a major commercial and residential corridor centered around the former Landmark Mall site, now being redeveloped. The area features apartments, townhomes, and commercial properties along Duke Street and Van Dorn Street. Prime Solution Restoration provides Landmark area properties with dependable emergency restoration services.</p>",
+    "neighborhoods": ["Van Dorn area", "Duke Street corridor", "Landmark Mall redevelopment area", "Lincolnia adjacent"],
+    "localRisks": ["Older apartment complex plumbing failures", "Commercial property water damage", "Storm water drainage issues", "Construction-related water intrusion near redevelopment"],
+    "faqs": [
+      { "question": "Do you serve the Landmark area of Alexandria?", "answer": "Yes, we provide 24/7 emergency restoration throughout the Landmark area including residential, commercial, and apartment properties." },
+      { "question": "Can you handle apartment complex water damage in the Landmark area?", "answer": "Yes, we're experienced with multi-unit apartment water damage common in the Landmark area's larger residential complexes." },
+      { "question": "What about commercial restoration near Landmark?", "answer": "We serve all commercial properties in the Landmark corridor including retail, office, and restaurant spaces with emergency response and full restoration." },
+      { "question": "How fast is your response to the Landmark area?", "answer": "We can reach the Landmark area within 30-45 minutes for emergency calls. It's one of the most accessible areas in our service zone." }
+    ],
+    "metaTitle": "Water Damage Restoration Landmark Alexandria VA | 24/7 | PSR",
+    "metaDescription": "Water damage restoration for the Landmark area, Alexandria VA. 24/7 emergency service for homes, apartments & businesses. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd454" },
+    "name": "Hamilton",
+    "slug": "hamilton",
+    "county": "Loudoun County",
+    "description": "<p>Hamilton is a quiet, rural town in western Loudoun County, known for its equestrian estates, vineyards, and pastoral landscapes. Restoration needs in Hamilton often involve rural property challenges and historic structures. Prime Solution Restoration provides Hamilton with dependable emergency services tailored to its rural character.</p>",
+    "neighborhoods": ["Hamilton Station", "Harmony", "Purcellville Road corridor"],
+    "localRisks": ["Well water system failures", "Rural property flooding from poor drainage", "Barn and outbuilding fire risk", "Winter pipe freeze in exposed rural plumbing"],
+    "faqs": [
+      { "question": "Do you serve rural Hamilton properties?", "answer": "Yes, we serve all Hamilton properties including farms, estates, and rural homes. Our equipment is mobile and we can access remote locations." },
+      { "question": "Can you respond quickly to Hamilton emergencies?", "answer": "Yes, we can reach Hamilton within 60 minutes. Despite its rural setting, Hamilton is within our emergency response zone." },
+      { "question": "Do you restore barns and farm buildings in Hamilton?", "answer": "Yes, we restore all types of agricultural and equestrian structures common on Hamilton properties, including barns, stables, and outbuildings." },
+      { "question": "What water damage risks are common in Hamilton?", "answer": "Hamilton properties commonly face well failures, septic backup, basement flooding from poor rural drainage, and winter pipe freeze damage." }
+    ],
+    "metaTitle": "Water Damage Restoration Hamilton VA | Rural Loudoun | PSR",
+    "metaDescription": "Restoration services for Hamilton, VA. 24/7 emergency water, fire & mold damage repair for rural properties and estates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd457" },
+    "name": "Aldie",
+    "slug": "aldie",
+    "county": "Loudoun County",
+    "description": "<p>Aldie is a scenic community in southern Loudoun County where historic Virginia meets modern planned developments. From the historic Aldie Mill to communities like Stone Ridge, the area offers diverse property types. Prime Solution Restoration serves Aldie with professional restoration services for both historic and contemporary homes.</p>",
+    "neighborhoods": ["Stone Ridge", "Willowsford", "South Riding adjacent", "Lenah Mill", "Kirkpatrick Farms"],
+    "localRisks": ["Little River flooding in low-lying areas", "New development drainage issues", "Rural property well and septic failures", "Storm damage in open agricultural areas"],
+    "faqs": [
+      { "question": "Do you serve Aldie's newer communities like Stone Ridge?", "answer": "Yes, we serve all Aldie communities including Stone Ridge, Willowsford, Lenah Mill, Kirkpatrick Farms, and surrounding areas." },
+      { "question": "What water damage risks do Aldie homeowners face?", "answer": "Aldie homes face risks from appliance failures in newer communities, well/septic issues in rural areas, and Little River flooding in low-lying sections." },
+      { "question": "Can you handle storm damage in Aldie?", "answer": "Yes, we provide complete storm damage restoration for Aldie properties including emergency tarping, water extraction, debris removal, and structural repair." },
+      { "question": "Do you restore historic properties in the Aldie area?", "answer": "Yes, we have experience restoring historic properties in the Aldie area, including homes near the Aldie Mill and along the historic Route 50 corridor." }
+    ],
+    "metaTitle": "Water Damage Restoration Aldie VA | Stone Ridge & Surrounding | PSR",
+    "metaDescription": "Water damage restoration for Aldie, Loudoun County VA. 24/7 emergency service for Stone Ridge, Willowsford & more. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd461" },
+    "name": "Burke",
+    "slug": "burke",
+    "county": "Fairfax County",
+    "description": "<p>Burke is a well-established community in central Fairfax County, known for its parks, Lake Burke, and family-oriented neighborhoods built primarily in the 1970s-80s. As these homes age, plumbing failures and water damage become increasingly common. Prime Solution Restoration provides Burke homeowners with fast, reliable restoration services.</p>",
+    "neighborhoods": ["Burke Centre", "Burke Lake area", "Signal Hill", "Rolling Valley", "Old Keene Mill area"],
+    "localRisks": ["Aging 1970s-80s plumbing systems", "Lake Burke and Pohick Creek flooding", "Sump pump failures in basement-heavy homes", "Sewer lateral deterioration in older sections"],
+    "faqs": [
+      { "question": "Why do older Burke homes have more water damage issues?", "answer": "Burke homes from the 1970s-80s often have aging copper or galvanized plumbing, original water heaters past their lifespan, and older sewer laterals that can deteriorate and cause backups." },
+      { "question": "Do you serve Burke Centre and surrounding neighborhoods?", "answer": "Yes, we serve all Burke neighborhoods including Burke Centre, Signal Hill, Rolling Valley, and the Lake Burke area with 24/7 emergency response." },
+      { "question": "Can you help with Burke basement flooding?", "answer": "Yes, we provide emergency water extraction and structural drying for flooded basements. We also assess the cause and recommend prevention measures." },
+      { "question": "What fire damage services do you offer in Burke?", "answer": "We provide complete fire and smoke damage restoration including emergency board-up, soot and smoke cleanup, odor removal, content restoration, and full structural reconstruction." }
+    ],
+    "metaTitle": "Water Damage Restoration Burke VA | Established Home Experts | PSR",
+    "metaDescription": "Burke VA water damage restoration for established homes. 24/7 emergency flood, fire & mold services. Serving Burke Centre & all neighborhoods. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd465" },
+    "name": "Chantilly",
+    "slug": "chantilly",
+    "county": "Fairfax County",
+    "description": "<p>Chantilly is a major suburban hub in western Fairfax County, home to Dulles Expo Center, numerous technology businesses, and large residential developments. The area's mix of commercial and residential properties means diverse restoration needs. Prime Solution Restoration provides Chantilly with comprehensive emergency services for homes and businesses alike.</p>",
+    "neighborhoods": ["Centre Ridge", "Poplar Tree Estates", "Brookfield", "Westfields", "Chantilly Highlands", "Fair Oaks area"],
+    "localRisks": ["Commercial property water damage in business parks", "Cub Run flooding near residential areas", "Aging infrastructure in established neighborhoods", "Data center and server room water emergencies"],
+    "faqs": [
+      { "question": "Do you serve both residential and commercial properties in Chantilly?", "answer": "Yes, we provide 24/7 emergency restoration for Chantilly homes, offices, retail spaces, data centers, and commercial facilities." },
+      { "question": "Can you handle data center or server room water damage?", "answer": "Yes, we understand the urgency and sensitivity of technology facility water damage. We use specialized drying techniques and work within your facility's requirements." },
+      { "question": "What residential areas do you cover in Chantilly?", "answer": "We serve all Chantilly neighborhoods including Centre Ridge, Poplar Tree Estates, Brookfield, Westfields, Chantilly Highlands, and surrounding communities." },
+      { "question": "How fast is your response to Chantilly?", "answer": "We can reach most Chantilly locations within 45-60 minutes. Our teams are positioned throughout Fairfax County for rapid response." }
+    ],
+    "metaTitle": "Water Damage Restoration Chantilly VA | Home & Business Service | PSR",
+    "metaDescription": "Chantilly VA water damage restoration for homes & businesses. 24/7 emergency flood, fire & mold cleanup. Commercial specialists. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46d" },
+    "name": "Manassas",
+    "slug": "manassas",
+    "county": "Independent City",
+    "description": "<p>Manassas is an independent city with deep Civil War history, a revitalized downtown, and diverse residential neighborhoods. As the commercial hub for western Prince William County, Manassas features everything from historic buildings to modern commercial developments. Prime Solution Restoration serves the entire City of Manassas with professional, responsive emergency services.</p>",
+    "neighborhoods": ["Old Town Manassas", "Yorktown", "Georgetown South", "Sudley", "Signal Bay", "Liberia"],
+    "localRisks": ["Aging infrastructure in historic downtown", "Bull Run flooding in adjacent areas", "Older home plumbing failures in established neighborhoods", "Commercial property water damage downtown"],
+    "faqs": [
+      { "question": "Do you serve all of the City of Manassas?", "answer": "Yes, we serve the entire City of Manassas including Old Town, Yorktown, Georgetown South, Sudley, and all surrounding neighborhoods." },
+      { "question": "Can you restore historic buildings in Old Town Manassas?", "answer": "Yes, we have experience restoring historic commercial and residential properties in Old Town Manassas while preserving their architectural character." },
+      { "question": "How fast can you reach Manassas?", "answer": "We can reach most Manassas locations within 45-60 minutes for emergency calls. The city is centrally located within our service area." },
+      { "question": "Do you provide commercial restoration in downtown Manassas?", "answer": "Yes, we serve Manassas businesses including downtown shops, restaurants, and offices with 24/7 emergency restoration services designed to minimize closure time." }
+    ],
+    "metaTitle": "Water Damage Restoration Manassas VA | City-Wide Service | PSR",
+    "metaDescription": "Manassas VA water damage restoration — serving the entire city 24/7. Emergency flood, fire & mold cleanup. Free estimates. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd472" },
+    "name": "Triangle",
+    "slug": "triangle",
+    "county": "Prince William County",
+    "description": "<p>Triangle is a community in southern Prince William County adjacent to Marine Corps Base Quantico. The area serves both military families and civilian residents with affordable housing options. Prime Solution Restoration provides Triangle residents with responsive, professional restoration services at competitive prices.</p>",
+    "neighborhoods": ["Triangle Town Center", "Quantico adjacent", "Fuller Heights", "Dumfries adjacent"],
+    "localRisks": ["Quantico Creek flooding", "Aging rental property infrastructure", "Storm water issues in low-lying areas", "Military housing water damage"],
+    "faqs": [
+      { "question": "Do you serve military families in the Triangle area?", "answer": "Yes, we proudly serve military families near Quantico. We understand the urgency of restoration for families with service obligations and work to minimize disruption." },
+      { "question": "What's the most common water damage in Triangle?", "answer": "Common issues include basement flooding from Quantico Creek overflow, burst pipes in older homes, water heater failures, and storm water drainage problems." },
+      { "question": "How quickly can you respond to Triangle emergencies?", "answer": "We can reach Triangle within 45-60 minutes for emergency calls. Southern Prince William County is well covered by our response teams." },
+      { "question": "Do you offer affordable restoration services for Triangle residents?", "answer": "Yes, we offer competitive pricing and work with all major insurance companies. We also provide free damage assessments and detailed estimates before any work begins." }
+    ],
+    "metaTitle": "Water Damage Restoration Triangle VA | Near Quantico | PSR",
+    "metaDescription": "Water damage restoration for Triangle, VA near Quantico. 24/7 emergency flood, fire & mold services. Affordable, professional. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45c" },
+    "name": "Reston",
+    "slug": "reston",
+    "county": "Fairfax County",
+    "description": "<p>Reston is a pioneering planned community in Fairfax County, designed around its lakes, wooded pathways, and village centers. With properties ranging from lakeside condos to single-family homes in wooded settings, Reston presents diverse restoration challenges. The community's proximity to Lake Anne, Lake Thoreau, and other water features adds unique flood considerations. Prime Solution Restoration is Reston's trusted restoration partner.</p>",
+    "neighborhoods": ["Lake Anne", "Tall Oaks", "North Point", "South Lakes", "Hunters Woods", "Reston Town Center"],
+    "localRisks": ["Lake flooding affecting lakeside properties", "Storm water runoff on wooded pathways", "Condo and townhome water damage in cluster communities", "Aging infrastructure in original 1960s-70s sections"],
+    "faqs": [
+      { "question": "Do you serve Reston's lakeside properties?", "answer": "Yes, we serve all Reston properties including those near Lake Anne, Lake Thoreau, and other community waterways. We understand the specific flood risks these locations face." },
+      { "question": "Can you handle condo water damage in Reston clusters?", "answer": "Yes, Reston's cluster-style housing means water damage often affects neighbors. We handle multi-unit situations and coordinate with the Reston Association and HOAs." },
+      { "question": "What about older homes in Reston's original sections?", "answer": "Reston's 1960s-70s sections face aging plumbing and infrastructure issues. We're experienced with these properties and provide appropriate restoration techniques." },
+      { "question": "Do you serve Reston Town Center businesses?", "answer": "Yes, we provide commercial restoration for Reston Town Center businesses and the surrounding commercial district with 24/7 emergency response." }
+    ],
+    "metaTitle": "Water Damage Restoration Reston VA | Lake Community Experts | PSR",
+    "metaDescription": "Reston VA water damage restoration for lakeside homes, condos & businesses. 24/7 emergency flood, fire & mold services. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd46a" },
+    "name": "West Springfield",
+    "slug": "west-springfield",
+    "county": "Fairfax County",
+    "description": "<p>West Springfield is a well-established residential community in southern Fairfax County, featuring homes built primarily in the 1960s-80s. The area's mature trees, rolling terrain, and aging home systems create ongoing restoration needs. Prime Solution Restoration provides West Springfield with dependable emergency services for water, fire, and mold damage.</p>",
+    "neighborhoods": ["Rolling Forest", "Orange Hunt", "Saratoga", "Newington Forest", "Cardinal Forest"],
+    "localRisks": ["Aging plumbing in 1960s-80s homes", "Accotink Creek and Pohick Creek flooding", "Hillside runoff causing basement water intrusion", "Mature tree storm damage"],
+    "faqs": [
+      { "question": "Why do West Springfield homes have frequent water issues?", "answer": "Many West Springfield homes are 40-60 years old with original plumbing approaching end-of-life. Cast iron drain pipes, galvanized supply lines, and aging water heaters are common failure points." },
+      { "question": "Do you serve all West Springfield neighborhoods?", "answer": "Yes, we serve Rolling Forest, Orange Hunt, Saratoga, Newington Forest, Cardinal Forest, and all surrounding West Springfield communities." },
+      { "question": "Can you handle creek flooding in West Springfield?", "answer": "Yes, properties near Accotink Creek and Pohick Creek face flood risk. We provide rapid emergency flood response and restoration for affected West Springfield homes." },
+      { "question": "What mold risks exist in older West Springfield homes?", "answer": "Older homes with poor ventilation, aging waterproofing, and original building materials are highly susceptible to mold. We provide thorough mold inspection and remediation services." }
+    ],
+    "metaTitle": "Water Damage Restoration West Springfield VA | 24/7 Service | PSR",
+    "metaDescription": "West Springfield VA water damage restoration for established homes. 24/7 emergency flood, fire & mold cleanup. Serving all neighborhoods. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd484" },
+    "name": "Dupont Circle",
+    "slug": "dupont-circle",
+    "county": "Washington DC",
+    "description": "<p>Dupont Circle is one of DC's most vibrant neighborhoods, featuring grand Victorian and Beaux-Arts row houses, embassies, and a thriving cultural scene. The neighborhood's historic building stock, combined with dense urban living, creates unique restoration challenges. Prime Solution Restoration provides Dupont Circle with expert restoration that respects the neighborhood's architectural heritage.</p>",
+    "neighborhoods": ["Dupont Circle East", "Dupont Circle West", "Kalorama Triangle", "Sheridan-Kalorama", "17th Street corridor"],
+    "localRisks": ["Victorian-era plumbing failures", "Basement flooding in below-grade units", "Embassy row property complexity", "Fire risk in densely connected row houses"],
+    "faqs": [
+      { "question": "Do you restore Victorian homes in Dupont Circle?", "answer": "Yes, we specialize in restoring Dupont Circle's historic Victorian and Beaux-Arts properties. We use appropriate techniques to preserve original plasterwork, woodwork, and architectural details." },
+      { "question": "Can you handle water damage in Dupont Circle basement apartments?", "answer": "Yes, below-grade units in Dupont Circle are particularly vulnerable to water intrusion. We provide rapid extraction, structural drying, and mold prevention for basement-level properties." },
+      { "question": "What causes most water damage in Dupont Circle?", "answer": "The most common causes are aging Victorian-era plumbing, roof failures on older buildings, basement seepage from the high water table, and city sewer backup during storms." },
+      { "question": "Do you serve embassies and institutional properties in Dupont Circle?", "answer": "Yes, we serve all property types in Dupont Circle including residential, commercial, and institutional buildings with professional, discreet service." }
+    ],
+    "metaTitle": "Water Damage Restoration Dupont Circle DC | Historic Experts | PSR",
+    "metaDescription": "Dupont Circle DC water damage restoration for historic homes & properties. 24/7 emergency flood, fire & mold services. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd459" },
+    "name": "Fairfax",
+    "slug": "fairfax",
+    "county": "Independent City",
+    "description": "<p>The City of Fairfax is an independent city and the county seat of Fairfax County, featuring a charming Old Town, George Mason University, and diverse residential neighborhoods. With buildings ranging from historic colonial structures to modern developments, Fairfax presents varied restoration needs. Prime Solution Restoration provides the City of Fairfax with comprehensive emergency services.</p>",
+    "neighborhoods": ["Old Town Fairfax", "Fairfax Circle", "George Mason University area", "Mosby Woods", "Country Club Hills", "Cobbdale"],
+    "localRisks": ["Aging infrastructure in historic Old Town", "University area rental property water damage", "Older home plumbing failures", "Storm water overflow from Accotink Creek tributaries"],
+    "faqs": [
+      { "question": "Do you serve the entire City of Fairfax?", "answer": "Yes, we serve all City of Fairfax neighborhoods including Old Town, Fairfax Circle, the GMU area, Mosby Woods, and surrounding communities." },
+      { "question": "Can you restore historic buildings in Old Town Fairfax?", "answer": "Yes, we have experience with historic restoration in Old Town Fairfax, preserving original materials and character while addressing water, fire, or mold damage." },
+      { "question": "Do you handle rental property restoration near George Mason University?", "answer": "Yes, we serve rental properties and work with landlords and property managers for efficient restoration that minimizes tenant disruption." },
+      { "question": "How quickly can you reach the City of Fairfax?", "answer": "We can reach the City of Fairfax within 30-45 minutes for emergency calls. Its central location in our service area means fast response times." }
+    ],
+    "metaTitle": "Water Damage Restoration Fairfax City VA | 24/7 Emergency | PSR",
+    "metaDescription": "City of Fairfax VA water damage restoration. 24/7 emergency flood, fire & mold cleanup. Serving Old Town to GMU area. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd45b" },
+    "name": "Herndon",
+    "slug": "herndon",
+    "county": "Fairfax County",
+    "description": "<p>Herndon is a vibrant town in northwestern Fairfax County with a revitalized historic downtown, the new Silver Line Metro station, and diverse residential neighborhoods. The town's mix of older and newer homes means varied restoration challenges. Prime Solution Restoration provides Herndon with fast, professional emergency restoration services.</p>",
+    "neighborhoods": ["Historic Downtown Herndon", "McNair Farms", "Fox Mill Estates", "Reflection Lake", "Chandon", "Worldgate"],
+    "localRisks": ["Sugarland Run stream flooding", "Older downtown building water issues", "Sump pump failures in low-lying neighborhoods", "Townhome water damage affecting shared walls"],
+    "faqs": [
+      { "question": "Do you serve all Herndon neighborhoods?", "answer": "Yes, we serve all of Herndon including Historic Downtown, McNair Farms, Fox Mill Estates, the Worldgate area, and all surrounding communities." },
+      { "question": "What about flooding near Sugarland Run in Herndon?", "answer": "Properties near Sugarland Run face elevated flood risk during heavy storms. We provide rapid emergency flood response and restoration for affected Herndon properties." },
+      { "question": "Can you handle townhome water damage in Herndon?", "answer": "Yes, we're experienced with Herndon's many townhome communities. We address shared-wall concerns and coordinate with HOAs and neighboring units as needed." },
+      { "question": "Do you serve Herndon businesses near the Metro station?", "answer": "Yes, we provide commercial restoration for businesses throughout Herndon including the downtown area and the developing Metro station corridor." }
+    ],
+    "metaTitle": "Water Damage Restoration Herndon VA | Town-Wide Service | PSR",
+    "metaDescription": "Herndon VA water damage restoration — 24/7 emergency service. Flood, fire & mold cleanup for homes and businesses. IICRC certified. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd462" },
+    "name": "Springfield",
+    "slug": "springfield",
+    "county": "Fairfax County",
+    "description": "<p>Springfield is a major transportation hub and established community in Fairfax County, centered around the Springfield interchange and Springfield Town Center. With a large inventory of homes from the 1960s-80s and growing commercial development, Springfield has diverse restoration needs. Prime Solution Restoration provides Springfield with reliable 24/7 emergency services.</p>",
+    "neighborhoods": ["Springfield Town Center area", "Keene Mill", "Backlick Run", "North Springfield", "South Run adjacent", "Kings Park"],
+    "localRisks": ["Accotink Creek and Backlick Run flooding", "Aging plumbing in 1960s-80s homes", "I-95 corridor commercial property water damage", "Sewer system issues in older sections"],
+    "faqs": [
+      { "question": "Do you serve all of Springfield, VA?", "answer": "Yes, we serve the entire Springfield area including neighborhoods around Springfield Town Center, Keene Mill, Kings Park, North Springfield, and all surrounding communities." },
+      { "question": "Is Springfield at risk for creek flooding?", "answer": "Yes, properties near Accotink Creek and Backlick Run face flood risk during heavy rain. We provide emergency flood response and recommend flood preparedness for at-risk properties." },
+      { "question": "What about older homes in Springfield?", "answer": "Springfield's 1960s-80s homes commonly experience aging pipe failures, water heater failures, and basement seepage. We're experienced with these properties and provide appropriate restoration." },
+      { "question": "Do you serve Springfield Town Center businesses?", "answer": "Yes, we provide commercial restoration for businesses in and around Springfield Town Center with 24/7 emergency response." }
+    ],
+    "metaTitle": "Water Damage Restoration Springfield VA | 24/7 Service | PSR",
+    "metaDescription": "Springfield VA water damage restoration for homes & businesses. 24/7 emergency flood, fire & mold cleanup. Serving all neighborhoods. Call (571) 655-7207.",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd464" },
+    "name": "Falls Church",
+    "slug": "falls-church",
+    "county": "Independent City",
+    "description": "<p>Falls Church is a small, independent city known as 'The Little City,' featuring charming neighborhoods, excellent schools, and a vibrant community. Many homes in Falls Church date from the mid-20th century, making aging infrastructure a primary restoration concern. Prime Solution Restoration provides Falls Church with responsive, high-quality emergency services.</p>",
+    "neighborhoods": ["Falls Church City Center", "West Falls Church", "East Falls Church", "Broad Street corridor", "Park Avenue area"],
+    "localRisks": ["Mid-century home plumbing deterioration", "Basement flooding in low-lying areas", "Small city infrastructure aging", "Tree damage from mature urban canopy"],
+    "faqs": [
+      { "question": "Do you serve the City of Falls Church?", "answer": "Yes, we serve the entire City of Falls Church including City Center, West Falls Church, East Falls Church, and all neighborhoods within the Little City." },
+      { "question": "What are common water damage issues in Falls Church?", "answer": "Falls Church's mid-century homes commonly experience cast-iron pipe failures, water heater breakdowns, basement seepage, and sewer lateral issues." },
+      { "question": "Can you handle tree storm damage in Falls Church?", "answer": "Yes, Falls Church's mature urban canopy means tree damage is common during storms. We provide complete storm damage restoration from emergency response to final repair." },
+      { "question": "Do you offer free estimates for Falls Church residents?", "answer": "Yes, we provide free on-site damage assessments for all Falls Church properties and work with your insurance company to make the process as smooth as possible." }
+    ],
+    "metaTitle": "Water Damage Restoration Falls Church VA | The Little City | PSR",
+    "metaDescription": "Falls Church VA water damage restoration — 24/7 emergency service for The Little City. Flood, fire & mold cleanup. Free estimates. Call now!",
+    "isActive": true
+  },
+  {
+    "_id": { "$oid": "69b724a14ac2a5a3ac4bd47c" },
+    "name": "Alexandria",
+    "slug": "alexandria",
+    "county": "Independent City",
+    "description": "<p>The City of Alexandria is a historic independent city on the Potomac River, blending colonial-era architecture with modern urban living. From Old Town's waterfront to the West End's residential neighborhoods, Alexandria offers diverse restoration challenges. Prime Solution Restoration provides the entire City of Alexandria with expert emergency restoration services that respect the city's rich heritage.</p>",
+    "neighborhoods": ["Old Town", "Del Ray", "Carlyle", "West End", "Seminary Hill", "Eisenhower Valley", "Landmark", "Arlandria"],
+    "localRisks": ["Potomac River and Cameron Run flooding", "Historic property moisture and foundation issues", "Urban storm water drainage overflow", "Dense row house fire spread risk"],
+    "faqs": [
+      { "question": "Do you serve the entire City of Alexandria?", "answer": "Yes, we serve all Alexandria neighborhoods including Old Town, Del Ray, West End, Carlyle, Seminary Hill, Eisenhower Valley, Landmark, and Arlandria." },
+      { "question": "Can you handle historic property restoration in Alexandria?", "answer": "Absolutely. We're experienced with Alexandria's historic preservation requirements and restore properties to meet both BAR guidelines and modern safety standards." },
+      { "question": "What's the biggest flood risk in Alexandria?", "answer": "The Potomac River and Cameron Run pose the greatest flood risks. Old Town's waterfront and low-lying areas in Eisenhower Valley are particularly vulnerable during major storms." },
+      { "question": "Do you provide commercial restoration in Alexandria?", "answer": "Yes, we serve Alexandria businesses from Old Town shops to West End offices with 24/7 emergency restoration, working to minimize closure time and business interruption." }
+    ],
+    "metaTitle": "Water Damage Restoration Alexandria VA | City-Wide 24/7 | PSR",
+    "metaDescription": "Alexandria VA water damage restoration for historic homes, condos & businesses. 24/7 emergency flood, fire & mold services. Call (571) 655-7207.",
+    "isActive": true
+  }
+]
