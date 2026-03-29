@@ -75,6 +75,12 @@ export default async function CityPage({ params }) {
     const hasNeighborhoods = city.neighborhoods && city.neighborhoods.length > 0;
     const hasLocalRisks = city.localRisks && city.localRisks.length > 0;
     const hasFaqs = city.faqs && city.faqs.length > 0;
+    const isCountyHub = city.name.includes("County") || city.county === "County Hub";
+
+    // For county hubs, get cities that belong to this county
+    const countyCities = isCountyHub
+        ? cities.filter((c) => c.county === city.name && c._id !== city._id)
+        : [];
 
     const citySchema = {
         "@context": "https://schema.org",
@@ -177,8 +183,36 @@ export default async function CityPage({ params }) {
                 </section>
             )}
 
-            {/* --- Neighborhoods (if available) --- */}
-            {hasNeighborhoods && (
+            {/* --- County Hub: Cities in this County --- */}
+            {isCountyHub && countyCities.length > 0 && (
+                <section className="py-20 px-6 border-t border-border">
+                    <div className="container mx-auto max-w-5xl">
+                        <div className="text-center mb-12">
+                            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
+                                Full Coverage
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase italic tracking-tighter mt-3">
+                                Cities & Communities in <span className="text-primary">{city.name}</span>
+                            </h2>
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                            {countyCities.map((c) => (
+                                <Link
+                                    key={c._id}
+                                    href={`/pages/locations/${toSlug(c.name)}`}
+                                    className="flex items-center gap-2 px-5 py-3 bg-card border border-border rounded-2xl text-sm font-bold hover:border-primary hover:text-primary transition-all group"
+                                >
+                                    <HiLocationMarker className="text-primary/50 group-hover:text-primary shrink-0" size={14} />
+                                    {c.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* --- Neighborhoods (if available, for non-county pages) --- */}
+            {hasNeighborhoods && !isCountyHub && (
                 <section className="py-16 px-6 border-t border-border">
                     <div className="container mx-auto max-w-5xl">
                         <div className="text-center mb-10">
@@ -218,7 +252,7 @@ export default async function CityPage({ params }) {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {city.localRisks.map((risk, i) => (
                                 <div key={i} className="flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
-                                    <div className="w-10 h-10 bg-red-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 bg-red-500/10 rounded-xl flex items-center justify-center shrink-0">
                                         <HiExclamation className="text-red-500" size={20} />
                                     </div>
                                     <p className="text-secondary font-medium text-sm leading-relaxed">{risk}</p>

@@ -2,17 +2,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiArrowNarrowRight, HiLocationMarker, HiSearch, HiPhone } from "react-icons/hi";
+import { HiArrowNarrowRight, HiLocationMarker, HiSearch, } from "react-icons/hi";
 
 function toSlug(name) {
     return name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 }
 
-// Group cities by county
+// Group cities by county (exclude county hub entries from cards)
 function groupByCounty(cities) {
     const groups = {};
     const order = ["Loudoun County", "Fairfax County", "Prince William County", "Arlington County", "Independent City", "Washington DC", "Maryland", ""];
     cities.forEach((city) => {
+        // Skip county hub pages from the grid — they show as header links
+        if (city.county === "County Hub") return;
         const key = city.county || "Other Areas";
         if (!groups[key]) groups[key] = [];
         groups[key].push(city);
@@ -39,7 +41,7 @@ export default function LocationsClient({ cities }) {
     );
 
     const grouped = groupByCounty(filtered);
-    const totalResults = filtered.length;
+    const totalResults = filtered.filter((c) => c.county !== "County Hub").length;
 
     return (
         <div className="min-h-screen bg-background pt-10 pb-24 px-6 selection:bg-primary/10">
@@ -106,27 +108,6 @@ export default function LocationsClient({ cities }) {
                 </div>
             </section>
 
-            {/* --- Emergency Banner --- */}
-            {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="max-w-5xl mx-auto mb-16"
-            >
-                <div className="bg-foreground text-background rounded-[30px] p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-40 h-40 bg-primary/20 blur-[60px] rounded-full -mr-10 -mt-10" />
-                    <div className="relative z-10">
-                        <p className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-1">Emergency? Don&apos;t wait.</p>
-                        <p className="text-lg md:text-xl font-black uppercase italic tracking-tight">We respond within 60 minutes — anywhere in our service area</p>
-                    </div>
-                    <a
-                        href="tel:+15716557207"
-                        className="relative z-10 flex items-center gap-3 bg-primary px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-orange-500 hover:text-white transition-all shadow-lg shadow-primary/30 whitespace-nowrap"
-                    >
-                        <HiPhone className="animate-pulse" size={20} /> Call 24/7
-                    </a>
-                </div>
-            </motion.div> */}
 
             {/* --- Cities Grouped by County --- */}
             <div className="max-w-6xl mx-auto space-y-16">
@@ -159,10 +140,22 @@ export default function LocationsClient({ cities }) {
                                         <HiLocationMarker className="text-primary" size={20} />
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-foreground">
-                                            {county}
-                                        </h2>
-                                        <p className="text-secondary text-xs font-bold">
+                                        {county.includes("County") ? (
+                                            <Link
+                                                href={`/pages/locations/${toSlug(county)}`}
+                                                className="group/county inline-flex items-center gap-3 bg-primary/10 hover:bg-primary px-5 py-2.5 rounded-2xl transition-all duration-300"
+                                            >
+                                                <span className="text-2xl md:text-3xl font-black text-blue-500 uppercase italic tracking-tighter text-primary group-hover/county:text-orange-500 transition-colors duration-300">
+                                                    {county}
+                                                </span>
+                                                <HiArrowNarrowRight className="text-primary group-hover/county:text-orange-500 group-hover/county:translate-x-1 transition-all duration-300" size={20} />
+                                            </Link>
+                                        ) : (
+                                            <h2 className="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-foreground">
+                                                {county}
+                                            </h2>
+                                        )}
+                                        <p className="text-secondary text-xs font-bold mt-1">
                                             {countyGroup.length} {countyGroup.length === 1 ? "location" : "locations"}
                                         </p>
                                     </div>
@@ -180,7 +173,7 @@ export default function LocationsClient({ cities }) {
                                         >
                                             <Link
                                                 href={`/pages/locations/${toSlug(city.name)}`}
-                                                className="group relative bg-card/70 backdrop-blur-xl rounded-[24px] p-5 transition-all duration-500 hover:shadow-[0_20px_50px_-15px_rgba(15,23,42,0.1)] hover:-translate-y-1.5 flex flex-col ring-1 ring-border/50 hover:ring-primary/40 h-full"
+                                                className="group relative bg-card/70 backdrop-blur-xl rounded-3xl p-5 transition-all duration-500 hover:shadow-[0_20px_50px_-15px_rgba(15,23,42,0.1)] hover:-translate-y-1.5 flex flex-col ring-1 ring-border/50 hover:ring-primary/40 h-full"
                                             >
                                                 <div className="flex items-center justify-between mb-3">
                                                     <div className="w-9 h-9 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
