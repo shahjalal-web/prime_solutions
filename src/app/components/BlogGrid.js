@@ -29,7 +29,7 @@ export default async function BlogGrid() {
             Expert <span className="text-orange-600">Recovery</span> Knowledge
           </h2>
           <p className="text-secondary max-w-2xl mx-auto text-sm md:text-base leading-relaxed font-medium italic">
-            Get professional tips on **Water Damage Restoration**, **Mold Remediation**, and **Fire Damage Recovery** serving Virginia, Maryland, and Washington DC. 
+            Get professional tips on <strong className="text-foreground">Water Damage Restoration</strong>, <strong className="text-foreground">Mold Remediation</strong>, and <strong className="text-foreground">Fire Damage Recovery</strong> serving Virginia, Maryland, and Washington DC.
           </p>
         </div>
 

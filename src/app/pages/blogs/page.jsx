@@ -42,7 +42,7 @@ export default async function BlogsPage() {
                         The Recovery <span className="text-primary">Chronicles</span>
                     </h1>
                     <p className="text-secondary text-lg md:text-xl font-medium italic leading-relaxed max-w-4xl mx-auto">
-                        Professional safety protocols and expert guides for **Water Damage Restoration**, **Fire Recovery**, and **Mold Remediation** across Virginia, Maryland, and DC.
+                        Professional safety protocols and expert guides for <strong className="text-foreground">Water Damage Restoration</strong>, <strong className="text-foreground">Fire Recovery</strong>, and <strong className="text-foreground">Mold Remediation</strong> across Virginia, Maryland, and DC.
                     </p>
                 </div>
 

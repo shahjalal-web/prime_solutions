@@ -45,9 +45,12 @@ export async function generateMetadata({ params }) {
 
     if (!city) return {};
 
+    // Determine region for metadata
+    const metaRegion = city.county === "Washington DC" ? "DC" : city.county === "Maryland" ? "MD" : "VA";
+
     // Use custom meta if available, fallback to default
-    const title = city.metaTitle || `Water Damage Restoration ${city.name} VA | 24/7 Emergency | Prime Solution Restoration`;
-    const description = city.metaDescription || `Need water damage restoration in ${city.name}, VA? Prime Solution Restoration provides 24/7 emergency water, fire & mold restoration services in ${city.name} and surrounding areas.`;
+    const title = city.metaTitle || `Water Damage Restoration ${city.name} ${metaRegion} | 24/7 Emergency | Prime Solution Restoration`;
+    const description = city.metaDescription || `Need water damage restoration in ${city.name}, ${metaRegion}? Prime Solution Restoration provides 24/7 emergency water, fire & mold restoration services in ${city.name} and surrounding areas.`;
 
     return {
         title,
@@ -82,18 +85,24 @@ export default async function CityPage({ params }) {
         ? cities.filter((c) => c.county === city.name && c._id !== city._id)
         : [];
 
+    // Determine region based on county
+    const isDC = city.county === "Washington DC";
+    const isMD = city.county === "Maryland";
+    const regionShort = isDC ? "DC" : isMD ? "MD" : "VA";
+    const regionFull = isDC ? "Washington DC" : isMD ? "Maryland" : "Virginia";
+
     const citySchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "Prime Solution Restoration",
-        description: `24/7 water damage restoration, mold remediation, and fire damage cleanup services in ${city.name}, Virginia.`,
+        description: `24/7 water damage restoration, mold remediation, and fire damage cleanup services in ${city.name}, ${regionFull}.`,
         url: `https://www.psolutionservices.com/pages/locations/${slug}`,
         telephone: "+1-571-655-7207",
         email: "office@psolutionservices.com",
         address: {
             "@type": "PostalAddress",
             addressLocality: city.name,
-            addressRegion: "VA",
+            addressRegion: regionShort,
             addressCountry: "US",
         },
         areaServed: {
@@ -117,13 +126,13 @@ export default async function CityPage({ params }) {
                     <div className="flex items-center justify-center gap-2 mb-6">
                         <HiLocationMarker className="text-primary" size={20} />
                         <span className="text-primary font-black uppercase tracking-[0.3em] text-xs">
-                            Serving {city.name}{city.county ? `, ${city.county}` : ""}, Virginia
+                            Serving {city.name}{city.county && city.county !== "County Hub" ? `, ${city.county}` : ""}{!isDC ? `, ${regionFull}` : ""}
                         </span>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-[0.9] mb-8">
                         Water Damage Restoration <br />
-                        <span className="text-primary">{city.name}, VA</span>
+                        <span className="text-primary">{city.name}{isDC ? "" : `, ${regionShort}`}</span>
                     </h1>
 
                     <p className="text-secondary text-lg max-w-2xl mx-auto leading-relaxed mb-10">

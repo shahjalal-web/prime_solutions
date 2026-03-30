@@ -138,7 +138,7 @@ export default function ContactPage() {
                         Immediate <span className="text-primary">Dispatch</span>
                     </motion.h1>
                     <p className="mt-8 text-secondary text-lg font-medium italic leading-relaxed">
-                        Facing **Water Damage**, **Fire**, or **Mold** issues in Virginia? Our local restoration experts in Ashburn, Fairfax, and Loudoun are ready to deploy 24/7.
+                        Facing <strong className="text-foreground">Water Damage</strong>, <strong className="text-foreground">Fire</strong>, or <strong className="text-foreground">Mold</strong> issues in Virginia? Our local restoration experts in Ashburn, Fairfax, and Loudoun are ready to deploy 24/7.
                     </p>
                 </div>
 

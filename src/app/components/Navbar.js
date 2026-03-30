@@ -101,16 +101,15 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* Conditional Dashboard/Login/Logout Links */}
-          {user ? (
+          {/* Admin-only links — hidden from public */}
+          {user?.role === "admin" && (
             <>
               <Link
-                href={user.role === "admin" ? "/dashboard/admin" : "/dashboard"}
+                href="/dashboard/admin"
                 className="text-orange-600 font-bold uppercase text-xs"
               >
-                {user.role === "admin" ? "Admin Panel" : "Dashboard"}
+                Admin Panel
               </Link>
-
               <button
                 onClick={handleSignOut}
                 className="flex items-center gap-1 text-red-500 font-bold uppercase text-xs hover:text-red-600 transition-colors"
@@ -118,13 +117,6 @@ export default function Navbar() {
                 <HiLogout size={16} /> Logout
               </button>
             </>
-          ) : (
-            <Link
-              href="/auth/login"
-              className="text-orange-600 font-bold uppercase text-xs"
-            >
-              Login
-            </Link>
           )}
 
           {/* Theme Toggle */}
@@ -182,16 +174,15 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              {user && (
+              {/* Admin-only links — hidden from public */}
+              {user?.role === "admin" && (
                 <>
                   <Link
-                  onClick={() => setIsOpen(false)}
-                    href={
-                      user.role === "admin" ? "/dashboard/admin" : "/dashboard"
-                    }
+                    onClick={() => setIsOpen(false)}
+                    href="/dashboard/admin"
                     className="text-orange-600 font-bold text-xl uppercase"
                   >
-                    {user.role === "admin" ? "Admin Panel" : "Dashboard"}
+                    Admin Panel
                   </Link>
                   <button
                     onClick={handleSignOut}
@@ -200,16 +191,6 @@ export default function Navbar() {
                     Logout
                   </button>
                 </>
-              )}
-
-              {!user && (
-                <Link
-                  href="/auth/login"
-                  onClick={() => setIsOpen(false)}
-                  className="text-xl text-orange-600"
-                >
-                  Login
-                </Link>
               )}
 
               <a

@@ -31,7 +31,7 @@ export default async function Footer() {
   const categories = await getFooterCategories();
 
   return (
-    <footer className="bg-background text-foreground border-t border-border pt-16 pb-6 transition-colors duration-500">
+    <footer className="bg-background text-foreground border-t border-border pt-16 pb-6 md:pb-6 pb-24 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Local SEO Focus */}
@@ -43,8 +43,8 @@ export default async function Footer() {
               P<span className="text-orange-600">S</span>R
             </Link>
             <p className="text-secondary text-sm font-medium italic leading-relaxed">
-              Virginia's 24/7 Experts in **Water Damage Restoration**, **Fire
-              Recovery**, and **Mold Remediation**. Serving Loudoun, Fairfax,
+              Virginia&apos;s 24/7 Experts in <strong className="text-foreground">Water Damage Restoration</strong>, <strong className="text-foreground">Fire
+              Recovery</strong>, and <strong className="text-foreground">Mold Remediation</strong>. Serving Loudoun, Fairfax,
               and the DMV area.
             </p>
             <div className="flex gap-3">

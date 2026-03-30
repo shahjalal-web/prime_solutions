@@ -1,10 +1,13 @@
 import Hero from "./pages/home/page";
+import HomepageLeadForm from "./components/HomepageLeadForm";
+import StatsCounter from "./components/StatsCounter";
 import AboutSection from "./components/AboutSection";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
 import BlogGrid from "./components/BlogGrid";
 import Faq from "./components/Faq";
 import TrustBadges from "./components/TrustBadges";
+import FinalCTA from "./components/FinalCTA";
 // import Services from "./components/service"
 import ServicesPage from "./pages/services/page"
 
@@ -42,15 +45,28 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
+      {/* 1. Hero + CTA badges */}
       <Hero />
-      {/* <Services /> */}
+      {/* 2. Urgency + Lead Form */}
+      <HomepageLeadForm />
+      {/* 3. Services */}
       <ServicesPage />
-      <AboutSection />
+      {/* 4. Stats / Trust counters */}
+      <StatsCounter />
+      {/* 5. How We Work (Process) */}
       <Process />
+      {/* 6. About */}
+      <AboutSection />
+      {/* 7. Google Reviews / Testimonials */}
       <Testimonials />
-      <Faq />
+      {/* 8. Trust Badges (Thumbtack, BBB, etc) */}
       <TrustBadges />
+      {/* 9. FAQ */}
+      <Faq />
+      {/* 10. Blog */}
       <BlogGrid />
+      {/* 11. Final CTA */}
+      <FinalCTA />
     </div>
   );
 }

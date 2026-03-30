@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
-import { HiPhone, HiShieldCheck } from "react-icons/hi";
+import { HiPhone, HiShieldCheck, HiClock, HiLightningBolt } from "react-icons/hi";
 import InspectionTrigger from "../../pages/service-details/[slug]/InspectionTrigger";
 
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center bg--background pt-20 overflow-hidden">
-      
+
       {/* --- SEO Hidden Section (Hidden from users, visible to Google) --- */}
       <div className="sr-only">
         <h2>Water Damage Restoration in Loudoun County & Fairfax County</h2>
@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        
+
         {/* Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -39,14 +39,30 @@ export default function Hero() {
           </h1>
 
           {/* P tag with Location Keywords for Local SEO */}
-          <p className="text-lg text--secondary mb-8 leading-relaxed max-w-lg italic">
-            Certified restoration experts serving **Loudoun, Fairfax, and Prince William County**. 
-            From water damage to fire disasters, we provide fast, insurance-approved 
-            recovery across **VA, DC, and MD**.
+          <p className="text-lg text--secondary mb-6 leading-relaxed max-w-lg italic">
+            Certified restoration experts serving <strong className="text--foreground">Loudoun, Fairfax, and Prince William County</strong>.
+            From water damage to fire disasters, we provide fast, insurance-approved
+            recovery across <strong className="text--foreground">VA, DC, and MD</strong>.
           </p>
 
+          {/* 60 Min Response + Trust Badges */}
+          <div className="flex flex-wrap items-center gap-4 mb-8">
+            <div className="flex items-center gap-2 px-4 py-2.5 bg-orange-600/10 border border-orange-600/20 rounded-xl">
+              <HiClock className="text-orange-600" size={20} />
+              <span className="text-sm font-black text-orange-600 uppercase tracking-wide">60 Min Response</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2.5 bg-green-600/10 border border-green-600/20 rounded-xl">
+              <HiShieldCheck className="text-green-600" size={20} />
+              <span className="text-sm font-black text-green-600 uppercase tracking-wide">Licensed & Insured</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2.5 bg-blue-600/10 border border-blue-600/20 rounded-xl">
+              <HiLightningBolt className="text-blue-600" size={20} />
+              <span className="text-sm font-black text-blue-600 uppercase tracking-wide">IICRC Certified</span>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-5 mt-8">
+          <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="tel:+15716557207"
               className="relative group flex items-center justify-center gap-3 px-8 py-4 bg-orange-600 text-white font-black rounded-xl overflow-hidden shadow-xl shadow-orange-600/20 transition-all active:scale-95 min-w-60"
@@ -93,7 +109,7 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-      
+
       {/* Decorative Background SEO Element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-600/5 blur-[120px] -z-10" />
     </section>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navber from "./components/Navbar";
 import Footer from "./components/Footer";
+import StickyCallButton from "./components/StickyCallButton";
 import {AuthProvider} from "./context/AuthContext";
 import { Toaster } from "sonner";
 
@@ -155,6 +156,7 @@ export default function RootLayout({
           <Navber />
           {children}
           <Toaster position="top-right" richColors />
+          <StickyCallButton />
           <Footer />
         </AuthProvider>
       </body>

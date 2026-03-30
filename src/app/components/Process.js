@@ -5,18 +5,18 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const steps = [
   {
     number: "01",
-    title: "Detailed Assessment",
-    description: "Our certified experts conduct a thorough on-site inspection in Virginia to estimate damage and define the recovery scope."
+    title: "You Call, We Arrive",
+    description: "Call us 24/7 — our certified team arrives within 60 minutes. Free on-site inspection, no obligation. We assess the damage and create an action plan."
   },
   {
     number: "02",
-    title: "Emergency Mitigation",
-    description: "We deploy structural drying and dehumidification to prevent further damage from affecting your property and belongings."
+    title: "We Handle Everything",
+    description: "Emergency mitigation starts immediately — water extraction, structural drying, board-up, content protection. We also file your insurance claim directly so you don't have to."
   },
   {
     number: "03",
-    title: "Full Restoration",
-    description: "From drywall repair to interior restoration, we return your home or business in the DMV area to its pre-loss condition."
+    title: "Property Restored",
+    description: "Full restoration from drywall repair to final paint. We return your home or business to its pre-loss condition — like it never happened. Guaranteed."
   }
 ];
 

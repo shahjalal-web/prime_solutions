@@ -191,7 +191,7 @@ export default function LocationsClient({ cities }) {
                                                 </h3>
 
                                                 <p className="text-[10px] font-bold text-secondary/60 uppercase tracking-wider mb-4">
-                                                    Virginia
+                                                    {city.county === "Washington DC" ? "Washington DC" : city.county === "Maryland" ? "Maryland" : "Virginia"}
                                                 </p>
 
                                                 <div className="mt-auto flex items-center justify-between bg-background border border-border px-3 py-2.5 rounded-xl group-hover:bg-primary group-hover:border-primary transition-all duration-300">

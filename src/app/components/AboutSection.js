@@ -48,10 +48,10 @@ export default function AboutSection() {
 
             {/* Content with County Keywords (SEO Optimized) */}
             <p className="text-sm md:text-base text-secondary leading-relaxed mb-8 italic font-medium">
-              Prime Solution Restoration is your trusted partner for **Water Damage, Fire Damage, and Mold Remediation**. 
-              We proudly serve residential and commercial properties throughout **Virginia**, specialized in 
-              **Loudoun, Fairfax, and Prince William County**. Our reach extends to **Washington DC, Montgomery County (MD), 
-              Frederick County (MD), and Jefferson County (WV)**.
+              Prime Solution Restoration is your trusted partner for <strong className="text-foreground">Water Damage, Fire Damage, and Mold Remediation</strong>.
+              We proudly serve residential and commercial properties throughout <strong className="text-foreground">Virginia</strong>, specialized in
+              <strong className="text-foreground">Loudoun, Fairfax, and Prince William County</strong>. Our reach extends to <strong className="text-foreground">Washington DC, Montgomery County (MD),
+              Frederick County (MD), and Jefferson County (WV)</strong>.
             </p>
 
             {/* Testimonial Quote Section */}

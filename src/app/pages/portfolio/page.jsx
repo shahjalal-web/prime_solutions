@@ -75,7 +75,7 @@ export default function PortfolioPage() {
                     >
 
                         <p className="text-secondary font-medium border-l-4 border-orange-600 pl-4 md:pl-6 italic max-w-xl text-sm md:text-base">
-                            From commercial water extraction to residential fire reconstruction, explore our certified track record of restoring properties across NY/NJ.
+                            From commercial water extraction to residential fire reconstruction, explore our certified track record of restoring properties across Virginia, DC, and Maryland.
                         </p>
                     </motion.div>
 
