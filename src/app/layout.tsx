@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Prime Solution Restoration | 24/7 Water, Fire & Mold Restoration in VA, DC & MD",
   description:
     "Expert property restoration in Loudoun, Fairfax & Prince William County. 24/7 Emergency response for water, fire, and mold damage. Serving VA, DC, and MD.",
-  metadataBase: new URL("https://www.psolutionservices.com"),
+  metadataBase: new URL("https://psolutionservices.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Prime Solution Restoration | 24/7 Water, Fire & Mold Restoration",
     description:
       "Expert property restoration in Loudoun, Fairfax & Prince William County. 24/7 Emergency response for water, fire, and mold damage.",
-    url: "https://www.psolutionservices.com",
+    url: "https://psolutionservices.vercel.app",
     siteName: "Prime Solution Restoration",
     images: [
       {
@@ -57,8 +57,8 @@ const organizationSchema = {
   "@type": "LocalBusiness",
   name: "Prime Solution Restoration",
   alternateName: "PSR",
-  url: "https://www.psolutionservices.com",
-  logo: "https://www.psolutionservices.com/logo.png",
+  url: "https://psolutionservices.vercel.app",
+  logo: "https://psolutionservices.vercel.app/logo.png",
   description:
     "24/7 emergency property restoration services including water damage, fire damage, mold remediation, and drywall repair serving Northern Virginia, Washington DC, and Maryland.",
   telephone: "+1-571-655-7207",
@@ -153,8 +153,15 @@ export default function RootLayout({
       </head>
       <body>
         <AuthProvider>
-          <Navber />
-          {children}
+          <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-100 focus:px-4 focus:py-2 focus:bg-orange-600 focus:text-white focus:rounded-lg focus:font-bold">
+            Skip to main content
+          </a>
+          <header>
+            <Navber />
+          </header>
+          <main id="main-content">
+            {children}
+          </main>
           <Toaster position="top-right" richColors />
           <StickyCallButton />
           <Footer />

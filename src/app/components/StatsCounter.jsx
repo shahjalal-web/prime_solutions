@@ -42,7 +42,7 @@ export default function StatsCounter() {
   }, []);
 
   return (
-    <section ref={ref} className="py-20 px-6 bg-card/50 border-y border-border">
+    <section ref={ref} className="py-20 px-6 bg-card border-y border-border">
       <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map((stat, i) => {

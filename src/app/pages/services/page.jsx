@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { HiArrowNarrowRight, HiSparkles } from "react-icons/hi";
+import { optimizeCloudinaryUrl } from "../../lib/cloudinaryUrl";
 
 export const revalidate = 60;
 
@@ -28,9 +29,9 @@ export default async function ServicesPage() {
                     </span>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl font-black uppercase italic text-foreground tracking-tighter leading-none mb-6">
+                <h2 className="text-5xl md:text-7xl font-black uppercase italic text-foreground tracking-tighter leading-none mb-6">
                     <span className="text-primary underline decoration-border decoration-wavy underline-offset-8"> Our Expertise</span>
-                </h1>
+                </h2>
 
                 <p className="text-secondary font-medium text-sm max-w-xl mx-auto leading-relaxed">
                     From water damage to emergency cleanup, we provide high-standard specialized restoration solutions for every challenge.
@@ -49,8 +50,9 @@ export default async function ServicesPage() {
                             {/* Image Section */}
                             <div className="relative h-64 w-full overflow-hidden rounded-4xl mb-6">
                                 <img
-                                    src={cat.image?.url}
+                                    src={optimizeCloudinaryUrl(cat.image?.url, 400)}
                                     alt={cat.name}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-20 group-hover:grayscale-0"
                                 />
 

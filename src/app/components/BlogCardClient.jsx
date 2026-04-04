@@ -2,6 +2,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { optimizeCloudinaryUrl } from "../lib/cloudinaryUrl";
 
 export default function BlogCard({ blog, index }) {
 
@@ -13,12 +14,13 @@ export default function BlogCard({ blog, index }) {
             transition={{ delay: index * 0.1, duration: 0.5 }}
             className="group shadow-lg rounded-2xl shadow-green-400 hover:shadow-2xl"
         >
-            <Link href={`/pages/blogs/${blog.slug}`}>
+            <Link href={`/pages/blogs/${blog.slug}`} prefetch={false}>
                 {/* Image Section with Overlay Effect */}
                 <div className="relative h-72 overflow-hidden rounded-4xl mb-8 shadow-2xl bg-accent/20">
                     <img
-                        src={blog.image?.url || blog.image}
+                        src={optimizeCloudinaryUrl(blog.image?.url || blog.image, 500)}
                         alt={`${blog.title} - Prime Solution Restoration Virginia`}
+                        loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-30 group-hover:grayscale-0"
                     />
 

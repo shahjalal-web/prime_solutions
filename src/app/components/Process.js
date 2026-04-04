@@ -58,7 +58,7 @@ export default function Process() {
                 </div>
 
                 {/* Content Box */}
-                <div className="bg-accent/30 backdrop-blur-sm pt-16 pb-12 px-8 text-center rounded-4xl border border-border shadow-2xl group-hover:border-orange-600/30 transition-all duration-500">
+                <div className="bg-card pt-16 pb-12 px-8 text-center rounded-4xl border border-border shadow-2xl group-hover:border-orange-600/30 transition-all duration-500">
                   <h3 className="text-2xl font-black text-foreground mb-4 uppercase italic tracking-tight group-hover:text-orange-600 transition-colors">
                     {step.title}
                   </h3>

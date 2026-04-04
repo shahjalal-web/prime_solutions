@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: "Prime Solution Restoration",
     description: "24/7 Emergency Property Restoration Services",
-    url: "https://www.psolutionservices.com",
+    url: "https://psolutionservices.vercel.app",
     siteName: "Prime Solution Restoration",
     images: [
       {

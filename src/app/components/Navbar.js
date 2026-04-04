@@ -122,6 +122,7 @@ export default function Navbar() {
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             className="p-2 rounded-lg bg--accent text--foreground hover:ring-2 ring-orange-600/20 transition-all"
           >
             {isDark ? <HiSun size={20} /> : <HiMoon size={20} />}
@@ -140,6 +141,7 @@ export default function Navbar() {
         <div className="flex md:hidden items-center gap-4">
           <button
             onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             className="p-2 text-xl text--foreground"
           >
             {isDark ? <HiSun /> : <HiMoon />}
@@ -147,6 +149,7 @@ export default function Navbar() {
           <button
             className="text-3xl text-orange-600"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <HiX /> : <HiMenuAlt3 />}
           </button>

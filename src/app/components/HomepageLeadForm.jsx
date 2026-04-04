@@ -69,7 +69,7 @@ export default function HomepageLeadForm() {
   };
 
   return (
-    <section className="py-20 px-6 relative overflow-hidden">
+    <section className="py-20 px-6 relative overflow-hidden bg-background">
       {/* Decorative */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-orange-600/10 blur-[100px] rounded-full -ml-36 -mt-36" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-600/10 blur-[120px] rounded-full -mr-48 -mb-48" />
@@ -98,7 +98,7 @@ export default function HomepageLeadForm() {
               <span className="text-orange-600">Get Help Now.</span>
             </h2>
 
-            <p className="text-gray-400 text-base leading-relaxed max-w-md">
+            <p className="text-secondary text-base leading-relaxed max-w-md">
               Don&apos;t wait — every minute counts. Request a free inspection and our certified team will be at your door within 60 minutes.
             </p>
 
@@ -135,7 +135,7 @@ export default function HomepageLeadForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <div className=" border rounded-[30px] p-8 backdrop-blur-sm">
+            <div className="bg-card border border-border rounded-[30px] p-8 backdrop-blur-sm">
               <div className="mb-6">
                 <h3 className="text-2xl font-black uppercase italic tracking-tight">
                   Request Free <span className="text-orange-600">Inspection</span>
@@ -150,14 +150,16 @@ export default function HomepageLeadForm() {
                   <input
                     required
                     placeholder="Full Name"
-                    className="border p-4 rounded-xl focus:border-orange-600 outline-none font-bold  text-sm"
+                    aria-label="Full Name"
+                    className="border border-border bg-background text-foreground p-4 rounded-xl focus:border-orange-600 outline-none font-bold text-sm"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
                   <input
                     required
                     placeholder="Phone Number"
-                    className="border p-4 rounded-xl focus:border-orange-600 outline-none font-bold  text-sm"
+                    aria-label="Phone Number"
+                    className="border border-border bg-background text-foreground p-4 rounded-xl focus:border-orange-600 outline-none font-bold text-sm"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
@@ -167,7 +169,8 @@ export default function HomepageLeadForm() {
                   <div className="relative">
                     <select
                       required
-                      className="w-full border p-4 rounded-xl focus:border-orange-600 outline-none font-bold appearance-none cursor-pointer bg-gray-500 text-sm"
+                      aria-label="What happened?"
+                      className="w-full border border-border p-4 pr-10 rounded-xl focus:border-orange-600 outline-none font-bold appearance-none cursor-pointer bg-background text-foreground text-xs sm:text-sm"
                       value={formData.category}
                       onChange={(e) => setFormData({ ...formData, category: e.target.value, subCategory: "" })}
                     >
@@ -181,7 +184,8 @@ export default function HomepageLeadForm() {
                     <select
                       required
                       disabled={!formData.category}
-                      className="w-full border p-4 rounded-xl focus:border-orange-600 outline-none font-bold appearance-none cursor-pointer bg-gray-500 text-sm disabled:opacity-30"
+                      aria-label="Select Service"
+                      className="w-full border border-border p-4 pr-10 rounded-xl focus:border-orange-600 outline-none font-bold appearance-none cursor-pointer bg-background text-foreground text-xs sm:text-sm disabled:opacity-30"
                       value={formData.subCategory}
                       onChange={(e) => setFormData({ ...formData, subCategory: e.target.value })}
                     >
@@ -196,16 +200,18 @@ export default function HomepageLeadForm() {
                 <textarea
                   required
                   placeholder="Property Address"
+                  aria-label="Property Address"
                   rows={2}
-                  className="w-full border p-4 rounded-xl focus:border-orange-600 outline-none font-bold  text-sm resize-none"
+                  className="w-full border border-border bg-background text-foreground p-4 rounded-xl focus:border-orange-600 outline-none font-bold text-sm resize-none"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                 />
 
                 <textarea
                   placeholder="Briefly describe the damage (optional)"
+                  aria-label="Describe the damage"
                   rows={2}
-                  className="w-full border p-4 rounded-xl focus:border-orange-600 outline-none font-bold  text-sm resize-none"
+                  className="w-full border border-border bg-background text-foreground p-4 rounded-xl focus:border-orange-600 outline-none font-bold text-sm resize-none"
                   value={formData.problem}
                   onChange={(e) => setFormData({ ...formData, problem: e.target.value })}
                 />
@@ -217,7 +223,7 @@ export default function HomepageLeadForm() {
                   {loading ? "SENDING..." : "REQUEST FREE INSPECTION"}
                 </button>
 
-                <p className="text-center text-white/30 text-[10px] font-bold uppercase tracking-wider">
+                <p className="text-center text-secondary text-[10px] font-bold uppercase tracking-wider">
                   No obligation. Free assessment. Available 24/7.
                 </p>
               </form>

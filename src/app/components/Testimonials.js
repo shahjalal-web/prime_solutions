@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useState, useEffect } from "react";
@@ -10,9 +9,10 @@ import { HiStar, HiChevronLeft, HiChevronRight, HiExternalLink } from "react-ico
 const reviews = [
   {
     id: 1,
-    name: "Jacke Manders",
+    name: "Jack Manders",
     role: "Fairfax, VA",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    initials: "JM",
+    color: "bg-blue-600",
     text: "When my basement flooded in Fairfax, I called Prime Solution. They found the leak fast and handled the water restoration efficiently. Highly recommend!",
     stars: 5,
     timeAgo: "2 weeks ago",
@@ -21,7 +21,8 @@ const reviews = [
     id: 2,
     name: "Sarah Johnson",
     role: "Ashburn, VA",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    initials: "SJ",
+    color: "bg-emerald-600",
     text: "The fire damage in our Loudoun office was extensive. Their team handled everything from soot removal to reconstruction with expert care.",
     stars: 5,
     timeAgo: "1 month ago",
@@ -30,7 +31,8 @@ const reviews = [
     id: 3,
     name: "Michael Ross",
     role: "Washington, DC",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    initials: "MR",
+    color: "bg-purple-600",
     text: "Mold remediation is a tricky job, but they did it perfectly in our DC facility. They even provided a full report for our insurance claim.",
     stars: 5,
     timeAgo: "3 weeks ago",
@@ -39,7 +41,8 @@ const reviews = [
     id: 4,
     name: "David Miller",
     role: "Woodbridge, VA",
-    image: "https://randomuser.me/api/portraits/men/50.jpg",
+    initials: "DM",
+    color: "bg-red-600",
     text: "Fast response across Prince William County! They saved my wooden floor after a major pipe burst leak. Very professional team.",
     stars: 5,
     timeAgo: "1 month ago",
@@ -48,13 +51,15 @@ const reviews = [
     id: 5,
     name: "Emily Chen",
     role: "Reston, VA",
-    image: "https://randomuser.me/api/portraits/women/60.jpg",
+    initials: "EC",
+    color: "bg-amber-600",
     text: "Excellent drywall repair and interior restoration service. They were on time and explained the whole process clearly. Insurance was handled smoothly.",
     stars: 5,
     timeAgo: "2 months ago",
   },
 ];
 
+// TODO: Replace with actual Google Business Profile review link
 const GOOGLE_REVIEW_URL = "https://g.page/r/prime-solution-restoration/review";
 
 export default function Testimonials() {
@@ -111,14 +116,14 @@ export default function Testimonials() {
                 </svg>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-2xl font-black text-foreground">5.0</span>
+                    <span className="text-2xl text-black">5.0</span>
                     <div className="flex gap-0.5">
                       {[...Array(5)].map((_, i) => (
                         <HiStar key={i} className="text-yellow-400" size={16} />
                       ))}
                     </div>
                   </div>
-                  <p className="text-[10px] font-bold text-secondary uppercase tracking-wider">Google Reviews</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-black">Google Reviews</p>
                 </div>
               </div>
 
@@ -192,11 +197,9 @@ export default function Testimonials() {
                     </p>
 
                     <div className="flex items-center gap-4 mt-auto border-t border-border pt-6">
-                      <img
-                        src={review.image}
-                        alt={review.name}
-                        className="w-12 h-12 rounded-full border-2 border-orange-600 shadow-lg p-0.5 object-cover"
-                      />
+                      <div className={`w-12 h-12 rounded-full ${review.color} flex items-center justify-center text-white font-black text-sm border-2 border-orange-600 shadow-lg`}>
+                        {review.initials}
+                      </div>
                       <div className="flex-1">
                         <h4 className="font-black text-foreground text-sm uppercase italic tracking-tight group-hover:text-orange-600 transition-colors">
                           {review.name}
@@ -221,6 +224,7 @@ export default function Testimonials() {
             <button
               key={i}
               onClick={() => setStartIndex(i)}
+              aria-label={`Go to review slide ${i + 1}`}
               className={`h-2 rounded-full transition-all duration-500 ${
                 startIndex === i
                   ? "w-12 bg-orange-600 shadow-lg shadow-orange-600/40"

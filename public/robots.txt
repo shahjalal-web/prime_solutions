@@ -23,4 +23,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap
-Sitemap: https://psolutionservices.com/sitemap.xml
+Sitemap: https://psolutionservices.vercel.app/sitemap.xml

@@ -179,7 +179,7 @@ export default function ContactPage() {
                         initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }}
                         className="lg:col-span-7"
                     >
-                        <div className="bg-card border border-border p-8 md:p-14 rounded-[50px] shadow-2xl relative">
+                        <div className="bg-card border border-border p-8 md:p-14 rounded-[50px] shadow-2xl relative z-10">
                             <div className="flex items-center gap-3 mb-12">
                                 <HiOutlineSparkles className="text-primary" size={24} />
                                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-secondary">Service Request Protocol</p>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     <div className="space-y-4">
                                         <label className="text-[9px] font-black uppercase tracking-widest text-primary ml-1">Restoration Category</label>
-                                        <select required id="category" value={formData.category} onChange={handleCategoryChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-gray-600 text-white">
+                                        <select required id="category" value={formData.category} onChange={handleCategoryChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-background text-foreground">
                                             <option value="">Select Category</option>
                                             {categories.map((cat) => (<option key={cat._id} value={cat._id}>{cat.name}</option>))}
                                         </select>
@@ -209,7 +209,7 @@ export default function ContactPage() {
                                         {formData.category && (
                                             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
                                                 <label className="text-[9px] font-black uppercase tracking-widest text-primary ml-1">Specific Problem</label>
-                                                <select required id="subCategory" value={formData.subCategory} onChange={handleInputChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-gray-600 text-white">
+                                                <select required id="subCategory" value={formData.subCategory} onChange={handleInputChange} className="w-full bg-accent/40 border border-border/50 px-6 py-5 rounded-2xl outline-none focus:ring-2 focus:ring-primary/20 transition-all font-bold text-xs appearance-none bg-background text-foreground">
                                                     <option value="">Specific Issue</option>
                                                     {subCategories.map((sub) => (<option key={sub._id} value={sub._id}>{sub.name}</option>))}
                                                     <option value="other's">Others</option>
@@ -246,6 +246,7 @@ export default function ContactPage() {
                         </p>
                         <div className="h-80 w-full bg-accent rounded-[40px] overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-1000">
                             <iframe
+                                title="Google Maps - Prime Solution Ashburn Office"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.3789327823526!2d-77.4912239!3d39.014238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64bf2e4db82ad%3A0x1234567890abcdef!2s42785%20Generation%20Dr%2C%20Ashburn%2C%20VA%2020147!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
                                 width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
                             ></iframe>
@@ -257,6 +258,7 @@ export default function ContactPage() {
                         </p>
                         <div className="h-80 w-full bg-accent rounded-[40px] overflow-hidden border border-border grayscale hover:grayscale-0 transition-all duration-1000">
                             <iframe
+                                title="Google Maps - Prime Solution Manassas Office"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.3789327823526!2d-77.4755!3d38.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6730b6b6b6b6b%3A0xabcdef1234567890!2s8735%20Quarry%20Rd%20Unit%20102%2C%20Manassas%2C%20VA%2020110!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
                                 width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
                             ></iframe>

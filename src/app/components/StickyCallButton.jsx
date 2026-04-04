@@ -23,17 +23,17 @@ export default function StickyCallButton() {
   return (
     <>
       {/* Mobile sticky bottom bar */}
-      <div className="sticky-call-btn fixed bottom-0 left-0 right-0 z-50 md:hidden bg-foreground/95 backdrop-blur-md border-t border-border/20 px-4 py-3 flex items-center gap-3">
+      <div className="sticky-call-btn fixed bottom-0 left-0 right-0 z-40 md:hidden bg-foreground/95 backdrop-blur-md border-t border-border/20 px-3 py-2.5 flex items-center gap-2">
         <a
           href="tel:+15716557207"
-          className="flex-1 flex items-center justify-center gap-2 bg-red-600 text-white py-3.5 rounded-xl font-black text-sm uppercase tracking-wider shadow-lg shadow-red-600/30 active:scale-95 transition-transform"
+          className="flex-1 flex items-center justify-center gap-2 bg-red-600 text-white py-3 rounded-xl font-black text-xs uppercase tracking-wide shadow-lg shadow-red-600/30 active:scale-95 transition-transform whitespace-nowrap"
         >
-          <HiPhone size={18} className="animate-pulse" />
-          Call Now 24/7
+          <HiPhone size={16} className="animate-pulse shrink-0" />
+          Call 24/7
         </a>
         <a
           href="tel:+15716557207"
-          className="flex-1 flex items-center justify-center gap-2 bg-orange-600 text-white py-3.5 rounded-xl font-black text-sm uppercase tracking-wider shadow-lg shadow-orange-600/30 active:scale-95 transition-transform"
+          className="flex-1 flex items-center justify-center gap-2 bg-orange-600 text-white py-3 rounded-xl font-black text-xs uppercase tracking-wide shadow-lg shadow-orange-600/30 active:scale-95 transition-transform whitespace-nowrap"
         >
           Free Inspection
         </a>
@@ -43,7 +43,7 @@ export default function StickyCallButton() {
       {visible && (
         <a
           href="tel:+15716557207"
-          className="sticky-call-btn hidden md:flex fixed bottom-8 right-8 z-50 items-center gap-3 bg-red-600 text-white px-6 py-4 rounded-2xl font-black text-sm uppercase tracking-wider shadow-2xl shadow-red-600/30 hover:bg-red-700 hover:scale-105 transition-all animate-bounce-slow"
+          className="sticky-call-btn hidden md:flex fixed bottom-8 right-8 z-40 items-center gap-3 bg-red-600 text-white px-6 py-4 rounded-2xl font-black text-sm uppercase tracking-wider shadow-2xl shadow-red-600/30 hover:bg-red-700 hover:scale-105 transition-all animate-bounce-slow"
         >
           <HiPhone size={20} className="animate-pulse" />
           Emergency? Call Now

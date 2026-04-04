@@ -10,8 +10,7 @@ export default function Hero() {
 
       {/* --- SEO Hidden Section (Hidden from users, visible to Google) --- */}
       <div className="sr-only">
-        <h2>Water Damage Restoration in Loudoun County & Fairfax County</h2>
-        <h2>Fire Disaster Recovery and Mold Remediation Virginia</h2>
+        <p>Water Damage Restoration in Loudoun County & Fairfax County. Fire Disaster Recovery and Mold Remediation Virginia.</p>
         <p>Prime Solution Restoration serves Prince William County, Washington DC, Montgomery County MD, and Frederick County. Experts in drywall repair and structural drying.</p>
       </div>
 
@@ -33,7 +32,7 @@ export default function Hero() {
           </div>
 
           {/* Main H1 - SEO Focused */}
-          <h1 className="text-4xl md:text-6xl font-black text--foreground leading-tight mb-6 uppercase italic tracking-tighter">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black text--foreground leading-tight mb-6 uppercase italic tracking-tighter">
             Property Restoration <br />
             <span className="text-orange-600">Like It Never Happened.</span>
           </h1>
@@ -91,7 +90,7 @@ export default function Hero() {
         >
           {/* Main Image with SEO Alt Text */}
           <img
-            src="hero.jfif"
+            src="/hero.webp"
             alt="Prime Solution Restoration - Emergency Fire and Water Damage Service Virginia"
             className="rounded-[40px] shadow-2xl relative z-10 border-8 border-card/50"
           />
@@ -103,7 +102,7 @@ export default function Hero() {
               <div className="w-28 h-28 rounded-full bg-linear-to-br from-blue-500 to-blue-700 flex flex-col items-center justify-center text-center shadow-inner border-4 border--background">
                 <HiShieldCheck className="text-white/90 mb-0.5" size={26} />
                 <p className="font-black text-3xl text-white leading-none tracking-tighter">15+</p>
-                <p className="text-[9px] font-bold text-blue-100 uppercase tracking-widest mt-1 px-2 leading-tight">YEARS EXPERT</p>
+                <p className="text-[9px] font-bold text-blue-100 uppercase tracking-widest mt-1 px-2 leading-tight">YEARS EXPERIENCE</p>
               </div>
             </div>
           </div>
