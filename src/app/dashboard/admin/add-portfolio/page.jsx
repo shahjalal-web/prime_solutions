@@ -110,8 +110,8 @@ export default function PortfolioAdmin() {
                 const compressed = await imageCompression(obj.file, options);
                 const data = new FormData();
                 data.append("file", compressed);
-                data.append("upload_preset", "prime_solutions");
-                const res = await fetch(`https://api.cloudinary.com/v1_1/druw6dw7t/image/upload`, { method: "POST", body: data });
+                data.append("upload_preset", "ml_default");
+                const res = await fetch(`https://api.cloudinary.com/v1_1/daq2xbt9h/image/upload`, { method: "POST", body: data });
                 const result = await res.json();
                 uploaded.push({ url: result.secure_url, publicId: result.public_id });
             } catch (error) {

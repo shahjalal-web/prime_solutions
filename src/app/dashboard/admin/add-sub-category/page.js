@@ -82,10 +82,10 @@ export default function SubCategoryManagement() {
       const compressed = await imageCompression(file, options);
       const formData = new FormData();
       formData.append("file", compressed);
-      formData.append("upload_preset", "prime_solutions"); // Your preset
+      formData.append("upload_preset", "ml_default"); // Your preset
 
       const res = await fetch(
-        `https://api.cloudinary.com/v1_1/druw6dw7t/image/upload`,
+        `https://api.cloudinary.com/v1_1/daq2xbt9h/image/upload`,
         {
           method: "POST",
           body: formData,

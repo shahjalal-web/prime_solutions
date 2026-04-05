@@ -22,8 +22,8 @@ export default function CategoryManagement() {
   const { user } = useAuth();
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
-  const CLOUD_NAME = "druw6dw7t"; // Replace with your Cloudinary Cloud Name
-  const UPLOAD_PRESET = "prime_solutions"; // Replace with your Unsigned Upload Preset
+  const CLOUD_NAME = "daq2xbt9h"; // Replace with your Cloudinary Cloud Name
+  const UPLOAD_PRESET = "ml_default"; // Replace with your Unsigned Upload Preset
 
   // Fetch Categories
   const fetchCategories = async () => {

@@ -32,8 +32,8 @@ export default function BlogAdmin() {
     const [faqs, setFaqs] = useState([]);
 
     const API_URL = process.env.NEXT_PUBLIC_API_URL;
-    const CLOUD_NAME = "druw6dw7t";
-    const UPLOAD_PRESET = "prime_solutions";
+    const CLOUD_NAME = "daq2xbt9h";
+    const UPLOAD_PRESET = "ml_default";
 
     // Fetch initial data
     const fetchInitialData = async () => {
